@@ -3,7 +3,7 @@ import "../Styles/Navstyle/Navbar.css";
 import { CgLoadbarSound } from "react-icons/cg";
 import { GiSoundOff } from "react-icons/gi";
 import useSound from "use-sound";
-import got from "./got.mp3"; -m 
+import got from "./got.mp3"; 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
