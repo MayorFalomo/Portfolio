@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Archivo&family=Barlow:wght@600&family=Cabin:wght@500&family=Cinzel:wght@500;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@300&family=Maven+Pro&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&family=Nanum+Gothic&family=Playfair+Display:wght@500&family=Poppins&family=Roboto:ital,wght@1,300&family=Rubik:wght@300;400&family=Saira&display=swap");
+.HeroContainer {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  .HeroCard {
+    position: absolute;
+    top: 60%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 9;
+    padding: 50px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .HeroCard p {
+    font-size: calc(15px + 0.390625vw);
+  }
+  .name {
+    font-size: 9vw;
+    color: #d4a345;
+    font-family: "Montserrat";
+    width: 100%;
+  }
+  h1 span {
+    font-family: "Montserrat";
+    font-size: 5vw;
+    color: #e7cc98;
+  }
+  #header-text em {
+    font-size: 50px;
+  }
+  #header-text {
+    margin-bottom: 20px;
+  }
+
+  .imgBtn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .leftLight {
+    position: fixed;
+    left: -100px;
+    top: -100px;
+    z-index: 1;
+  }
+  .leftLightening {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  .cursor {
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    pointer-events: none;
+  }
+  .cursor-dot,
+  .cursor-dot-outline {
+    // pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 99999999;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #dc5656;
+  }
+  .cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(229, 128, 128, 0.5);
+  }
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 660px) {
+  #header-text em {
+    font-size: 20px !important;
+  }
+  .HeroCard {
+    padding: 20px !important;
+  }
+  h1 span {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 400px) {
+  .imgBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

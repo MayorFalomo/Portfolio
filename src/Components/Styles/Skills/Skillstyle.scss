@@ -1,0 +1,37 @@
+.SkillContainer {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 9;
+  margin: 50px auto;
+  h1 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 8vw;
+    color: #141c2d;
+  }
+  .skillCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .skill-logos {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.skillImg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .skillImg img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+}

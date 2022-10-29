@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Archivo&family=Barlow:wght@600&family=Cabin:wght@500&family=Cinzel:wght@500;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@300&family=Maven+Pro&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&family=Nanum+Gothic&family=Playfair+Display:wght@500&family=Poppins&family=Roboto:ital,wght@1,300&family=Rubik:wght@300;400&family=Saira&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+body{
+    background-color: #050607;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    /* overflow: none !important; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.App{
+  position: relative;
+  /* cursor: none; */
+  /* overflow: none !important; */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb{
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: gray;
+}
+.App .cursor {
+  background-color: #fff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999 !important;
+  pointer-events: none;
+}
+.App .cursor-dot,
+.App .cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 999999999999999999 !important;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.App .cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #dc5656;
+}
+.App .cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(229, 128, 128, 0.5);
+}

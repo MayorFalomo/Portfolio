@@ -1,0 +1,96 @@
+.AboutContainer {
+  position: relative;
+  z-index: 9;
+  .aboutSection {
+    display: flex;
+
+  }
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  .about-title h2 {
+    font-size: 5vw;
+    color: #d4a345;
+  }
+  .myNotes {
+    width: 50%;
+  }
+
+  .myself {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 30px;
+  }
+  .aboutCardImg h2 {
+    text-align: center;
+  }
+
+  .AboutmeImg img {
+    width: 100%;
+  }
+  .aboutBio {
+    height: 100vh;
+  }
+  .aboutBio p {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 30px;
+  }
+  .aboutCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .about-title {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+  }
+  .about-title h2 {
+    font-size: 60px !important;
+    margin: 30px;
+  }
+  .myNotes {
+    width: 100% !important;
+  }
+  .AboutmeImg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .aboutCard p {
+    width: 95%;
+    margin: auto;
+  }
+  .aboutBio {
+    height: auto !important;
+  }
+}
+@media (max-width: 670px) {
+  .aboutCardImg h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  #about {
+    font-size: 48px !important;
+  }
+}

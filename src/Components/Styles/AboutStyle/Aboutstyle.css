@@ -1,0 +1,93 @@
+.AboutContainer {
+  position: relative;
+  z-index: 9;
+}
+.AboutContainer .aboutSection {
+  display: flex;
+}
+.AboutContainer .about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.AboutContainer .about-title h2 {
+  font-size: 5vw;
+  color: #d4a345;
+}
+.AboutContainer .myNotes {
+  width: 50%;
+}
+.AboutContainer .myself {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 30px;
+}
+.AboutContainer .aboutCardImg h2 {
+  text-align: center;
+}
+.AboutContainer .AboutmeImg img {
+  width: 100%;
+}
+.AboutContainer .aboutBio {
+  height: 100vh;
+}
+.AboutContainer .aboutBio p {
+  font-size: calc(15px + 0.390625vw);
+  line-height: 30px;
+}
+.AboutContainer .aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  gap: 30px;
+}
+
+@media (max-width: 1280px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .about-title {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+  }
+  .about-title h2 {
+    font-size: 60px !important;
+    margin: 30px;
+  }
+  .myNotes {
+    width: 100% !important;
+  }
+  .AboutmeImg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .aboutCard p {
+    width: 95%;
+    margin: auto;
+  }
+  .aboutBio {
+    height: auto !important;
+  }
+}
+@media (max-width: 670px) {
+  .aboutCardImg h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  #about {
+    font-size: 48px !important;
+  }
+}/*# sourceMappingURL=Aboutstyle.css.map */

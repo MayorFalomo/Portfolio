@@ -1,0 +1,146 @@
+.ContactContainer {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 9;
+}
+.ContactContainer .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+}
+.ContactContainer .work .content p {
+  font-size: calc(15px + 0.390625vw);
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  width: 100% !important;
+}
+.ContactContainer h1 {
+  font-size: 6vw;
+  color: #141c2d;
+}
+.ContactContainer .content h1 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.ContactContainer .content h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+.ContactContainer .content h1:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+.ContactContainer .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+}
+.ContactContainer .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.ContactContainer .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+.ContactContainer footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  font-size: 30px;
+  gap: 30px;
+  padding: 40px;
+}
+.ContactContainer footer p {
+  font-size: 18px;
+}
+.ContactContainer ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.ContactContainer .email {
+  writing-mode: vertical-lr;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  right: 70px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 760px) {
+  .email {
+    position: absolute;
+    top: 70%;
+  }
+}
+@media (max-width: 665px) {
+  .content h1 {
+    font-size: 80px !important;
+  }
+  .work {
+    height: 75vh !important;
+  }
+  .email {
+    position: absolute;
+    right: 20px !important;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px !important;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (max-width: 430px) {
+  .content h1 {
+    font-size: 60px !important;
+  }
+  .work {
+    height: 75vh !important;
+  }
+}/*# sourceMappingURL=Contactstyles.css.map */
