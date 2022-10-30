@@ -77,7 +77,7 @@ const Navbar = () => {
                 play();
               }}
             >
-              {<GiSoundOff className="stopIcon" />} {/* </Tippy> */}
+              {<GiSoundOff className="stopIcon" />}
             </p>
           )}
         </div>

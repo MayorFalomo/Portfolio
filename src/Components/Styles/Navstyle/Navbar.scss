@@ -99,9 +99,6 @@ nav {
     top: 170px;
     z-index: 99;
   }
-  // .stopIcon {
-  //   font-size: 40px;
-  // }
 }
 
 @media (max-width: 750px) {
@@ -109,8 +106,11 @@ nav {
     display: flex !important;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 35px;
     z-index: 999999999;
+  }
+  .burger{
+    font-size: 35px !important;
   }
   .namesLogo {
     position: relative;

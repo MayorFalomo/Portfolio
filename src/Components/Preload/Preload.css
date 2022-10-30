@@ -3,6 +3,10 @@
   overflow: hidden;
   color: #fff;
 }
+.preload .preload::-webkit-scrollbar {
+  display: none !important;
+  width: 0;
+}
 .preload h1 {
   position: absolute;
   font-family: "Open Sans";

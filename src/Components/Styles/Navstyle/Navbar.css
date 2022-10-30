@@ -98,8 +98,11 @@ nav .sound {
     display: flex !important;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 35px;
     z-index: 999999999;
+  }
+  .burger {
+    font-size: 35px !important;
   }
   .namesLogo {
     position: relative;

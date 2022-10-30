@@ -56,6 +56,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 9;
+  width: 60%;
 }
 .ProjectsContainer #parallax h1 {
   font-size: 40px;
@@ -64,7 +65,7 @@
   margin: 0;
   position: absolute;
   bottom: 5%;
-  right: 25%;
+  right: 30%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -72,7 +73,7 @@
   font-size: 40px;
 }
 .ProjectsContainer #parallax p {
-  font-size: 3vw;
+  font-size: 25px;
   color: #141c2d;
   color: transparent;
   color: #ffffff;
@@ -81,7 +82,7 @@
   margin: 10px auto;
 }
 .ProjectsContainer #evenImg p {
-  font-size: 3vw;
+  font-size: 25px;
   color: #141c2d;
   color: transparent;
   color: #ffffff;
@@ -140,8 +141,22 @@
     justify-content: center;
   }
 }
+@media (max-width: 600px) {
+  #parallax {
+    position: absolute !important;
+    bottom: -70px !important;
+    width: 100% !important;
+  }
+  .parallaxText {
+    position: absolute !important;
+    bottom: -70px !important;
+  }
+}
 @media (max-width: 450px) {
   .parallaxText p {
     font-size: 23px !important;
+  }
+  #projectHeader {
+    font-size: 50px !important;
   }
 }/*# sourceMappingURL=Projects.css.map */

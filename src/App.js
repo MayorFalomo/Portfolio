@@ -138,7 +138,7 @@ function App() {
           </div>
         </>
       )}
-    </ParallaxProvider>
+    </ParallaxProvider> 
   );
 }
 
