@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 li{
@@ -29,6 +30,10 @@ body{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   /* overflow-x: hidden; */
+}
+
+.AppCard{
+  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar{
@@ -79,4 +84,17 @@ body{
   width: 40px;
   height: 40px;
   background-color: rgba(229, 128, 128, 0.5);
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
 }

@@ -9,15 +9,18 @@ import Contact from "./Components/Contact/Contact";
 import { useEffect, useRef, useState } from "react";
 import useLocoScroll from "./Components/Scroll/LocoScroll";
 import Preload from "./Components/Preload/Preload";
-
+// import {Cursor} from 'react-creative-cursor'
+import Cursor from "./Components/Cursor/Cursor";
 function App() {
   const [loading, setLoading] = useState(false);
   const [completed, setCompleted] = useState(false);
-  // useLocoScroll();
+  useLocoScroll();
+
+  //  const delay = 18;
 
   // const dot = useRef(null);
   // const dotOutline = useRef(null);
-  // const delay = 18;
+
   // const cursorVisible = useRef(true);
   // const cursorEnlarged = useRef(false);
 
@@ -29,25 +32,26 @@ function App() {
   // const requestRef = useRef(null);
 
   // useEffect(() => {
-  //   document.addEventListener("mousedown", mouseOverEvent);
-  //   document.addEventListener("mouseup", mouseOutEvent);
-  //   document.addEventListener("mousemove", mouseMoveEvent);
-  //   document.addEventListener("mouseenter", mouseEnterEvent);
-  //   document.addEventListener("mouseleave", mouseLeaveEvent);
+  //   document.addEventListener('mousedown', mouseOverEvent);
+  //   document.addEventListener('mouseup', mouseOutEvent);
+  //   document.addEventListener('mousemove', mouseMoveEvent);
+  //   document.addEventListener('mouseenter', mouseEnterEvent);
+  //   document.addEventListener('mouseleave', mouseLeaveEvent);
 
   //   animateDotOutline();
 
   //   return () => {
-  //     document.removeEventListener("mousedown", mouseOverEvent);
-  //     document.removeEventListener("mouseup", mouseOutEvent);
-  //     document.removeEventListener("mousemove", mouseMoveEvent);
-  //     document.removeEventListener("mouseenter", mouseEnterEvent);
-  //     document.removeEventListener("mouseleave", mouseLeaveEvent);
+  //     document.removeEventListener('mousedown', mouseOverEvent);
+  //     document.removeEventListener('mouseup', mouseOutEvent);
+  //     document.removeEventListener('mousemove', mouseMoveEvent);
+  //     document.removeEventListener('mouseenter', mouseEnterEvent);
+  //     document.removeEventListener('mouseleave', mouseLeaveEvent);
 
   //     cancelAnimationFrame(requestRef.current);
   //   };
   // }, []);
-  // const toggleCursorVisiblity = () => {
+
+  // const toggleCursorVisibility = () => {
   //   if (cursorVisible.current) {
   //     dot.current.style.opacity = 1;
   //     dotOutline.current.style.opacity = 1;
@@ -59,11 +63,11 @@ function App() {
 
   // const toggleCursorSize = () => {
   //   if (cursorEnlarged.current) {
-  //     dot.current.style.transform = "translate(-50%, -50%) scale(0.75)";
-  //     dotOutline.current.style.transform = "translate(-50%, -50%) scale(1.5)";
+  //     dot.current.style.transform = 'translate(-50%, -50%) scale(0.75)';
+  //     dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1.5)';
   //   } else {
-  //     dot.current.style.transform = "translate(-50%, -50%) scale(1)";
-  //     dotOutline.current.style.transform = "translate(-50%, -50%) scale(1)";
+  //     dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
+  //     dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
   //   }
   // };
 
@@ -76,36 +80,38 @@ function App() {
   //   cursorEnlarged.current = false;
   //   toggleCursorSize();
   // };
+
   // const mouseEnterEvent = () => {
   //   cursorVisible.current = true;
-  //   toggleCursorVisiblity();
+  //   toggleCursorVisibility();
   // };
 
   // const mouseLeaveEvent = () => {
-  //   cursorVisible.current = true;
-  //   toggleCursorVisiblity();
+  //   cursorVisible.current = false;
+  //   toggleCursorVisibility();
   // };
 
-  // const mouseMoveEvent = (e) => {
+  // const mouseMoveEvent = e => {
   //   cursorVisible.current = true;
-  //   toggleCursorVisiblity();
+  //   toggleCursorVisibility();
 
   //   endX.current = e.pageX;
   //   endY.current = e.pageY;
 
-  //   dot.current.style.top = endY.current + "px";
-  //   dot.current.style.left = endX.current + "px";
+  //   dot.current.style.top = endY.current + 'px';
+  //   dot.current.style.left = endX.current + 'px';
   // };
 
   // const animateDotOutline = () => {
   //   _x.current += (endX.current - _x.current) / delay;
   //   _y.current += (endY.current - _y.current) / delay;
 
-  //   dotOutline.current.style.top = _y.current + "px";
-  //   dotOutline.current.style.left = _x.current + "px";
+  //   dotOutline.current.style.top = _y.current + 'px';
+  //   dotOutline.current.style.left = _x.current + 'px';
 
   //   requestRef.current = requestAnimationFrame(animateDotOutline);
   // };
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -126,15 +132,17 @@ function App() {
         </div>
       ) : (
         <>
-          <div className="App" data-scroll-container>
-            {/* <div ref={dotOutline} className="cursor-dot-outline"></div>
-            <div ref={dot} className="cursor-dot"></div> */}
+            <div className="App" data-scroll-container>
+              <div className="AppCard" >
+           <Cursor/>
+              {/* <Cursor isGelly={ true} /> */}
             <Navbar />
             <Herosection />
             <About />
             <Skills />
             <Projects />
-            <Contact />
+                <Contact />
+                </div>
           </div>
         </>
       )}

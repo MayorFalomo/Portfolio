@@ -1,6 +1,5 @@
 .ProjectsContainer {
   overflow-x: hidden;
-  // border: 2px green solid;
   position: relative;
   z-index: 9;
   .ProjectsContainer::-webkit-scrollbar {
@@ -11,7 +10,6 @@
     font-size: 6vw;
     margin: 40px auto;
     color: #141c2d;
-    // border: 5px green solid;
   }
   .wrapper {
     width: 95vw;
@@ -56,12 +54,11 @@
     margin: 0;
     position: absolute;
     bottom: 5%;
-    right: 20%;
+    left: 20%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 9;
     width: 60%;
-    // border: 2px blue solid;
   }
   #parallax h1 {
     font-size: 40px;
@@ -73,7 +70,6 @@
     right: 30%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    // border: 2px yellow solid;
   }
   .parallaxText h1 {
     font-size: 40px;
@@ -119,7 +115,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    // border: 2px yellow solid;
   }
 }
 
@@ -140,7 +135,6 @@
   .parallaxText {
     margin: 0;
     position: absolute;
-    // border: 90%;
     bottom: 0;
     left: 50%;
     -ms-transform: translate(-50%, -50%);

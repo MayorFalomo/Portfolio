@@ -6,6 +6,7 @@ import { useRef } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Herosection = () => {
+
   return (
     <div className="HeroContainer" data-scroll-section>
       <div className="HeroCard">

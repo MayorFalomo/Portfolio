@@ -52,7 +52,7 @@
   margin: 0;
   position: absolute;
   bottom: 5%;
-  right: 20%;
+  left: 20%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 9;
