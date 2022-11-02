@@ -175,3 +175,12 @@
     font-size: 50px !important;
   }
 }
+
+@media (max-width: 320px) {
+  .parallaxText h1{
+    font-size: 30px !important;
+  }
+  #parallax h1{
+    font-size: 28px !important;
+  }
+}
