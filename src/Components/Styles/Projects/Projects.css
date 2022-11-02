@@ -26,7 +26,6 @@
 }
 .ProjectsContainer .projectImg {
   position: relative;
-  border: 2px yellow solid;
 }
 .ProjectsContainer #evenImg {
   position: relative;
@@ -50,14 +49,13 @@
   margin: 50px auto;
 }
 .ProjectsContainer #parallax {
+  margin: 0;
   position: absolute;
   right: 0;
-  margin: 0;
   bottom: 0;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 9;
-  border: 2px red solid;
 }
 .ProjectsContainer #parallax h1 {
   font-size: 40px;
@@ -69,7 +67,6 @@
   right: 30%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 2px green solid;
 }
 .ProjectsContainer .parallaxText h1 {
   font-size: 40px;
