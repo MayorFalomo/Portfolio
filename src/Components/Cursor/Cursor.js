@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useRef } from 'react';
-// import '../../App.css'
 
 const Cursor = () => {
     const delay = 18;

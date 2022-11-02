@@ -29,25 +29,6 @@ const Projects = () => {
     }
   }, [isView]);
 
-  // useEffect(() => {
-  //   if (isView) {
-  //     animation.start({
-  //       x: "0vw",
-  //       transition: {
-  //         type: "spring",
-  //         duration: 1,
-  //         bounce: 0.3,
-  //       },
-  //     });
-  //   }
-  //   if (!isView) {
-  //     animation.start({ x: "150vw" });
-  //   }
-  // }, [isView]);
-  // useEffect(() => {
-  //   console.log("Element is inview", isView);
-  // });
-
   return (
     <div id="projects" className="ProjectsContainer">
       <Parallax

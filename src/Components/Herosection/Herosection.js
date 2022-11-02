@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Particle from "../Particle/Particle";
-// import "../Styles/Herostyle/Herostyle.css";
 import "../Styles/Herostyle/Herostyle.css";
-import { useRef } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Herosection = () => {
