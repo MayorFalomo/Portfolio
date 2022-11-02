@@ -137,4 +137,9 @@ nav .sound {
     position: absolute;
     top: 150px !important;
   }
+}
+@media (max-width: 320px) {
+  .activeMenu {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
