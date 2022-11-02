@@ -99,7 +99,7 @@ const Projects = () => {
           <div className="parallaxText">
             <h1>Medley Games </h1>
             <p>A Game Company Website </p>
-            <div className="flexLink">
+            <div className="flexLinks">
               <a href="https://medley-games.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo
               </a>
@@ -144,7 +144,7 @@ const Projects = () => {
           <div className="parallaxText">
             <h1>Travel Buddy</h1>
             <p>A Travel Agency Site </p>
-            <div className="flexLink">
+            <div className="flexLinks">
               <a href="https://travelbuddy-agency.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
@@ -189,7 +189,7 @@ const Projects = () => {
           <div className="parallaxText">
             <h1>Google Clone</h1>
             <p>A Search Engine </p>
-            <div className="flexLink">
+            <div className="flexLinks">
               <a id="black" href="https://googlebase.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>

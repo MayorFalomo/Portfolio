@@ -107,6 +107,7 @@
   .imgBtn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-self: flex-start;
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=Herostyle.css.map */

@@ -133,16 +133,13 @@ function App() {
       ) : (
         <>
             <div className="App" data-scroll-container>
-              <div className="AppCard" >
            <Cursor/>
-              {/* <Cursor isGelly={ true} /> */}
             <Navbar />
             <Herosection />
             <About />
             <Skills />
             <Projects />
                 <Contact />
-                </div>
           </div>
         </>
       )}

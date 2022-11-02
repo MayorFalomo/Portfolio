@@ -25,15 +25,8 @@ body{
 }
 .App{
   position: relative;
-  /* cursor: none; */
-  /* overflow: none !important; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-}
-
-.AppCard{
-  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar{
@@ -97,4 +90,10 @@ body{
   mix-blend-mode: difference;
   z-index: 999;
   pointer-events: none;
+}
+
+@media (max-width: 1250px) {
+  .App{
+    overflow-x: hidden;
+  }
 }
