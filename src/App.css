@@ -97,3 +97,10 @@ body{
     overflow-x: hidden;
   }
 }
+@media (max-width: 500px) {
+  .App .cursor-dot, .cursor-dot-outline{
+    display: none !important;
+    position: relative !important;
+    z-index: -5 !important;
+  }
+}
