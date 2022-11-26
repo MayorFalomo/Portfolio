@@ -180,6 +180,29 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
+
+        <motion.div className="projectImg" animate={anime}>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.05 }}
+            href="https://orpheus-nft.netlify.app/"
+          >
+            <img src="./Swish.png" alt="img" />
+          </motion.a>
+
+          <div id="parallax">
+            <h1>Swish </h1>
+            <p> Weather App </p>
+            <div className="flexLink">
+              <a href="https://swish-weather-app.netlify.app/">
+                {<MdLogout className="netlifyLink" />} Demo{" "}
+              </a>
+              <a href="https://github.com/MayorFalomo/Swish-Weather-App">
+                {<IoLogoGithub className="githubLink" />} Github{" "}
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
