@@ -4,6 +4,7 @@ import html from "./HtmlLogo.svg";
 import css from "./cssLogo.svg";
 import js from "./jsLogo.svg";
 import sass from "./Sass.svg";
+import NextJs from "./nextjs.svg";
 import typescript from "./typescript.svg";
 import Reacts from "./ReactLogo.svg";
 import Skill from "./Skill";
@@ -44,21 +45,26 @@ const Skills = () => {
     },
     {
       id: 7,
+      logo: NextJs,
+      name: "Next JS",
+    },
+    {
+      id: 8,
       logo: figma,
       name: "FIGMA",
     },
     {
-      id: 8,
+      id: 9,
       logo: "./firebase.svg",
       name: "FIREBASE",
     },
     {
-      id: 9,
+      id: 10,
       logo: "./github.svg",
       name: "GITHUB",
     },
     {
-      id: 10,
+      id: 11,
       logo: "./git.svg",
       name: "GIT",
     },
