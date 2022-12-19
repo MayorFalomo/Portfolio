@@ -192,7 +192,7 @@ const Projects = () => {
 
           <div id="parallax">
             <h1>Swish </h1>
-            <p> Weather App </p>
+            <p> Weather App(Typescript) </p>
             <div className="flexLink">
               <a href="https://swish-weather-app.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}

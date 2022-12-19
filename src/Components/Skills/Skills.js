@@ -14,7 +14,6 @@ import figma from "./figma.svg";
 import { SiStyledcomponents } from "react-icons/si";
 
 const Skills = () => {
-   const icon = <SiStyledcomponents size={30} />;
   const Logos = [
     {
       id: 1,
