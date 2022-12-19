@@ -5,13 +5,16 @@ import css from "./cssLogo.svg";
 import js from "./jsLogo.svg";
 import sass from "./Sass.svg";
 import NextJs from "./nextjs.svg";
+import vue from "./vue.svg"
 import typescript from "./typescript.svg";
 import Reacts from "./ReactLogo.svg";
 import Skill from "./Skill";
 import { Parallax } from "react-scroll-parallax";
 import figma from "./figma.svg";
+import { SiStyledcomponents } from "react-icons/si";
 
 const Skills = () => {
+   const icon = <SiStyledcomponents size={30} />;
   const Logos = [
     {
       id: 1,
@@ -50,6 +53,11 @@ const Skills = () => {
     },
     {
       id: 8,
+      logo: vue,
+      name: "Vue JS",
+    },
+    {
+      id: 8,
       logo: figma,
       name: "FIGMA",
     },
@@ -67,6 +75,11 @@ const Skills = () => {
       id: 11,
       logo: "./git.svg",
       name: "GIT",
+    },
+    {
+      id: 12,
+      logo: NextJs,
+      name: `Styled-Components `,
     },
   ];
 

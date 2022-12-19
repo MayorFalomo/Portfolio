@@ -185,7 +185,7 @@ const Projects = () => {
           <motion.a
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
-            href="https://orpheus-nft.netlify.app/"
+            href="https://swish-weather-app.netlify.app/"
           >
             <img src="./Swish.png" alt="img" />
           </motion.a>
@@ -198,6 +198,28 @@ const Projects = () => {
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a href="https://github.com/MayorFalomo/Swish-Weather-App">
+                {<IoLogoGithub className="githubLink" />} Github{" "}
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+         <motion.div id="evenImg" className="test" animate={anime}>
+          <motion.a
+            whileTap={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            href="https://trivial-quiz-app.netlify.app/"
+          >
+            <img src="./quiz.png" alt="img" />
+          </motion.a>
+          <div className="parallaxText">
+            <h1>Quiz App</h1>
+            <p>A Trivial App(Next Js) </p>
+            <div className="flexLinks">
+              <a id="black" href="https://trivial-quiz-app.netlify.app/">
+                {<MdLogout className="netlifyLink" />} Demo{" "}
+              </a>
+              <a id="black" href="https://github.com/MayorFalomo/Quiz-App">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>

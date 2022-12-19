@@ -27,7 +27,7 @@ const About = () => {
                 optimized for best user experience.
               </p>
               <p>
-                In just about six months of intensive coding, As my projects
+                With just about eight months of intensive coding. As my projects
                 show, i've worked on several projects, building out and
                 selectively picking out the best Ui while also paying close
                 attention to functionality, I work with frameworks like React
@@ -37,7 +37,7 @@ const About = () => {
               </p>
               <p>
                 In my Free time i like to read Fantasy Novels, Watch a new movie
-                / series or Learn a new Technology.{" "}
+                / series or Learning a new Technology.{" "}
               </p>
               <p>I am currently available for New Oppurtunities... </p>
             </div>
