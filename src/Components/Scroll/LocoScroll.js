@@ -5,7 +5,6 @@ import { useEffect } from "react";
 export default function useLocoScroll(start) {
   useEffect(() => {
     if (!start) return;
-    // let locoScroll = null;
 
     const scrollEl = document.querySelector("#appContainer");
 

@@ -263,3 +263,16 @@
     }
   }
 } /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 550px) {
+  .preload h1{
+     position: absolute;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    left: 35%;
+    top: 58%;
+    margin-left: -20px;
+  }
+}

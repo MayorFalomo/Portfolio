@@ -17,6 +17,7 @@
   margin: auto;
   flex-wrap: wrap;
   text-align: center;
+  gap: 10px;
 }
 .SkillContainer .skill-logos {
   display: flex;
@@ -24,18 +25,22 @@
   align-items: center;
   justify-content: center;
 }
-
-.skillImg {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.skillImg .skillImg img {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
+.SkillContainer .atom {
+  width: 100px;
 }
 
+@media (max-width: 500px) {
+  .skillImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .skillImg img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+}
 @media (max-width: 450px) {
   .SkillContainer h1 {
     font-size: 50px !important;

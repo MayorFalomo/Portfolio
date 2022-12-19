@@ -11,7 +11,7 @@ import Reacts from "./ReactLogo.svg";
 import Skill from "./Skill";
 import { Parallax } from "react-scroll-parallax";
 import figma from "./figma.svg";
-import { SiStyledcomponents } from "react-icons/si";
+import atom from './atom.png'
 
 const Skills = () => {
   const Logos = [
@@ -56,29 +56,24 @@ const Skills = () => {
       name: "Vue JS",
     },
     {
-      id: 8,
+      id: 9,
       logo: figma,
       name: "FIGMA",
     },
     {
-      id: 9,
+      id: 10,
       logo: "./firebase.svg",
       name: "FIREBASE",
     },
     {
-      id: 10,
+      id: 11,
       logo: "./github.svg",
       name: "GITHUB",
     },
     {
-      id: 11,
+      id: 12,
       logo: "./git.svg",
       name: "GIT",
-    },
-    {
-      id: 12,
-      logo: NextJs,
-      name: `Styled-Components `,
     },
   ];
 
@@ -98,6 +93,7 @@ const Skills = () => {
               </div>
             );
           })}
+        <img className="atom" src={atom} alt="" />
         </div>
       </Parallax>
     </div>

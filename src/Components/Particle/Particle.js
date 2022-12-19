@@ -1,7 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-// import "../Styles/Herostyle/Herostyle.css";
 
 const Particle = () => {
   const particlesInit = async (main) => {

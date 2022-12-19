@@ -11,7 +11,7 @@ const Projects = () => {
   const ref = useRef(null);
   const isView = useInView(ref);
   const anime = useAnimation();
-  const animation = useAnimation();
+  // const animation = useAnimation();
 
   useEffect(() => {
     if (isView) {
