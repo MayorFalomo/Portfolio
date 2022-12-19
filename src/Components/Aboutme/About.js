@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/AboutStyle/Aboutstyle.css";
+
+
 const About = () => {
   return (
     <div className="AboutContainer" data-scroll-section>
