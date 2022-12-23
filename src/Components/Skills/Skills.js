@@ -11,7 +11,8 @@ import Reacts from "./ReactLogo.svg";
 import Skill from "./Skill";
 import { Parallax } from "react-scroll-parallax";
 import figma from "./figma.svg";
-import atom from './atom.png'
+import styledComponents from './atom.png'
+import tailwind from '../Skills/tailwind.svg';
 
 const Skills = () => {
   const Logos = [
@@ -75,6 +76,11 @@ const Skills = () => {
       logo: "./git.svg",
       name: "GIT",
     },
+    {
+      id: 13,
+      logo: tailwind,
+      name: "Tailwind",
+    },
   ];
 
   return (
@@ -93,7 +99,10 @@ const Skills = () => {
               </div>
             );
           })}
-        <img className="atom" src={atom} alt="" />
+          <div className="atom" >
+          <img className="styled" src={styledComponents} alt="" />
+            <p>Styled-Component </p>
+          </div>
         </div>
       </Parallax>
     </div>

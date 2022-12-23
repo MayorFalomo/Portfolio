@@ -27,7 +27,7 @@ const Particle = () => {
               value: 10,
               density: {
                 enable: true,
-                value_area: 350,
+                value_area: 500,
               },
             },
             color: {
