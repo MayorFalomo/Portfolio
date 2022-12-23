@@ -24,12 +24,14 @@
     align-items: center;
     justify-content: center;
   }
- 
-}
- .skillCard .atom img{
-    width: 100px;
-    border: 3px red solid;
+ .atom{
+    width: 120px;
   }
+  .atom img{
+    width: 100%;
+  }
+}
+ 
 @media (max-width: 500px) {
   .skillImg {
   display: flex;

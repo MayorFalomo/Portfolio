@@ -101,7 +101,7 @@ const Skills = () => {
           })}
           <div className="atom" >
           <img className="styled" src={styledComponents} alt="" />
-            <p>Styled-Component </p>
+            <p>Styled-Components </p>
           </div>
         </div>
       </Parallax>
