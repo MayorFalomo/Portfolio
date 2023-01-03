@@ -225,6 +225,29 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
+
+        <motion.div className="projectImg" animate={anime}>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.05 }}
+            href="https://store-bay.netlify.app/"
+          >
+            <img src="./StoreBay.png" alt="img" />
+          </motion.a>
+
+          <div id="parallax">
+            <h1>StoreBay </h1>
+            <p> Store page (Vue JS) </p>
+            <div className="flexLink">
+              <a href="https://store-bay.netlify.app/">
+                {<MdLogout className="netlifyLink" />} Demo{" "}
+              </a>
+              <a href="https://github.com/MayorFalomo/StoreBay">
+                {<IoLogoGithub className="githubLink" />} Github{" "}
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
