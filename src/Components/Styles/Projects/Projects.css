@@ -149,12 +149,6 @@
     display: flex;
     justify-content: center;
   }
-  .techBro {
-    text-decoration: underline;
-    display: flex;
-    align-items: center;
-    border: 3px red solid;
-  }
   .flexLinks {
     display: flex;
     justify-content: center;
