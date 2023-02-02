@@ -120,6 +120,11 @@
     align-items: center;
     gap: 20px;
   }
+  .techBro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 1700px) {
@@ -149,6 +154,12 @@
   .flexLink {
     display: flex;
     justify-content: center;
+  }
+  .techBro{
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    border: 3px red solid;
   }
   .flexLinks {
     display: flex;

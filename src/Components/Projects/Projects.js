@@ -48,6 +48,7 @@ const Projects = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", bounce: 0.3 }}
             href="https://cinema-flix.netlify.app/"
+            target="_blank"
           >
             <img src="./cinemaflix.png" alt="img" />
           </motion.a>
@@ -57,11 +58,12 @@ const Projects = () => {
             <div className="flexLink">
               <motion.a
                 className="link"
+                target="_blank"
                 href="https://cinema-flix.netlify.app/"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </motion.a>
-              <motion.a href="https://github.com/MayorFalomo/cinemaFlix">
+              <motion.a target="_blank" href="https://github.com/MayorFalomo/cinemaFlix">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </motion.a>
             </div>
@@ -72,6 +74,7 @@ const Projects = () => {
           <motion.a
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
+            target="_blank"
             href="https://medley-games.netlify.app/"
           >
             <img src="./medleyGames.jpg" alt="img" />
@@ -81,10 +84,10 @@ const Projects = () => {
             <h1>Medley Games </h1>
             <p>A Game Company Website </p>
             <div className="flexLinks">
-              <a href="https://medley-games.netlify.app/">
+              <a target="_blank" href="https://medley-games.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo
               </a>
-              <a href="https://github.com/MayorFalomo/Medley-Games">
+              <a target="_blank" href="https://github.com/MayorFalomo/Medley-Games">
                 {<IoLogoGithub className="githubLink" />} Github
               </a>
             </div>
@@ -95,6 +98,7 @@ const Projects = () => {
           <motion.a
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
+            target="_blank"
             href="https://urban-nft-dashboard.netlify.app/"
           >
             <img src="./urban.jpg" alt="img" />
@@ -104,10 +108,10 @@ const Projects = () => {
             <h1>Nft Dashboard </h1>
             <p>A Single Page Nft Dashboard </p>
             <div className="flexLink">
-              <a href="https://urban-nft-dashboard.netlify.app/">
+              <a target="_blank" href="https://urban-nft-dashboard.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a href="https://github.com/MayorFalomo/Urban-Nft-Dashboard">
+              <a target="_blank" href="https://github.com/MayorFalomo/Urban-Nft-Dashboard">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -119,6 +123,7 @@ const Projects = () => {
             whileTap={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             href="https://travelbuddy-agency.netlify.app/"
+            target="_blank"
           >
             <img src="./travelBuddy.jpg" alt="img" />
           </motion.a>
@@ -126,10 +131,10 @@ const Projects = () => {
             <h1>Travel Buddy</h1>
             <p>A Travel Agency Site </p>
             <div className="flexLinks">
-              <a href="https://travelbuddy-agency.netlify.app/">
+              <a target="_blank" href="https://travelbuddy-agency.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a href="https://github.com/MayorFalomo/TravelBuddy">
+              <a target="_blank" href="https://github.com/MayorFalomo/TravelBuddy">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -141,6 +146,7 @@ const Projects = () => {
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
             href="https://orpheus-nft.netlify.app/"
+            target="_blank"
           >
             <img src="./orpheus.png" alt="img" />
           </motion.a>
@@ -149,10 +155,10 @@ const Projects = () => {
             <h1>Orpheus </h1>
             <p> Landing Page </p>
             <div className="flexLink">
-              <a href="https://orpheus-nft.netlify.app/">
+              <a target="_blank" href="https://orpheus-nft.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a href="https://github.com/MayorFalomo/Orpheus-landing-page">
+              <a target="_blank" href="https://github.com/MayorFalomo/Orpheus-landing-page">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -164,6 +170,7 @@ const Projects = () => {
             whileTap={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             href="https://googlebase.netlify.app/"
+            target="_blank"
           >
             <img src="./google.png" alt="img" />
           </motion.a>
@@ -171,10 +178,10 @@ const Projects = () => {
             <h1>Google Clone</h1>
             <p>A Search Engine </p>
             <div className="flexLinks">
-              <a id="black" href="https://googlebase.netlify.app/">
+              <a id="black" target="_blank" href="https://googlebase.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a id="black" href="https://github.com/MayorFalomo/GoogleBase">
+              <a id="black" target="_blank" href="https://github.com/MayorFalomo/GoogleBase">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -186,18 +193,20 @@ const Projects = () => {
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
             href="https://swish-weather-app.netlify.app/"
+            target="_blank"
           >
-            <img src="./Swish.png" alt="img" />
+            <img src="./swishUpdated.png" alt="img" />
           </motion.a>
 
           <div id="parallax">
             <h1>Swish </h1>
             <p> Weather App(Typescript) </p>
+<p className="techBro">Contributor: <span ><a  target="_blank" href="https://github.com/temidayo-falomo">  @Temidayo</a></span> </p>
             <div className="flexLink">
-              <a href="https://swish-weather-app.netlify.app/">
+              <a target="_blank" href="https://swish-weather-app.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a href="https://github.com/MayorFalomo/Swish-Weather-App">
+              <a target="_blank" href="https://github.com/MayorFalomo/Swish-Weather-App">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -208,6 +217,7 @@ const Projects = () => {
           <motion.a
             whileTap={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
+            target="_blank"
             href="https://trivial-quiz-app.netlify.app/"
           >
             <img src="./quiz.png" alt="img" />
@@ -216,10 +226,10 @@ const Projects = () => {
             <h1>Quiz App</h1>
             <p>A Trivial App(Next Js) </p>
             <div className="flexLinks">
-              <a id="black" href="https://trivial-quiz-app.netlify.app/">
+              <a id="black" target="_blank" href="https://trivial-quiz-app.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a id="black" href="https://github.com/MayorFalomo/Quiz-App">
+              <a id="black" target="_blank" href="https://github.com/MayorFalomo/Quiz-App">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
@@ -230,6 +240,7 @@ const Projects = () => {
           <motion.a
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.05 }}
+            target="_blank"
             href="https://store-bay.netlify.app/"
           >
             <img src="./StoreBay.png" alt="img" />
@@ -239,10 +250,10 @@ const Projects = () => {
             <h1>StoreBay </h1>
             <p> Store page (Vue JS) </p>
             <div className="flexLink">
-              <a href="https://store-bay.netlify.app/">
+              <a target="_blank" href="https://store-bay.netlify.app/">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a href="https://github.com/MayorFalomo/StoreBay">
+              <a target="_blank" href="https://github.com/MayorFalomo/StoreBay">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
