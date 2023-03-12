@@ -276,7 +276,7 @@ const Projects = () => {
               <a id="black" target="_blank" href="https://blogaroo.netlify.app/register">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
-              <a id="black" target="_blank" href="https://github.com/MayorFalomo/Quiz-App">
+              <a id="black" target="_blank" href="https://github.com/MayorFalomo/Blogaroo-FrontEnd">
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
             </div>
