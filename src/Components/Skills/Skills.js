@@ -13,6 +13,9 @@ import { Parallax } from "react-scroll-parallax";
 import figma from "./figma.svg";
 import styledComponents from './atom.png'
 import tailwind from '../Skills/tailwind.svg';
+import mongodb from '../Skills/mongodb.svg';
+import express from '../Skills/express.svg';
+import node from '../Skills/nodeJs.svg';
 
 const Skills = () => {
   const Logos = [
@@ -80,6 +83,21 @@ const Skills = () => {
       id: 13,
       logo: tailwind,
       name: "Tailwind",
+    },
+    {
+      id: 14,
+      logo: mongodb,
+      name: "MongoDb",
+    },
+    {
+      id: 15,
+      logo: express,
+      name: "Express",
+    },
+    {
+      id: 16,
+      logo: node,
+      name: "nodeJs",
     },
   ];
 

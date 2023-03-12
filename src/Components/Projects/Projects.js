@@ -259,6 +259,29 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
+        
+        <motion.div id="evenImg" className="test" animate={anime}>
+          <motion.a
+            whileTap={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            target="_blank"
+            href="https://blogaroo.netlify.app/register"
+          >
+            <img src="./blogaroo.png" alt="img" />
+          </motion.a>
+          <div className="parallaxText">
+            <h1>Blogaroo</h1>
+            <p>A Blog Website(MERN project) </p>
+            <div className="flexLinks">
+              <a id="black" target="_blank" href="https://blogaroo.netlify.app/register">
+                {<MdLogout className="netlifyLink" />} Demo{" "}
+              </a>
+              <a id="black" target="_blank" href="https://github.com/MayorFalomo/Quiz-App">
+                {<IoLogoGithub className="githubLink" />} Github{" "}
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

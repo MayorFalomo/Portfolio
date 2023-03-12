@@ -29,7 +29,7 @@ const About = () => {
                 optimized for best user experience.
               </p>
               <p>
-                With just about eight months of intensive coding. As my projects
+                With less than a year of intensive coding and As my projects
                 show, i've worked on several projects, building out and
                 selectively picking out the best Ui while also paying close
                 attention to functionality, I work with frameworks like React

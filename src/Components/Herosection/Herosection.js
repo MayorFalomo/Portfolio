@@ -13,7 +13,7 @@ const Herosection = () => {
           <h1 className="name">Mayowa Falomo.</h1>
           <h1 className="spans">
             {" "}
-            <span>&lt;Frontend-Developer/&gt;</span>{" "}
+            <span>&lt;MERN Stack Developer/&gt;</span>{" "}
           </h1>
           <em>and...aspiring genius.</em>
         </div>
