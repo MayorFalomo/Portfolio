@@ -128,7 +128,7 @@ const Projects = () => {
             <div id="parallax">
             <h1>Orpheus </h1>
               <p> A single Landing Page using React </p>
-              <span>React, Sass</span>
+              <span>React, SASS</span>
             <div className="flexLink">
               <a target="_blank" href="https://orpheus-nft.netlify.app/" rel="noreferrer">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -146,7 +146,7 @@ const Projects = () => {
           <div className="parallaxText">
             <h1>Google Clone</h1>
             <p>Google clone - A Search Engine i built using the programming search engine API and firebase for authentication, it works just like google   </p>
-            <span>HTML, React, CSS, API</span>
+            <span>HTML, React, CSS, API, Firebase</span>
             <div className="flexLinks">
               <a id="black" target="_blank" href="https://googlebase.netlify.app/" rel="noreferrer">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
