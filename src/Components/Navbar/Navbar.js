@@ -41,11 +41,9 @@ const Navbar = () => {
           <AnchorLink href="#projects">
             <li className="hover-underline-animation">PROJECTS </li>
           </AnchorLink>
-          <AnchorLink href="#hire">
-            <li className="bidBtn">
-              <button className="bidBtn">HIRE ME </button>
-            </li>{" "}
-          </AnchorLink>
+            <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" ><li className="bidBtn">
+              <button className="bidBtn">RESUME </button>
+            </li></a>
         </ul>
         <div className="MenuDiv">
           {menuBtn ? (
