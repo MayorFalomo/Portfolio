@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setCompleted(true);
-    }, 6000);
+    }, 3000);
   }, []);
   return (
     <ParallaxProvider>

@@ -19,7 +19,7 @@ const About = () => {
           </div>
           <div className="aboutBio">
             <div className="aboutCard">
-              <h1 className="myself">Bio... </h1>
+              <h1 className="myself">BIO </h1>
               <p>
                 {" "}
                 My name is Mayowa Falomo a self taught Frontend Developer based

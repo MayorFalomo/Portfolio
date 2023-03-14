@@ -26,7 +26,7 @@ const Preload = () => {
         <span></span>
         <span></span>
         <span></span>
-        <h1>Here i come.....</h1>
+        <h1>Web Wizard.....</h1>
       </div>
     </div>
   );

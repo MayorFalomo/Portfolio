@@ -27,11 +27,13 @@ body{
     /* overflow: none !important; */
     scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: default;
 }
 .App{
   position: relative;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 ::-webkit-scrollbar{
@@ -58,8 +60,8 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999999999999 !important;
-  pointer-events: none;
+  z-index: 99999999999999 !important; 
+  pointer-events: none; 
 }
 .App .cursor-dot,
 .App .cursor-dot-outline {
@@ -74,13 +76,13 @@ body{
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .App .cursor-dot {
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   background-color: #dc5656;
 }
 .App .cursor-dot-outline {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   background-color: rgba(229, 128, 128, 0.5);
 }
 

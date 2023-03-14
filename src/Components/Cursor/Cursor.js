@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 
 const Cursor = () => {
-    const delay = 18;
+    const delay = 12;
 
   const dot = useRef(null);
   const dotOutline = useRef(null);

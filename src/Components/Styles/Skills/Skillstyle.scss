@@ -16,7 +16,7 @@
     margin: auto;
     flex-wrap: wrap;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
   }
   .skill-logos {
     display: flex;
@@ -25,7 +25,7 @@
     justify-content: center;
   }
  .atom{
-    width: 120px;
+    width: 100px;
   }
   .atom img{
     width: 100%;
@@ -49,5 +49,10 @@
 @media (max-width: 450px) {
   .SkillContainer h1{
     font-size: 50px !important;
+  }
+  .skill-logos {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
   }
 }

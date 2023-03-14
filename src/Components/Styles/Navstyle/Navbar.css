@@ -75,6 +75,7 @@ nav .leftLightening {
   right: -30px;
   top: -40px;
   z-index: 2;
+  border: 2px red solid;
 }
 nav .MenuDiv {
   display: none;

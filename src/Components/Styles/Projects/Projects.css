@@ -1,183 +1,220 @@
-.ProjectsContainer {
-  overflow-x: hidden;
-  position: relative;
-  z-index: 9;
-}
-.ProjectsContainer .ProjectsContainer::-webkit-scrollbar {
-  display: none;
-}
-.ProjectsContainer .ProjectsContainer h1 {
+.ProjectsContainer #projectHeader {
   text-align: center;
-  font-size: 6vw;
+  font-size: 7vw;
   margin: 40px auto;
   color: #141c2d;
-}
-.ProjectsContainer .wrapper {
-  width: 95vw;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin: auto;
-}
-.ProjectsContainer .test:nth-child(even) {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.ProjectsContainer .projectImg {
-  position: relative;
-}
-.ProjectsContainer #evenImg {
-  position: relative;
-  display: flex;
-  justify-content: end;
-}
-.ProjectsContainer .projectImg img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-}
-.ProjectsContainer #evenImg img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-}
-.ProjectsContainer #projectHeader {
-  color: #141c2d;
-  text-align: center;
-  font-size: 8vw;
-  margin: 50px auto;
-}
-.ProjectsContainer #parallax {
-  margin: 0;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 9;
-}
-.ProjectsContainer #parallax h1 {
-  font-size: 40px;
-}
-.ProjectsContainer .parallaxText {
-  margin: 0;
-  position: absolute;
-  bottom: 5%;
-  right: 30%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.ProjectsContainer .parallaxText h1 {
-  font-size: 40px;
-}
-.ProjectsContainer #parallax p {
-  font-size: 25px;
-  color: #141c2d;
-  color: transparent;
-  color: #ffffff;
-  /* background: #333333; */
-  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
-  margin: 10px auto;
-}
-.ProjectsContainer #evenImg p {
-  font-size: 25px;
-  color: #141c2d;
-  color: transparent;
-  color: #ffffff;
-  /* background: #333333; */
-  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
-  margin: 10px auto;
-}
-.ProjectsContainer .githubLink {
-  font-size: 40px;
-}
-.ProjectsContainer .netlifyLink {
-  font-size: 40px;
-}
-.ProjectsContainer a {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
 }
 .ProjectsContainer a:hover {
   text-decoration: underline;
 }
-.ProjectsContainer .flexLink {
+.ProjectsContainer .projectWrapper {
+  margin-top: 70px;
+}
+.ProjectsContainer .subProjectLeft {
+  position: relative;
+  width: 70%;
+  height: 800px;
+  margin-left: 15px;
+  z-index: 99;
+}
+.ProjectsContainer .subProjectRightCon {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: flex-end;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.ProjectsContainer .subProjectRight {
+  position: relative;
+  width: 70%;
+  height: 800px;
+  width: 70%;
+  margin-left: 15px;
+  margin-top: 30px;
+  z-index: 99;
+}
+.ProjectsContainer .parallaxText {
+  opacity: 0;
+  bottom: -200px;
+  transition: 0.5s ease all;
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.ProjectsContainer .subProjectLeft:hover {
+  border: none;
+}
+.ProjectsContainer .subProjectLeft:hover .parallaxText {
+  opacity: 1;
+  bottom: 100px;
+  transition: 0.5s all ease;
+}
+.ProjectsContainer .subProjectLeft:hover .overLayLeft {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.ProjectsContainer .parallaxText h1 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #141c2d;
+  color: transparent;
+  color: #ffffff;
+  /* background: #333333; */
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+  margin: 10px auto;
+}
+.ProjectsContainer .parallaxText p {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  line-height: 35px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: end;
+}
+.ProjectsContainer .parallaxText span {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px auto;
+  font-size: 20px;
+  margin: 10px auto;
+  font-size: 20px;
+  color: #141c2d;
+  color: transparent;
+  color: #ffffff;
+  /* background: #333333; */
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+  line-height: 35px;
 }
 .ProjectsContainer .flexLinks {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  font-size: 20px;
 }
-.ProjectsContainer .techBro {
+.ProjectsContainer #parallax {
+  opacity: 0;
+  bottom: 200px;
+  transition: 0.5s ease all;
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.ProjectsContainer .subProjectRightCon:hover #parallax {
+  opacity: 1;
+  bottom: -100px;
+  transition: 0.5s all ease;
+}
+.ProjectsContainer .subProjectRightCon:hover .overLayRight {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.ProjectsContainer #parallax h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #141c2d;
+  color: transparent;
+  color: #ffffff;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+  margin: 10px auto;
+}
+.ProjectsContainer #parallax p {
+  padding: 20px;
+  width: 100%;
+  line-height: 35px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ProjectsContainer #parallax span {
+  margin: 10px auto;
+  font-size: 20px;
+  color: #141c2d;
+  color: transparent;
+  color: #ffffff;
+  /* background: #333333; */
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+  margin: 10px auto;
+  line-height: 30px;
+}
+.ProjectsContainer .flexLink {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-}
-
-@media (max-width: 1700px) {
-  .projectImg {
-    position: relative;
-  }
-  #parallax {
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50% !important;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-  }
-  .parallaxText {
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-  }
-  .flexLink {
-    display: flex;
-    justify-content: center;
-  }
-  .flexLinks {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 600px) {
-  #parallax {
-    position: absolute !important;
-    bottom: -70px !important;
-    width: 100% !important;
-  }
-  .parallaxText {
-    position: absolute !important;
-    bottom: -70px !important;
-  }
+  gap: 10px;
+  font-size: 20px;
+  margin: 10px auto;
 }
 @media (max-width: 450px) {
-  .parallaxText p {
-    font-size: 23px !important;
-  }
-  #projectHeader {
-    font-size: 50px !important;
+  .ProjectsContainer #projectHeader {
+    font-size: 45px;
   }
 }
-@media (max-width: 320px) {
-  .parallaxText h1 {
-    font-size: 30px !important;
+@media (max-width: 890px) {
+  .ProjectsContainer .subProjectLeft {
+    width: 90%;
   }
-  #parallax h1 {
-    font-size: 28px !important;
+  .ProjectsContainer .parallaxText {
+    width: 100%;
+  }
+  .ProjectsContainer .parallaxText h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer .parallaxText p {
+    background-color: transparent;
+    text-align: center;
+  }
+  .ProjectsContainer .flexLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer .parallaxText span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer .subProjectRightCon {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer .subProjectRight {
+    width: 100%;
+  }
+  .ProjectsContainer #parallax {
+    width: 100%;
+  }
+  .ProjectsContainer #parallax h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer #parallax p {
+    background-color: transparent;
+    text-align: center;
+  }
+  .ProjectsContainer #parallax span {
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectsContainer .flexLink {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=Projects.css.map */

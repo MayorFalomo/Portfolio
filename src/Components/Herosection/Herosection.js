@@ -15,7 +15,7 @@ const Herosection = () => {
             {" "}
             <span>&lt;MERN Stack Developer/&gt;</span>{" "}
           </h1>
-          <em>and...aspiring genius.</em>
+          <em>and...Web Wizard.</em>
         </div>
 
         <div className="imgBtn">
