@@ -16,19 +16,19 @@ const Contact = () => {
       </div>
       <footer id="hire">
         <ul>
-          <a href="https://twitter.com/mayowafalomo1">
+          <a  target='_blank' rel="noreferrer" href="https://twitter.com/mayowafalomo1">
             <li className="hover-underline-animation">Twitter </li>
           </a>
-          <a href="https://www.linkedin.com/in/mayowa-falomo-908875178/">
+          <a  target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/mayowa-falomo-908875178/">
             <li className="hover-underline-animation">LinkedIn </li>
           </a>
-          <a href="https://github.com/MayorFalomo">
+          <a  target='_blank' rel="noreferrer" href="https://github.com/MayorFalomo">
             <li className="hover-underline-animation">GitHub </li>
           </a>
-          <a href="mailto:mayorfalomo@gmail.com">
+          <a target='_blank' rel="noreferrer" href="mailto:mayorfalomo@gmail.com">
             <li className="hover-underline-animation">Gmail </li>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=08178152952">
+          <a  target='_blank' rel="noreferrer" href="https://api.whatsapp.com/send?phone=08178152952">
             <li className="hover-underline-animation">Whatsapp </li>
           </a>
         </ul>

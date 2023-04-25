@@ -32,7 +32,7 @@ const Projects = () => {
           <div className='overLayLeft' ></div>
           <div className="parallaxText">
             <h1>Blogaroo</h1>
-            <p>A creative Blog Website i built using the MERN Stack, it has all CRUD functionalities and added features of likes and comments on blog post.</p>
+            <p>A creative Blog Website i built using the MERN Stack, it has all CRUD functionalities and added features of likes and comments on blog post, editing your profile and making a blog post.</p>
             <span>MongoDb, Express,Typescript, React, Node Js and Styled-Components </span>
             <div className="flexLinks">
               <a id="black" target="_blank" href="https://blogaroo.netlify.app/register"  rel="noreferrer">
@@ -163,7 +163,7 @@ const Projects = () => {
             <div className='overLayRight' ></div>
             <div id="parallax">
             <h1>Swish </h1>
-            <p> Weather app i built using the openweather API and restcountry API, So there are two different API calls but i made them search simultaneously, <a target="_blank" href="https://github.com/temidayo-falomo" rel="noreferrer">  @Temidayo</a> also contributed to the UI </p>
+            <p> Weather app i built using the openweather API and restcountry API, I also added a converter so users can get their temperature in whatever unit they prefer and i used a rotating 3d image of Earth  <a target="_blank" href="https://github.com/temidayo-falomo" rel="noreferrer">  @Temidayo</a> also contributed to the UI </p>
             <span>Typescript, React, Styled-components and API </span>
               <div className="flexLink">
               <a target="_blank" href="https://swish-weather-app.netlify.app/" rel="noreferrer">

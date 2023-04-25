@@ -10,6 +10,9 @@ import { useEffect, useState } from "react";
 import useLocoScroll from "./Components/Scroll/LocoScroll";
 import Preload from "./Components/Preload/Preload";
 import Cursor from "./Components/Cursor/Cursor";
+import { AnimatePresence } from "framer-motion";
+import {motion} from 'framer-motion'
+
 function App() {
   const [loading, setLoading] = useState(false);
   const [completed, setCompleted] = useState(false);
@@ -21,6 +24,7 @@ function App() {
     }, 3000);
   }, []);
   return (
+    <AnimatePresence mode="wait" >
     <ParallaxProvider>
       {!completed ? (
         <div className="contain">
@@ -33,7 +37,10 @@ function App() {
           )}
         </div>
       ) : (
-        <>
+        <motion.div initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 3 }}>
             <div className="App" data-scroll-container>
            <Cursor/>
             <Navbar />
@@ -43,9 +50,10 @@ function App() {
             <Projects />
             <Contact />
           </div>
-        </>
+        </motion.div>
       )}
-    </ParallaxProvider> 
+      </ParallaxProvider> 
+      </AnimatePresence>
   );
 }
 
