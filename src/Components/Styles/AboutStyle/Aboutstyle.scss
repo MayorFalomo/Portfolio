@@ -39,14 +39,14 @@
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    // border: 2px red solid;
   }
   .aboutBio {
     height: 100vh;
   }
   .aboutBio p {
     font-size: calc(15px + 0.390625vw);
-    line-height: 35px;
+    line-height: 40px;
+    // border: #d4a345 2px solid;
   }
   .aboutCard {
     display: flex;
@@ -89,6 +89,7 @@
   .aboutCard p {
     width: 95%;
     margin: auto;
+    line-height: 30px;
   }
   .aboutBio {
     height: auto !important;
