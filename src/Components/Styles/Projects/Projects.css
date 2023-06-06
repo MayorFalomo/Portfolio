@@ -13,7 +13,7 @@
 .ProjectsContainer .subProjectLeft {
   position: relative;
   width: 80%;
-  height: 800px;
+  height: 900px;
   margin-left: 15px;
   z-index: 99;
 }
@@ -26,7 +26,7 @@
 .ProjectsContainer .subProjectRight {
   position: relative;
   width: 80%;
-  height: 800px;
+  height: 850px;
   margin-left: 15px;
   margin-top: 30px;
   z-index: 99;
