@@ -186,7 +186,7 @@ const Projects = () => {
                     <div className='overLayLeft' ></div>
           <div className="parallaxText">
             <h1>Swish</h1>
-            <p>Weather app i built using the openweather API and restcountry API, I also added a converter so users can get their temperature in whatever unit they prefer and i used a rotating 3d image of Earth  <a target="_blank" href="https://github.com/temidayo-falomo" rel="noreferrer">  @Temidayo</a> also contributed to the UI </p>
+            <p>Weather app i built using the openweather API and restcountry API, I also added a converter so users can get their temperature in whatever unit they prefer and also an interactive 3d view of the Earth  <a target="_blank" href="https://github.com/temidayo-falomo" rel="noreferrer">  @Temidayo</a> also contributed to the UI </p>
             <span>Next JS, CSS </span>
             <div className="flexLinks">
               <a id="black" target="_blank" href="https://swish-weather-app.netlify.app/" rel="noreferrer">
