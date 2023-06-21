@@ -35,7 +35,7 @@ const Projects = () => {
             <p>Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments  it has all CRUD functionalities</p>
             <span>MongoDb, Express,Typescript, Next JS, Node Js, Firebase, PWA and Styled-Components </span>
             <div className="flexLinks">
-              <a id="black" target="_blank" href="https://tweeks.netlify.app/register"  rel="noreferrer">
+              <a id="black" target="_blank" href="https://tweeks.netlify.app"  rel="noreferrer">
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a id="black" target="_blank" href="https://github.com/MayorFalomo/Twitter-clone"  rel="noreferrer">

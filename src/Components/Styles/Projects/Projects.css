@@ -35,7 +35,7 @@
 }
 .ProjectsContainer .parallaxText {
   opacity: 0;
-  bottom: -200px;
+  bottom: -100px;
   transition: 0.5s ease all;
   position: absolute;
   margin: 0;
@@ -167,9 +167,20 @@
     font-size: 45px;
   }
 }
+@media (max-width: 520px) {
+  .ProjectsContainer .parallaxText {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 9;
+  }
+}
 @media (max-width: 890px) {
   .ProjectsContainer .subProjectLeft {
     width: 90%;
+    height: 700px;
   }
   .ProjectsContainer .parallaxText {
     width: 100%;
@@ -198,6 +209,7 @@
   }
   .ProjectsContainer .subProjectRight {
     width: 100%;
+    height: 500px;
   }
   .ProjectsContainer #parallax {
     width: 100%;
