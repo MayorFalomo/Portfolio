@@ -23,10 +23,9 @@ const About = () => {
               <p>
                 {" "}
                 My name is Mayowa Falomo a self taught MERN Stack Developer based
-                in Nigeria and a student of the Federal University of Technology
-                Akure (FUTA) , My sole aim is building modern, accessible,
-                scalable, user friendly sites while also making sure the site is
-                optimized for best user experience.
+                in Nigeria , My sole aim is building modern, intuitive, accessible,
+                scalable, technical, user friendly sites while also making sure the site is
+                optimized for best user experience. I am passionate about creating unique site experiences for users to help leave a lasting impression about your company, brand or product.
               </p>
               <p>
                 As my projects
@@ -39,7 +38,7 @@ const About = () => {
               </p>
               <p>
                 In my Free time i like to read Fantasy Novels, Watch a movie
-                / series and sometimes videos of food i can only think about, or I Learn a new Technology.{" "}
+                / series or sometimes videos of food i can only imagine, or I Learn a new Technology.{" "}
               </p>
               <p>I am currently available for New Opportunities... </p>
             </div>
