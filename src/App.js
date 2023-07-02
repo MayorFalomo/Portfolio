@@ -92,36 +92,10 @@ function getCurrentDimension() {
             {isMobile ? (
               <MobilePreload />
             ) : (
-              <Preload />
+              <MobilePreload />
             )}
           </>
         )}
-      {/* {!completed ? (
-        <div className="contain">
-          {!loading ? (
-            <div className="loader">
-              <Preload />
-            </div>
-          ) : (
-            <h1>Loading</h1>
-          )}
-        </div>
-      ) : (
-        <motion.div initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 2 }}>
-            <div className="App" data-scroll-container>
-           <Cursor/>
-            <Navbar />
-            <Herosection />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-          </div>
-        </motion.div>
-      )} */}
       </ParallaxProvider> 
       </AnimatePresence>
   );
