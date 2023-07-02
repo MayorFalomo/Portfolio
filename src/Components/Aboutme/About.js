@@ -24,7 +24,7 @@ const About = () => {
                 {" "}
                 My name is Mayowa Falomo a self taught MERN Stack Developer based
                 in Nigeria , My sole aim is building modern, intuitive, accessible,
-                scalable, technical, user friendly sites while also making sure the site is
+                scalable, technical and user friendly sites while also making sure the site is
                 optimized for best user experience. I am passionate about creating unique site experiences for users to help leave a lasting impression about your company, brand or product.
               </p>
               <p>
