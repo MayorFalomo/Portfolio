@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/AboutStyle/Aboutstyle.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 
 const About = () => {
@@ -12,9 +14,11 @@ const About = () => {
 
         <div className="myNotes">
           <div className="aboutCardImg">
-            <div style={{ backgroundImage: `url(./meImage.svg)`}} className="AboutmeImg">
-              {/* <img src="./meImage.svg" alt="img" /> */}
-            </div>
+            <LazyLoadImage
+              style={{ backgroundImage: `url(./meImage.svg)` }}
+              className="AboutmeImg">
+              {/* <img src="./meImage.svg" alt="img" loading="lazy" /> */}
+            </LazyLoadImage>
             <h2>A rare picture of me grinning widely.... </h2>
           </div>
           <div className="aboutBio">
@@ -22,7 +26,7 @@ const About = () => {
               <h1 className="myself">Bio... </h1>
               <p>
                 {" "}
-                My name is Mayowa Falomo a self taught MERN Stack and FrontEnd Developer based
+                My name is Mayowa Falomo a MERN Stack and FrontEnd Developer based
                 in Nigeria , My sole aim is building modern, intuitive, accessible,
                 scalable, technical and user friendly sites while also making sure the site is
                 optimized for best user experience. I am passionate about creating unique site experiences for users to help leave a lasting impression about your company, brand or product.
@@ -36,6 +40,8 @@ const About = () => {
                 components well, i'm also interested in Technologies like
                 Firebase and i am always looking to keep improving my skillset.{" "}
               </p>
+
+              
               <p>
                 In my Free time i like to read High Fantasy Novels, Watch a movie
                 / series or sometimes videos of food i can only imagine, or I Learn a new Technology.{" "}

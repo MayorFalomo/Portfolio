@@ -15,7 +15,7 @@ const MobilePreload = () => {
     
   return (
       <div className="Title">
-          <div>
+          <div className='centered' >
          <span className="web" data-aos="fade-up" >WEB </span>
          <span className="wizard" data-aos="fade-up" >WIZARD </span>
           </div>

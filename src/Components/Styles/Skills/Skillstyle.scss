@@ -32,6 +32,17 @@
   }
 }
  
+@media (max-width: 1600px) {
+  .SkillContainer h1{
+    margin: 120px auto;
+  }
+}
+ 
+@media (max-width: 1195px) {
+  .SkillContainer h1{
+    margin: 20px auto;
+  }
+}
 @media (max-width: 500px) {
   .skillImg {
   display: flex;
@@ -40,7 +51,7 @@
 }
   .skillImg img {
     width: 100%;
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
   }
 }
@@ -52,7 +63,7 @@
   }
   .skill-logos {
     width: 100%;
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
   }
 }

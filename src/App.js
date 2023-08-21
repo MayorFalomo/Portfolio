@@ -50,11 +50,11 @@ function getCurrentDimension() {
     handleResize(); // Check window.innerWidth initially
   }, [screenSize]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCompleted(true);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCompleted(true);
+  //   }, 2000);
+  // }, []);
 
   const handleResize = () => {
     if (screenSize.width < 500) {

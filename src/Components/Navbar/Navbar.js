@@ -9,19 +9,53 @@ import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import { motion, useCycle } from "framer-motion"; 
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
 
+  // const variants = {
+  //   open: { opacity: 1, x: 0 },
+  //   closed: { opacity:0, x: "-100%" },
+  // }
+
+  const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
+};
+  
+  const listItem = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+};
+
   const [playSound, setPlaySound] = useState(false);
+
   const [play, { stop }] = useSound(got);
   const handleClick = () => {
     setPlaySound(!playSound);
   };
 
+  
   return (
-    <nav data-scroll-section>
-      <div className="navbar">
+    <motion.nav  data-scroll-section>
+      <motion.div className="navbar">
         <div className="namesLogo">
           {menuBtn ? (
             <h2 className="activeMayor">Mayowa. </h2>
@@ -29,22 +63,35 @@ const Navbar = () => {
             <h2 className="inactive">Falomo. </h2>
           )}
         </div>
-        <ul className={menuBtn ? "activeMenu" : "closedMenu"}>
+        <motion.ul
+           animate={menuBtn ? "open" : "closed"}
+          variants={variants}
+          className={menuBtn ? "activeMenu" : "closedMenu"}>
           <AnchorLink href="#about">
-            <li id="firstChild" className="hover-underline-animation">
+            <motion.li
+              variants={listItem}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }} id="firstChild" className="hover-underline-animation">
               ABOUT ME
-            </li>
+            </motion.li>
           </AnchorLink>
           <AnchorLink href="#skills">
-            <li className="hover-underline-animation">SKILLS </li>
+            <motion.li variants={listItem}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }} className="hover-underline-animation">SKILLS </motion.li>
           </AnchorLink>
           <AnchorLink href="#projects">
-            <li className="hover-underline-animation">PROJECTS </li>
+            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="hover-underline-animation">PROJECTS </motion.li>
           </AnchorLink>
-            <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" ><li className="bidBtn">
+          <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" >
+            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }} className="bidBtn">
               <button className="bidBtn">RESUME </button>
-            </li></a>
-        </ul>
+          </motion.li>
+          </a>
+        </motion.ul>
         <div className="MenuDiv">
           {menuBtn ? (
             <li onClick={() => setMenuBtn(!menuBtn)}>
@@ -56,7 +103,7 @@ const Navbar = () => {
             </li>
           )}
         </div>
-      </div>
+      </motion.div>
       <Tippy className="playSound" content="Play Sound">
         <div className="sound">
           {playSound ? (
@@ -80,7 +127,7 @@ const Navbar = () => {
           )}
         </div>
       </Tippy>
-    </nav>
+    </motion.nav>
   );
 };
 
