@@ -1,9 +1,7 @@
 
 # My Portfolio
 
-The inspiration behind my portfolio was based off a project i built, Orpheus.
-
-The preload flying animation at the beginning is fitting for what i coined myself, Web Wizard, So it's reminiscent of a wizard flying (or a flying superhero wizard if you will).
+The inspiration behind my portfolio theme was based off a project i built, Orpheus.
 
 Most of my projects are usually self inspired or front-end challenges because i love thinking up amazing web apps and extra interactive functionalities for them.
 

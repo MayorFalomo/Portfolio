@@ -19,6 +19,26 @@ const Navbar = () => {
   //   closed: { opacity:0, x: "-100%" },
   // }
 
+  const sidebar = {
+  // open: (height = 1000) => ({
+  //   clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+  //   transition: {
+  //     type: "spring",
+  //     stiffness: 20,
+  //     restDelta: 2
+  //   }
+  // }),
+  closed: {
+    // clipPath: "circle(120px at )",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40
+    }
+  }
+};
+
   const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -54,8 +74,8 @@ const Navbar = () => {
 
   
   return (
-    <motion.nav  data-scroll-section>
-      <motion.div className="navbar">
+    <motion.nav variants={sidebar} animate={menuBtn ? "open" : "closed"} data-scroll-section>
+      <motion.div  className="navbar">
         <div className="namesLogo">
           {menuBtn ? (
             <h2 className="activeMayor">Mayowa. </h2>
