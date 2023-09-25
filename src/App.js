@@ -7,7 +7,6 @@ import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import { useEffect, useState } from "react";
-import useLocoScroll from "./Components/Scroll/LocoScroll";
 import Preload from "./Components/Preload/Preload";
 import Cursor from "./Components/Cursor/Cursor";
 import { AnimatePresence } from "framer-motion";
@@ -19,7 +18,6 @@ function App() {
   const [completed, setCompleted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  useLocoScroll();
 
   useEffect(() => {
     setTimeout(() => {
