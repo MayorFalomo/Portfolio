@@ -3,7 +3,7 @@
 
 The inspiration behind my portfolio theme was based off a project i built, Orpheus.
 
-Most of my projects are usually self inspired or front-end challenges because i love thinking up amazing web apps and extra interactive functionalities for them.
+Most of my projects are usually self inspired or front-end challenges.
 
 
 ## Demo
