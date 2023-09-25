@@ -9,7 +9,7 @@ import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { motion, useCycle } from "framer-motion"; 
+import { motion, useCycle, easeIn } from "framer-motion"; 
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
@@ -39,28 +39,51 @@ const Navbar = () => {
   }
 };
 
-  const variants = {
+  const variant = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+      transition: {
+        type: 'spring',
+          bounce: 0.25,
+        duration: 0.4,
+      staggerChildren: 0.07,
+      delayChildren: 0.2
+      }
   },
   closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+    transition: {
+        type: 'spring',
+        bounce: 0.25,
+        duration: 0.4,
+      staggerChildren: 0.05,
+      staggerDirection: -1
+    }
   }
 };
   
   const listItem = {
   open: {
     y: 0,
-    opacity: 1,
+      opacity: 1,
+    scale: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100 }
+      y: {
+                type: 'spring',
+        stiffness: 1000,
+        velocity: -100
+      }
     }
   },
   closed: {
-    y: 50,
-    opacity: 0,
+    y: 0,
+    scale: 0,
+    opacity: 1,
     transition: {
-      y: { stiffness: 1000 }
+      y: {
+                type: 'spring',
+        // bounce: 0.25,
+        // duration: 0.4,
+        stiffness: 1000
+      }
     }
   }
 };
@@ -85,7 +108,7 @@ const Navbar = () => {
         </div>
         <motion.ul
            animate={menuBtn ? "open" : "closed"}
-          variants={variants}
+          variants={variant}
           className={menuBtn ? "activeMenu" : "closedMenu"}>
           <AnchorLink href="#about">
             <motion.li
