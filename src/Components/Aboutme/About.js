@@ -26,7 +26,7 @@ const About = () => {
               <h1 className="myself">Bio... </h1>
               <motion.p variants={{
                 hidden: { opacity: 0, y: 80 },
-                visible: { opacity: 1, y: 0 },
+                visible: { opacity: 1, y: 0, type: 'spring' },
               }}
                 transition={{ duration: 0.4 }}
                 initial='hidden'
