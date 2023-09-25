@@ -40,7 +40,7 @@ const Navbar = () => {
 };
 
   const variant = {
-  open: {
+    open: {
       transition: {
         type: 'spring',
           bounce: 0.25,
@@ -75,13 +75,11 @@ const Navbar = () => {
   },
   closed: {
     y: 0,
-    scale: 0,
+    scale: 1,
     opacity: 1,
     transition: {
       y: {
                 type: 'spring',
-        // bounce: 0.25,
-        // duration: 0.4,
         stiffness: 1000
       }
     }
