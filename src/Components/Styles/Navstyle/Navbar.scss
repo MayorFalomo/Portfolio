@@ -44,7 +44,7 @@ nav {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     background-color: #fff;
     transform-origin: bottom right;
@@ -101,7 +101,7 @@ nav {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .MenuDiv {
     display: flex !important;
     position: absolute;

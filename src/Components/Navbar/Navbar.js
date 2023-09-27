@@ -126,6 +126,11 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               className="hover-underline-animation">PROJECTS </motion.li>
           </AnchorLink>
+          <AnchorLink href="#contact">
+            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="hover-underline-animation">CONTACT </motion.li>
+          </AnchorLink>
           <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" >
             <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }} className="bidBtn">
