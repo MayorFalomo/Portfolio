@@ -12,6 +12,7 @@ import Cursor from "./Components/Cursor/Cursor";
 import { AnimatePresence } from "framer-motion";
 import {motion} from 'framer-motion'
 import MobilePreload from "./Mobile/MobilePreload";
+import Lenis from "@studio-freight/lenis";
 
 function App() {
       const [screenSize, setScreenSize] = useState(getCurrentDimension());
@@ -62,6 +63,16 @@ function getCurrentDimension() {
     }
   };
 
+  useEffect(() => {
+    const lenis = new Lenis()
+    
+    function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  }, [])
  
     
 

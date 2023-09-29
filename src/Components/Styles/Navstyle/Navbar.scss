@@ -68,7 +68,8 @@ nav {
     background: linear-gradient(to left, transparent 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: bottom right;
-    transition: all 0.7s ease-out;
+    // transition: all 0.7s ease-out;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
   }
 
   .bidBtn:hover {
@@ -118,20 +119,25 @@ nav {
   }
   nav .closedMenu {
     position: absolute;
-    right: -150vw;
+    position: fixed;
     top: 0;
+    right: 0;
+    transform: translateX(100%) !important;
+    will-change: transform;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
     background-color: #050607;
-    transition: 0.4s ease-out;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
+    // border: 2px red solid;
   }
   .activeMenu {
     position: absolute;
     right: 0;
     top: 0;
+    transform: translateX(0%);
     z-index: 999999;
     display: flex;
     flex-direction: column;
@@ -139,7 +145,7 @@ nav {
     align-items: center;
     height: 60vh;
     width: 100%;
-    transition: 0.4s ease-in;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
     background-color: #050607;
   }
   .sound {

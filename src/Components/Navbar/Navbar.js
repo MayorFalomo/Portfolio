@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Navstyle/Navbar.css";
 import { CgLoadbarSound } from "react-icons/cg";
 import { GiSoundOff } from "react-icons/gi";
@@ -9,35 +9,46 @@ import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { motion, useCycle, easeIn } from "framer-motion"; 
+import { motion, } from "framer-motion";
+import { useAnimate, stagger } from "framer-motion";
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
 
-  // const variants = {
-  //   open: { opacity: 1, x: 0 },
-  //   closed: { opacity:0, x: "-100%" },
-  // }
+//   function useMenuAnimation(menuBtn) {
+//   const [scope, animate] = useAnimate();
 
-  const sidebar = {
-  // open: (height = 1000) => ({
-  //   clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-  //   transition: {
-  //     type: "spring",
-  //     stiffness: 20,
-  //     restDelta: 2
-  //   }
-  // }),
-  closed: {
-    // clipPath: "circle(120px at )",
-    transition: {
-      delay: 0.5,
-      type: "spring",
-      stiffness: 400,
-      damping: 40
-    }
-  }
-};
+//   useEffect(() => {
+//     const menuAnimations = menuBtn
+//       ? [
+//           [
+//             "nav",
+//             { transform: "translateX(0%)" },
+//             { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 }
+//           ],
+//           [
+//             "li",
+//             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
+//             { delay: stagger(0.05), at: "-0.1" }
+//           ]
+//         ]
+//       : [
+//           [
+//             "li",
+//             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
+//             { delay: stagger(0.05, { from: "last" }), at: "<" }
+//           ],
+//           ["nav", { transform: "translateX(-100%)" }, { at: "-0.1" }]
+//         ];
+
+//     animate([...menuAnimations]);
+//   }, [menuBtn]);
+
+//   return scope;
+// }
+
+//   const scope = useMenuAnimation(menuBtn);
+
 
   const variant = {
     open: {
@@ -95,7 +106,7 @@ const Navbar = () => {
 
   
   return (
-    <motion.nav variants={sidebar} animate={menuBtn ? "open" : "closed"} data-scroll-section>
+    <motion.nav  >
       <motion.div  className="navbar">
         <div className="namesLogo">
           {menuBtn ? (
