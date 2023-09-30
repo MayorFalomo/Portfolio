@@ -17,24 +17,34 @@ nav .navbar {
   margin: auto;
   padding: 40px;
 }
-nav ul {
+nav .navbar .closedMenu {
   display: flex;
   align-items: center;
   gap: 30px;
   font-size: 18px;
 }
-nav li {
-  z-index: 999;
+nav .navbar .inActiveNav {
+  display: none;
 }
-nav li:hover {
+nav .navbar .navActive {
+  display: none;
+}
+nav .closedMenu li {
+  position: relative;
+  z-index: 99999;
+}
+nav .closedMenu li:hover {
   color: #d4a345;
 }
-nav .hover-underline-animation {
+nav .navActive li:hover {
+  color: #d4a345;
+}
+nav .closedMenu .hover-underline-animation {
   display: inline-block;
   position: relative;
   color: #fff;
 }
-nav .hover-underline-animation:after {
+nav .closedMenu .hover-underline-animation:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -46,11 +56,32 @@ nav .hover-underline-animation:after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-nav .hover-underline-animation:hover:after {
+nav .closedMenu .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-nav button {
+nav .navActive .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+nav .navActive .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav .navActive .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+nav .closedMenu button {
   background-color: transparent;
   color: #fff;
   padding: 15px;
@@ -59,13 +90,53 @@ nav button {
   border-radius: 4px;
   outline: none;
 }
-nav .bidBtn {
+nav .closedMenu .bidBtn {
   background: linear-gradient(to left, transparent 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: bottom right;
   transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
 }
-nav .bidBtn:hover {
+nav .closedMenu .bidBtn:hover {
+  background-position: bottom left;
+  color: #000;
+  outline: 0;
+}
+nav .inActiveNav button {
+  background-color: transparent;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+nav .inActiveNav .bidBtn {
+  background: linear-gradient(to left, transparent 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+}
+nav .inActiveNav .bidBtn:hover {
+  background-position: bottom left;
+  color: #000;
+  outline: 0;
+}
+nav .navActive button {
+  background-color: transparent;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+nav .navActive .bidBtn {
+  background: linear-gradient(to left, transparent 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+}
+nav .navActive .bidBtn:hover {
   background-position: bottom left;
   color: #000;
   outline: 0;
@@ -75,7 +146,6 @@ nav .leftLightening {
   right: -30px;
   top: -40px;
   z-index: 2;
-  border: 2px red solid;
 }
 nav .MenuDiv {
   display: none;
@@ -109,34 +179,42 @@ nav .sound {
     position: relative;
     z-index: 9999999999;
   }
-  nav .closedMenu {
-    position: absolute;
-    position: fixed;
-    top: 0;
-    right: 0;
-    transform: translateX(100%) !important;
-    will-change: transform;
-    display: flex;
+  .navbar .closedMenu {
+    display: none !important;
+  }
+  .navbar .activeMenu {
+    display: none;
+  }
+  .navbar {
+    width: 100% !important;
+  }
+  .navbar .inActiveNav {
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
     height: 60vh;
+    width: 100% !important;
     background-color: #050607;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
   }
-  .activeMenu {
+  .navbar .navActive {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     position: absolute;
     right: 0;
     top: 0;
     transform: translateX(0%);
     z-index: 999999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 60vh;
     width: 100%;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
     background-color: #050607;
   }
   .sound {
@@ -145,7 +223,10 @@ nav .sound {
   }
 }
 @media (max-width: 320px) {
-  .activeMenu {
-    height: 100vh;
+  .navActive {
+    height: 100vh !important;
+  }
+  .navbar .inActiveNav {
+    height: 100vh !important;
   }
 }/*# sourceMappingURL=Navbar.css.map */

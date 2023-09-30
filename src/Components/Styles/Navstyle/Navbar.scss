@@ -15,30 +15,40 @@ nav {
     width: 90%;
     margin: auto;
     padding: 40px;
-    // border: 3px red solid;
+    // border: 2px solid green;
   }
 
-  ul {
+  .navbar .closedMenu {
     display: flex;
     align-items: center;
     gap: 30px;
     font-size: 18px;
-    // border: 2px red solid;
+    // border: 3px blue solid;
   }
-  li {
-    z-index: 999;
+   .navbar .inActiveNav{
+    display: none;
   }
-  li:hover {
+  .navbar .navActive{
+    display: none;
+  }
+  .closedMenu li{
+    position: relative;
+    z-index: 99999;
+  }
+  .closedMenu li:hover {
+    color: #d4a345;
+  }
+  .navActive li:hover {
     color: #d4a345;
   }
 
-  .hover-underline-animation {
+ .closedMenu .hover-underline-animation {
     display: inline-block;
     position: relative;
     color: #fff;
   }
 
-  .hover-underline-animation:after {
+ .closedMenu .hover-underline-animation:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -51,11 +61,34 @@ nav {
     transition: transform 0.25s ease-out;
   }
 
-  .hover-underline-animation:hover:after {
+ .closedMenu .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  button {
+ .navActive .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+  }
+
+ .navActive .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+ .navActive .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .closedMenu button {
     background-color: transparent;
     color: #fff;
     padding: 15px;
@@ -64,7 +97,7 @@ nav {
     border-radius: 4px;
     outline: none;
   }
-  .bidBtn {
+ .closedMenu .bidBtn {
     background: linear-gradient(to left, transparent 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: bottom right;
@@ -72,7 +105,51 @@ nav {
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
   }
 
-  .bidBtn:hover {
+ .closedMenu .bidBtn:hover {
+    background-position: bottom left;
+    color: #000;
+    outline: 0;
+  }
+  .inActiveNav button {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+  }
+ .inActiveNav .bidBtn {
+    background: linear-gradient(to left, transparent 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: bottom right;
+    // transition: all 0.7s ease-out;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+  }
+
+ .inActiveNav .bidBtn:hover {
+    background-position: bottom left;
+    color: #000;
+    outline: 0;
+  }
+  .navActive button {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+  }
+ .navActive .bidBtn {
+    background: linear-gradient(to left, transparent 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: bottom right;
+    // transition: all 0.7s ease-out;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+  }
+
+ .navActive .bidBtn:hover {
     background-position: bottom left;
     color: #000;
     outline: 0;
@@ -82,7 +159,6 @@ nav {
     right: -30px;
     top: -40px;
     z-index: 2;
-    border: 2px red solid;
   }
   .MenuDiv {
     display: none;
@@ -100,6 +176,7 @@ nav {
     top: 170px;
     z-index: 99;
   }
+ 
 }
 
 @media (max-width: 950px) {
@@ -117,36 +194,56 @@ nav {
     position: relative;
     z-index: 9999999999;
   }
-  nav .closedMenu {
-    position: absolute;
-    position: fixed;
-    top: 0;
-    right: 0;
-    transform: translateX(100%) !important;
-    will-change: transform;
-    display: flex;
+  .navbar .closedMenu{
+    display: none !important;
+  }
+  .navbar .activeMenu{
+    display: none;
+  }
+   .navbar {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    width: 100% !important;
+    // margin: auto;
+    // padding: 40px;
+    // border: 3px red solid;
+  }
+  .navbar .inActiveNav {
+     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: absolute;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    // right: 0;
+    // transform: translateX(100%) !important;
+    will-change: transform;
     height: 60vh;
+    width: 100% !important;
     background-color: #050607;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
-    // border: 2px red solid;
+    // border:2px solid blue;
+    // transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
   }
-  .activeMenu {
+  .navbar .navActive {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     position: absolute;
     right: 0;
     top: 0;
     transform: translateX(0%);
     z-index: 999999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 60vh;
     width: 100%;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
+    // transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
     background-color: #050607;
+    // border: 3px red solid;
   }
   .sound {
     position: absolute;
@@ -155,7 +252,10 @@ nav {
 }
 
 @media (max-width: 320px) {
-  .activeMenu{
-    height: 100vh;
+  .navActive{
+    height: 100vh !important;
+  }
+  .navbar .inActiveNav{
+    height: 100vh !important;
   }
 }

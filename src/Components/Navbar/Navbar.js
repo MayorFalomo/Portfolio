@@ -14,40 +14,43 @@ import { useAnimate, stagger } from "framer-motion";
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-//   function useMenuAnimation(menuBtn) {
-//   const [scope, animate] = useAnimate();
+  function useMenuAnimation(isOpen) {
+  const [scope, animate] = useAnimate();
 
-//   useEffect(() => {
-//     const menuAnimations = menuBtn
-//       ? [
-//           [
-//             "nav",
-//             { transform: "translateX(0%)" },
-//             { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 }
-//           ],
-//           [
-//             "li",
-//             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-//             { delay: stagger(0.05), at: "-0.1" }
-//           ]
-//         ]
-//       : [
-//           [
-//             "li",
-//             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-//             { delay: stagger(0.05, { from: "last" }), at: "<" }
-//           ],
-//           ["nav", { transform: "translateX(-100%)" }, { at: "-0.1" }]
-//         ];
+  useEffect(() => {
+    const menuAnimations = isOpen
+      ? [
+          [
+            "ul",
+            { transform: "translateX(0%)" },
+            { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 }
+          ],
+          [
+            "li",
+            { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
+            { delay: stagger(0.05), at: "-0.1" }
+          ]
+        ]
+      : [
+          [
+            "li",
+            { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
+            { delay: stagger(0.05, { from: "last" }), at: "<" }
+          ],
+          ["ul", { transform: "translateX(100%)" }, { at: "-0.1" }]
+        ];
 
-//     animate([...menuAnimations]);
-//   }, [menuBtn]);
+    animate([...menuAnimations]);
+  }, [isOpen]);
 
-//   return scope;
-// }
+  return scope;
+  }
+  
+  console.log(isOpen);
 
-//   const scope = useMenuAnimation(menuBtn);
+  const scope = useMenuAnimation(isOpen);
 
 
   const variant = {
@@ -106,56 +109,83 @@ const Navbar = () => {
 
   
   return (
-    <motion.nav  >
-      <motion.div  className="navbar">
+    <nav  >
+      <motion.div className="navbar">
         <div className="namesLogo">
-          {menuBtn ? (
+          {isOpen ? (
             <h2 className="activeMayor">Mayowa. </h2>
           ) : (
             <h2 className="inactive">Falomo. </h2>
           )}
         </div>
-        <motion.ul
-           animate={menuBtn ? "open" : "closed"}
-          variants={variant}
-          className={menuBtn ? "activeMenu" : "closedMenu"}>
+        <div  ref={scope}  >
+        <ul
+          className={isOpen ? "navActive" : "inActiveNav"}>
+          <AnchorLink href="#about">
+            <li
+              id="firstChild"
+              className="hover-underline-animation">
+              ABOUT ME
+            </li>
+          </AnchorLink>
+          <AnchorLink href="#skills">
+            <li
+              className="hover-underline-animation">SKILLS </li>
+          </AnchorLink>
+          <AnchorLink href="#projects">
+            <li
+              className="hover-underline-animation">PROJECTS </li>
+          </AnchorLink>
+          <AnchorLink href="#contact">
+            <li
+              className="hover-underline-animation">CONTACT </li>
+          </AnchorLink>
+          <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" >
+            <li
+              className="bidBtn">
+              <button className="bidBtn">RESUME </button>
+          </li>
+          </a>
+          </ul>
+          </div>
+        <div
+          className="closedMenu">
           <AnchorLink href="#about">
             <motion.li
-              variants={listItem}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }} id="firstChild" className="hover-underline-animation">
               ABOUT ME
             </motion.li>
           </AnchorLink>
           <AnchorLink href="#skills">
-            <motion.li variants={listItem}
+            <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }} className="hover-underline-animation">SKILLS </motion.li>
           </AnchorLink>
           <AnchorLink href="#projects">
-            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+            <motion.li   whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="hover-underline-animation">PROJECTS </motion.li>
           </AnchorLink>
           <AnchorLink href="#contact">
-            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+            <motion.li   whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="hover-underline-animation">CONTACT </motion.li>
           </AnchorLink>
           <a href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing" target='_blank' rel="noreferrer" >
-            <motion.li  variants={listItem}  whileHover={{ scale: 1.1 }}
+            <motion.li  whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }} className="bidBtn">
               <button className="bidBtn">RESUME </button>
           </motion.li>
           </a>
-        </motion.ul>
+        </div>
         <div className="MenuDiv">
-          {menuBtn ? (
-            <li onClick={() => setMenuBtn(!menuBtn)}>
+          {isOpen ? (
+            <li onClick={() => setIsOpen(!isOpen)}>
               {<FaTimes className="times" />}{" "}
             </li>
           ) : (
-            <li onClick={() => setMenuBtn(!menuBtn)} className="burger">
+            <li onClick={() => setIsOpen(!isOpen)} className="burger">
               {<RiMenu3Fill />}{" "}
             </li>
           )}
@@ -184,7 +214,7 @@ const Navbar = () => {
           )}
         </div>
       </Tippy>
-    </motion.nav>
+    </nav>
   );
 };
 
