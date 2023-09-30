@@ -23,7 +23,6 @@ nav {
     align-items: center;
     gap: 30px;
     font-size: 18px;
-    // border: 3px blue solid;
   }
    .navbar .inActiveNav{
     display: none;
@@ -101,8 +100,7 @@ nav {
     background: linear-gradient(to left, transparent 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: bottom right;
-    // transition: all 0.7s ease-out;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
   }
 
  .closedMenu .bidBtn:hover {
@@ -200,15 +198,7 @@ nav {
   .navbar .activeMenu{
     display: none;
   }
-   .navbar {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    width: 100% !important;
-    // margin: auto;
-    // padding: 40px;
-    // border: 3px red solid;
-  }
+
   .navbar .inActiveNav {
      display: flex !important;
     flex-direction: column;
@@ -216,17 +206,13 @@ nav {
     align-items: center;
     gap: 30px;
     position: absolute;
-    // position: fixed;
     top: 0;
     left: 0;
-    // right: 0;
-    // transform: translateX(100%) !important;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
     width: 100% !important;
     background-color: #050607;
-    // border:2px solid blue;
-    // transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
   }
   .navbar .navActive {
     display: flex !important;
@@ -237,13 +223,18 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     transform: translateX(0%);
     z-index: 999999;
     height: 60vh;
     width: 100%;
-    // transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
     background-color: #050607;
-    // border: 3px red solid;
+  }
+  .navbar .inActiveNav #firstChild{
+    margin-top: 30px;
+  }
+  .navbar .navActive #firstChild{
+    margin-top: 30px;
   }
   .sound {
     position: absolute;

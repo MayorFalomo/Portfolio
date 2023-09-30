@@ -94,7 +94,7 @@ nav .closedMenu .bidBtn {
   background: linear-gradient(to left, transparent 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: bottom right;
-  transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+  transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96);
 }
 nav .closedMenu .bidBtn:hover {
   background-position: bottom left;
@@ -185,9 +185,6 @@ nav .sound {
   .navbar .activeMenu {
     display: none;
   }
-  .navbar {
-    width: 100% !important;
-  }
   .navbar .inActiveNav {
     display: flex !important;
     flex-direction: column;
@@ -197,6 +194,7 @@ nav .sound {
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
     width: 100% !important;
@@ -211,11 +209,18 @@ nav .sound {
     position: absolute;
     right: 0;
     top: 0;
+    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     transform: translateX(0%);
     z-index: 999999;
     height: 60vh;
     width: 100%;
     background-color: #050607;
+  }
+  .navbar .inActiveNav #firstChild {
+    margin-top: 30px;
+  }
+  .navbar .navActive #firstChild {
+    margin-top: 30px;
   }
   .sound {
     position: absolute;

@@ -13,6 +13,7 @@ import { motion, } from "framer-motion";
 import { useAnimate, stagger } from "framer-motion";
 
 const Navbar = () => {
+  
   const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,14 +31,14 @@ const Navbar = () => {
           [
             "li",
             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-            { delay: stagger(0.05), at: "-0.1" }
+            { delay: stagger(0.09), at: "-0.1" }
           ]
         ]
       : [
           [
             "li",
             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-            { delay: stagger(0.05, { from: "last" }), at: "<" }
+            { delay: stagger(0.09, { from: "last" }), at: "<" }
           ],
           ["ul", { transform: "translateX(100%)" }, { at: "-0.1" }]
         ];
@@ -48,57 +49,7 @@ const Navbar = () => {
   return scope;
   }
   
-  console.log(isOpen);
-
   const scope = useMenuAnimation(isOpen);
-
-
-  const variant = {
-    open: {
-      transition: {
-        type: 'spring',
-          bounce: 0.25,
-        duration: 0.4,
-      staggerChildren: 0.07,
-      delayChildren: 0.2
-      }
-  },
-  closed: {
-    transition: {
-        type: 'spring',
-        bounce: 0.25,
-        duration: 0.4,
-      staggerChildren: 0.05,
-      staggerDirection: -1
-    }
-  }
-};
-  
-  const listItem = {
-  open: {
-    y: 0,
-      opacity: 1,
-    scale: 1,
-    transition: {
-      y: {
-                type: 'spring',
-        stiffness: 1000,
-        velocity: -100
-      }
-    }
-  },
-  closed: {
-    y: 0,
-    scale: 1,
-    opacity: 1,
-    transition: {
-      y: {
-                type: 'spring',
-        stiffness: 1000
-      }
-    }
-  }
-};
 
   const [playSound, setPlaySound] = useState(false);
 
