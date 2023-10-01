@@ -13,7 +13,7 @@ import { motion, } from "framer-motion";
 import { useAnimate, stagger } from "framer-motion";
 
 const Navbar = () => {
-  
+
   const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
