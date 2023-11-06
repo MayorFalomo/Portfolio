@@ -7,9 +7,8 @@ import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import { useEffect, useState } from "react";
-import Preload from "./Components/Preload/Preload";
 import Cursor from "./Components/Cursor/Cursor";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, easeIn, } from "framer-motion";
 import {motion} from 'framer-motion'
 import MobilePreload from "./Mobile/MobilePreload";
 import Lenis from "@studio-freight/lenis";
@@ -74,17 +73,14 @@ function getCurrentDimension() {
 requestAnimationFrame(raf)
   }, [])
  
-    
+    // const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait" >
-      <ParallaxProvider>
+    <ParallaxProvider>
+                    <AnimatePresence mode="wait" >
              {completed ? (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
+          
           >
             <div className="App" data-scroll-container>
               <Cursor />
@@ -96,17 +92,14 @@ requestAnimationFrame(raf)
               <Contact />
             </div>
           </motion.div>
-        ) : (
-          <>
-            {isMobile ? (
-              <MobilePreload />
-            ) : (
-              <MobilePreload />
-            )}
-          </>
+      ) : (
+          <motion.div
+            exit={{ opacity: 0, ease: easeIn }}>
+              <div><MobilePreload /></div>
+            </motion.div>
         )}
+                  </AnimatePresence>
       </ParallaxProvider> 
-      </AnimatePresence>
   );
 }
 
