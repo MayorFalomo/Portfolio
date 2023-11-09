@@ -31,4 +31,6 @@ mayorfalomo@gmail.com
 
 What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 
+Migrated to Vite from CRA
+
 I had to refactor the project section the portfolio loading slow on mobile, Removed framer-motion as that was affecting the speed and i used AOS for the transition instead. 

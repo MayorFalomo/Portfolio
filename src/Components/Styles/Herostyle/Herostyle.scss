@@ -48,13 +48,17 @@
     position: fixed;
     left: -100px;
     top: -100px;
-    z-index: -9;
+    // z-index: -9;
+    z-index: 9999999999999999999999;
+    border: 5px green solid;
   }
   .leftLightening {
     position: fixed;
     right: 0px;
     top: 0px;
-    z-index: 1;
+    // z-index: 1;
+    z-index: 99999999999999999999;
+    border: 2px red solid;
   }
   .cursor {
     background-color: #fff;

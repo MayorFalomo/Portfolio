@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@tippyjs/react": "^4.2.6",
+    "@vitejs/plugin-react-swc": "^3.4.1",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
@@ -15,19 +16,18 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-lazy-load-image-component": "^1.6.0",
-    "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.3.1",
     "react-tsparticles": "^2.3.3",
     "tsparticles": "^2.3.4",
     "use-sound": "^4.0.1",
+    "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.1",
+    "vite": "^4.5.0",
+    "vite-plugin-svgr": "^4.1.0"
   }
 }
