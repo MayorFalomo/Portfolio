@@ -29,7 +29,7 @@ const Projects = () => {
           className="subProjectLeft"
           data-aos="fade-up"
           style={{
-            backgroundImage: "url(./tweeks.png)",
+            backgroundImage: "url(./tweeks.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -74,7 +74,7 @@ const Projects = () => {
             className="subProjectRight"
             data-aos="fade-up"
             style={{
-              backgroundImage: "url(./blogaroo.png)",
+              backgroundImage: "url(./blogaroo.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -116,7 +116,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./cinemaflix.png)",
+            backgroundImage: "url(./cinemaflix.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -157,7 +157,7 @@ const Projects = () => {
             className="subProjectRight"
             data-aos="fade-up"
             style={{
-              backgroundImage: "url(./medleyGames.jpg)",
+              backgroundImage: "url(./medleyGames.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -194,7 +194,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./urban.jpg)",
+            backgroundImage: "url(./urban.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -232,7 +232,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./travelBuddy.jpg)",
+              backgroundImage: "url(./travelBuddy.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -271,7 +271,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./orpheus.png)",
+            backgroundImage: "url(./orpheus.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -308,7 +308,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./google.png)",
+              backgroundImage: "url(./google.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -348,7 +348,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./swishUpdated.png)",
+            backgroundImage: "url(./swishUpdated.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -399,7 +399,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./quiz.png)",
+              backgroundImage: "url(./quiz.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -438,7 +438,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./StoreBay.png)",
+            backgroundImage: "url(./StoreBay.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
