@@ -3,6 +3,14 @@
   position: relative;
   z-index: 9;
   margin: 50px auto;
+    .word{
+  position: relative;
+  margin-right: 10px;
+}
+.shadow{
+  position: absolute;
+  opacity: 0.7;
+}
   h1 {
     text-align: center;
     margin: 20px auto;
@@ -62,6 +70,11 @@
     font-size: 50px !important;
   }
   .skill-logos {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+  }
+  .atom {
     width: 100%;
     max-width: 70px;
     height: auto;

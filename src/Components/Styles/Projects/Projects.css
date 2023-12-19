@@ -1,3 +1,11 @@
+.ProjectsContainer .word {
+  position: relative;
+  margin-right: 10px;
+}
+.ProjectsContainer .shadow {
+  position: absolute;
+  opacity: 0.5;
+}
 .ProjectsContainer #projectHeader {
   text-align: center;
   font-size: 7vw;
@@ -103,6 +111,9 @@
   gap: 10px;
   font-size: 20px;
 }
+.ProjectsContainer .flexLinks .disable {
+  pointer-events: none;
+}
 .ProjectsContainer #parallax {
   opacity: 0;
   bottom: 200px;
@@ -161,6 +172,9 @@
   gap: 10px;
   font-size: 20px;
   margin: 10px auto;
+}
+.ProjectsContainer .flexLink .disable {
+  pointer-events: none;
 }
 @media (max-width: 450px) {
   .ProjectsContainer #projectHeader {

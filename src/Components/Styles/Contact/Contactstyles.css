@@ -27,6 +27,14 @@
   font-size: 6vw;
   color: #141c2d;
 }
+.ContactContainer .word {
+  position: relative;
+  margin-right: 10px;
+}
+.ContactContainer .shadow {
+  position: absolute;
+  opacity: 0.4;
+}
 .ContactContainer .content h1 {
   color: #fff;
   font-size: 8em;

@@ -5,6 +5,7 @@ import { MdLogout } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Paragraph from "./Paragraph";
 
 const Projects = () => {
   useEffect(() => {
@@ -12,6 +13,8 @@ const Projects = () => {
       AOS.init();
     });
   }, []);
+
+  const paragraph = `MY PROJECTS`;
 
   return (
     <div id="projects" className="ProjectsContainer">
@@ -21,13 +24,17 @@ const Projects = () => {
         className="my-thing"
         speed={-10}
       >
-        <h1 id="projectHeader">MY PROJECTS</h1>
+        <h1 id="projectHeader">
+          <Paragraph value={paragraph} />
+        </h1>
+        {/* <h1 id="projectHeader">MY PROJECTS</h1> */}
       </Parallax>
 
       <div className="projectWrapper">
         <div
           className="subProjectLeft"
           data-aos="fade-up"
+          data-aos-duration="500"
           style={{
             backgroundImage: "url(./tweeks.webp)",
             backgroundPosition: "center",
@@ -45,7 +52,7 @@ const Projects = () => {
               reply comments it has all CRUD functionalities
             </p>
             <span>
-              MongoDb, Express,Typescript, Next JS, Node Js, Firebase, PWA and
+              MongoDb, Express, Typescript, Next JS, Node Js, Firebase, PWA and
               Styled-Components{" "}
             </span>
             <div className="flexLinks">
@@ -73,6 +80,96 @@ const Projects = () => {
           <div
             className="subProjectRight"
             data-aos="fade-up"
+            data-aos-duration="500"
+            style={{
+              backgroundImage: "url(./reyna.webp)",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="overLayRight"></div>
+            <div id="parallax">
+              <h1> Reyna Hair salon </h1>
+              <p>
+                Reyna Hair Salon is a hair styling salon website for a Canadian
+                based startup, as a freelancer i worked on the entire website,
+                revamped the entire messy codebase and changed all the contents,
+                I worked on the responsiveness while also maintaining the
+                original code so nothing breaks.
+              </p>
+              <span>Javascript, HTML and CSS</span>
+              <div className="flexLink">
+                <a
+                  className="link"
+                  target="_blank"
+                  href="http://stage2.reyna.ca/"
+                  rel="noreferrer"
+                >
+                  {<MdLogout className="netlifyLink" />} Demo{" "}
+                </a>
+                <a
+                  className="disable"
+                  target="_blank"
+                  // href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
+                  rel="noreferrer"
+                  // style="pointer: none"
+                >
+                  {<IoLogoGithub className="githubLink" />} Github{" "}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="subProjectLeft"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          style={{
+            backgroundImage: "url(./easeinbiz.webp)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="overLayLeft"></div>
+          <div className="parallaxText">
+            <h1>EaseInBiz Automation </h1>
+            <p>
+              Easeinbiz - a startup based in Nigeria that provides automation
+              solutions for businesses, I built the entire page using react,
+              It's responsive on even the smallest devices and optimized on all
+              devices.
+            </p>
+            <span>React, Styled-components</span>
+            <div className="flexLinks">
+              <a
+                id="black"
+                target="_blank"
+                href="https://easeinbiz.com"
+                rel="noreferrer"
+              >
+                {<MdLogout className="netlifyLink" />} Demo{" "}
+              </a>
+              <a
+                className="disable"
+                id="black"
+                target="_blank"
+                // href="https://github.com/MayorFalomo/Twitter-clone"
+                rel="noreferrer"
+              >
+                {<IoLogoGithub className="githubLink" />} Github{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="subProjectRightCon">
+          <div
+            className="subProjectRight"
+            data-aos="fade-up"
+            data-aos-duration="500"
             style={{
               backgroundImage: "url(./blogaroo.webp)",
               backgroundPosition: "center",
@@ -123,6 +220,7 @@ const Projects = () => {
             backgroundColor: "black",
           }}
           data-aos="fade-up"
+          data-aos-duration="500"
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
@@ -156,6 +254,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             data-aos="fade-up"
+            data-aos-duration="500"
             style={{
               backgroundImage: "url(./medleyGames.webp)",
               backgroundPosition: "center",
@@ -167,8 +266,8 @@ const Projects = () => {
             <div id="parallax">
               <h1>Medley Games </h1>
               <p>
-                A mock Game website page i built using React and CSS, It uses
-                react-router to route to different pages
+                A landing page for a Game website page i built using React and
+                CSS, It uses react-router to route to different pages
               </p>
               <span> React, CSS</span>
               <div className="flexLink">
@@ -200,6 +299,7 @@ const Projects = () => {
             backgroundRepeat: "no-repeat",
           }}
           data-aos="fade-up"
+          data-aos-duration="500"
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
@@ -238,12 +338,13 @@ const Projects = () => {
               backgroundRepeat: "no-repeat",
             }}
             data-aos="fade-up"
+            data-aos-duration="500"
           >
             <div className="overLayRight"></div>
             <div id="parallax">
               <h1>Travel Buddy </h1>
               <p>
-                A mock Travel Agency Site i built using React also uses react
+                A Travel Agency website i built using React also uses react
                 router for routing between pages this was my second ever project
                 using React{" "}
               </p>
@@ -277,6 +378,7 @@ const Projects = () => {
             backgroundRepeat: "no-repeat",
           }}
           data-aos="fade-up"
+          data-aos-duration="500"
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
@@ -314,6 +416,7 @@ const Projects = () => {
               backgroundRepeat: "no-repeat",
             }}
             data-aos="fade-up"
+            data-aos-duration="500"
           >
             <div className="overLayRight"></div>
             <div id="parallax">
@@ -354,13 +457,14 @@ const Projects = () => {
             backgroundRepeat: "no-repeat",
           }}
           data-aos="fade-up"
+          data-aos-duration="500"
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
             <h1>Swish</h1>
             <p>
               Weather app i built using the openweather API and restcountry API,
-              I also added a converter so users can get their temperature in
+              I also added a converter so users can get their temperature to
               whatever unit they prefer and also an interactive 3d view of the
               Earth{" "}
               <a
@@ -405,6 +509,7 @@ const Projects = () => {
               backgroundRepeat: "no-repeat",
             }}
             data-aos="fade-up"
+            data-aos-duration="500"
           >
             <div className="overLayRight"></div>
             <div id="parallax">
@@ -444,6 +549,7 @@ const Projects = () => {
             backgroundRepeat: "no-repeat",
           }}
           data-aos="fade-up"
+          data-aos-duration="500"
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">

@@ -34,6 +34,7 @@ body{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   cursor: default;
+  /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar{
@@ -99,9 +100,9 @@ body{
   pointer-events: none;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .App{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 }
 @media (max-width: 500px) {

@@ -22,6 +22,8 @@
   }
   .myNotes {
     width: 50%;
+    // height: 320vh;
+    // border: 2px solid red;
   }
 
   .myself {
@@ -31,6 +33,7 @@
   }
   .aboutCardImg h2 {
     text-align: center;
+    line-height: 25px;
   }
 
   .AboutmeImg {
@@ -43,27 +46,87 @@
   }
   .aboutBio {
     height: 100vh;
+    // border: 1px solid red;
+    // height: 110vh;
   }
   .aboutBio p {
     font-size: calc(15px + 0.390625vw);
     line-height: 40px;
     // border: #d4a345 2px solid;
   }
+  .word{
+  position: relative;
+  margin-right: 10px;
+  /* border: 2px red solid; */
+}
+.shadow{
+  position: absolute;
+  opacity: 0.4;
+  /* border: #03a9f4 2px solid; */
+}
   .aboutCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: auto;
-    gap: 30px;
+    gap: 10px;
   }
-  // .aboutCards{
-  //   border: 1px solid red;
-  //   height: 100vh;
-  // }
+  .aboutCard h1{
+    color: #141c2d;
+  }
+  .aboutCards{
+    // border: 1px solid red;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // gap: 20px;
+    margin: 0 auto;
+    height: 90vh;
+    h1{
+       text-align: center;
+    font-size: 6vw;
+    // font-size: 40px;
+    // color: #d4a345;
+    color: #141c2d;
+    }
+    p{
+  font-size: calc(15px + 0.390625vw);
+    line-height: 40px;
+    }
+  }
+  .interests{
+    margin-top: 20px;
+  h2{
+     text-align: center;
+  margin: 10px auto;
+  font-size: 40px;
+      // color: #141c2d;
+
+  // color: #d4a345;
+  }
+  .tech{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   span{
+        font-size: calc(15px + 0.390625vw);
+    line-height: 40px;
+    }
+}
 }
 
-@media (max-width: 1200px) {
+// @media (max-width: 1485px) {
+//  .aboutCards h1{
+//   margin-top: 100px;
+//   border: #d4a345 2px solid;
+//   }
+// }
+
+@media (max-width: 1390px) {
   .aboutSection {
     display: flex;
     flex-direction: column;
@@ -92,6 +155,15 @@
     margin: auto;
     line-height: 30px;
   }
+  .aboutCards{
+    height: 100% !important;
+    margin-top: 20px;
+  }
+  .aboutCards p {
+    width: 95%;
+    margin: auto;
+    line-height: 30px;
+  }
   .aboutBio {
     height: auto !important;
   }
@@ -100,9 +172,19 @@
   .aboutCardImg h2 {
     font-size: 18px;
   }
+  .aboutCards h1{
+    font-size: 60px !important;
+    color: #d4a345;
+    // color: #141c2d;
+  }
 }
 @media (max-width: 400px) {
   #about {
     font-size: 48px !important;
+  }
+   .aboutCards h1{
+    font-size: 40px !important;
+    color: #d4a345;
+    // color: #141c2d;
   }
 }

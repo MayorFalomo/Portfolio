@@ -13,10 +13,10 @@ const MobilePreload = () => {
   return (
     <motion.div className="Title">
       <div className="centered">
-        <span className="web" data-aos="fade-up">
+        <span className="web" data-aos="fade-up" data-aos-duration="500">
           WEB{" "}
         </span>
-        <span className="wizard" data-aos="fade-up">
+        <span className="wizard" data-aos="fade-up" data-aos-duration="500">
           WIZARD{" "}
         </span>
       </div>

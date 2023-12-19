@@ -29,6 +29,7 @@
 }
 .AboutContainer .aboutCardImg h2 {
   text-align: center;
+  line-height: 25px;
 }
 .AboutContainer .AboutmeImg {
   width: 100%;
@@ -45,16 +46,63 @@
   font-size: calc(15px + 0.390625vw);
   line-height: 40px;
 }
+.AboutContainer .word {
+  position: relative;
+  margin-right: 10px;
+  /* border: 2px red solid; */
+}
+.AboutContainer .shadow {
+  position: absolute;
+  opacity: 0.4;
+  /* border: #03a9f4 2px solid; */
+}
 .AboutContainer .aboutCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin: auto;
-  gap: 30px;
+  gap: 10px;
+}
+.AboutContainer .aboutCard h1 {
+  color: #141c2d;
+}
+.AboutContainer .aboutCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+}
+.AboutContainer .aboutCards h1 {
+  text-align: center;
+  font-size: 6vw;
+  color: #141c2d;
+}
+.AboutContainer .aboutCards p {
+  font-size: calc(15px + 0.390625vw);
+  line-height: 40px;
+}
+.AboutContainer .interests {
+  margin-top: 20px;
+}
+.AboutContainer .interests h2 {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 40px;
+}
+.AboutContainer .interests .tech {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.AboutContainer .interests span {
+  font-size: calc(15px + 0.390625vw);
+  line-height: 40px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1390px) {
   .aboutSection {
     display: flex;
     flex-direction: column;
@@ -83,6 +131,15 @@
     margin: auto;
     line-height: 30px;
   }
+  .aboutCards {
+    height: 100% !important;
+    margin-top: 20px;
+  }
+  .aboutCards p {
+    width: 95%;
+    margin: auto;
+    line-height: 30px;
+  }
   .aboutBio {
     height: auto !important;
   }
@@ -91,9 +148,17 @@
   .aboutCardImg h2 {
     font-size: 18px;
   }
+  .aboutCards h1 {
+    font-size: 60px !important;
+    color: #d4a345;
+  }
 }
 @media (max-width: 400px) {
   #about {
     font-size: 48px !important;
+  }
+  .aboutCards h1 {
+    font-size: 40px !important;
+    color: #d4a345;
   }
 }/*# sourceMappingURL=Aboutstyle.css.map */
