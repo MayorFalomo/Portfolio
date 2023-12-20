@@ -6,35 +6,15 @@ import { motion } from "framer-motion";
 
 const Herosection = () => {
   return (
-    <div className="HeroContainer" data-scroll-section>
+    <div className="HeroContainer">
       <div className="HeroCard">
         <p> Hello! , my name is</p>
         <div id="header-text">
-          <motion.h1
-            variants={{
-              hidden: { opacity: 0, y: 200 },
-              visible: { opacity: 1, y: 0, type: "spring" },
-            }}
-            transition={{ duration: 0.4 }}
-            initial="hidden"
-            animate="visible"
-            className="name"
-          >
-            Mayowa Falomo.
-          </motion.h1>
-          <motion.h1
-            variants={{
-              hidden: { opacity: 0, y: 80 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.4 }}
-            initial="hidden"
-            animate="visible"
-            className="spans"
-          >
+          <h1 className="name">Mayowa Falomo.</h1>
+          <h1 className="spans">
             {" "}
             <span>&lt;Full Stack Developer/&gt;</span>{" "}
-          </motion.h1>
+          </h1>
           <em>and...Web Wizard.</em>
         </div>
 
