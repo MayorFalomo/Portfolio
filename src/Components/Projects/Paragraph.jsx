@@ -1,6 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
-import "../Styles/AboutStyle/AboutStyle.css";
+import "../Styles/AboutStyle/Aboutstyle.css";
 const Paragraph = ({ value }) => {
   const element = useRef(null);
 
