@@ -16,7 +16,6 @@ import tailwind from "../Skills/tailwind.svg";
 import mongodb from "../Skills/mongodb.svg";
 import express from "../Skills/express.svg";
 import node from "../Skills/nodeJs.svg";
-import Paragraph from "../Projects/Paragraph";
 
 const Skills = () => {
   const Logos = [
@@ -102,11 +101,12 @@ const Skills = () => {
     },
   ];
 
-  const skills = `CORE SKILLS`;
+  // const skills = `CORE SKILLS`;
   return (
     <div className="SkillContainer" id="skills" data-scroll-section>
       <h1>
-        <Paragraph value={skills} />{" "}
+        {/* <Paragraph value={skills} />{" "} */}
+        CORE SKILLS
       </h1>
       <Parallax
         easing="easeOutQuad"

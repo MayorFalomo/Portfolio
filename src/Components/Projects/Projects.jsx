@@ -5,7 +5,6 @@ import { MdLogout } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Paragraph from "./Paragraph";
 
 const Projects = () => {
   useEffect(() => {
@@ -24,10 +23,10 @@ const Projects = () => {
         className="my-thing"
         speed={-10}
       >
-        <h1 id="projectHeader">
+        {/* <h1 id="projectHeader">
           <Paragraph value={paragraph} />
-        </h1>
-        {/* <h1 id="projectHeader">MY PROJECTS</h1> */}
+        </h1> */}
+        <h1 id="projectHeader">MY PROJECTS</h1>
       </Parallax>
 
       <div className="projectWrapper">
