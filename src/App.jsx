@@ -8,16 +8,15 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import { useEffect, useState } from "react";
 import Cursor from "./Components/Cursor/Cursor";
-import { AnimatePresence, easeIn, } from "framer-motion";
-import {motion} from 'framer-motion'
+import { AnimatePresence, easeIn } from "framer-motion";
+import { motion } from "framer-motion";
 import MobilePreload from "./Mobile/MobilePreload";
 import Lenis from "@studio-freight/lenis";
 
 function App() {
-      const [screenSize, setScreenSize] = useState(getCurrentDimension());
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
   const [completed, setCompleted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,10 +24,10 @@ function App() {
     }, 2000);
   }, []);
 
-function getCurrentDimension() {
+  function getCurrentDimension() {
     return {
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     };
   }
 
@@ -37,10 +36,10 @@ function getCurrentDimension() {
       setScreenSize(getCurrentDimension());
     };
 
-    window.addEventListener('resize', updateDimension);
+    window.addEventListener("resize", updateDimension);
 
     return () => {
-      window.removeEventListener('resize', updateDimension);
+      window.removeEventListener("resize", updateDimension);
     };
   }, []);
 
@@ -63,43 +62,42 @@ function getCurrentDimension() {
   };
 
   useEffect(() => {
-    const lenis = new Lenis()
-    
-    function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+    const lenis = new Lenis();
 
-requestAnimationFrame(raf)
-  }, [])
- 
-    // const location = useLocation();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
+  // const location = useLocation();
 
   return (
     <ParallaxProvider>
-                    <AnimatePresence mode="wait" >
-             {completed ? (
-          <motion.div
-          
-          >
-            <div className="App" data-scroll-container>
-              <Cursor />
-              <Navbar />
-              <Herosection />
-              <About />
-              <Skills />
-              <Projects />
-              <Contact />
-            </div>
-          </motion.div>
+      {/* <AnimatePresence mode="wait"> */}
+      {completed ? (
+        <div>
+          <div className="App">
+            <Cursor />
+            <Navbar />
+            <Herosection />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+          </div>
+        </div>
       ) : (
-          <motion.div
-            exit={{ opacity: 0, ease: easeIn }}>
-              <div><MobilePreload /></div>
-            </motion.div>
-        )}
-                  </AnimatePresence>
-      </ParallaxProvider> 
+        <div>
+          {/* <div> */}
+          <MobilePreload />
+          {/* </div> */}
+        </div>
+      )}
+      {/* </AnimatePresence> */}
+    </ParallaxProvider>
   );
 }
 
