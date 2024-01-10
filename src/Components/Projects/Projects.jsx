@@ -92,8 +92,8 @@ const Projects = () => {
               <h1> Reyna Hair salon </h1>
               <p>
                 I freelanced on a Canadian startup's hair salon website,
-                revamping the messy codebase, updating content, ensuring
-                responsiveness, while preserving the original code integrity.
+                revamping codebase, updating content, ensuring responsiveness,
+                while preserving the original code integrity.
               </p>
               <span>Javascript, HTML and CSS</span>
               <div className="flexLink">
