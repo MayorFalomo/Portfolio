@@ -133,7 +133,7 @@ const Navbar = () => {
             </motion.li>
           </AnchorLink>
           <a
-            href="https://docs.google.com/document/d/1WcObxVqfzXWQDnYsSRrD8-xWxRTj9K3WITGLP47oa9k/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1TNq4DpFVG2EQPn27p5RRl1N7qod8sKYB/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

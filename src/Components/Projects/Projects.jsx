@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Projects/Projects.css";
 import { Parallax } from "react-scroll-parallax";
 import { MdLogout } from "react-icons/md";
@@ -12,6 +12,18 @@ const Projects = () => {
       AOS.init();
     });
   }, []);
+
+  const [readMore, setReadMore] = useState(150);
+  const [readLess, setReadLess] = useState(false);
+
+  const keep =
+    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, Add Canvas,Search and Send note to others, Translate notes, archive ,trash, pin, label, customize, and change the layouts of note. ";
+  const Twinkles =
+    "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments etc.";
+
+  const length = Twinkles.length;
+
+  console.log(length);
 
   const paragraph = `MY PROJECTS`;
 
@@ -35,7 +47,7 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           style={{
-            backgroundImage: "url(./tweeks.webp)",
+            backgroundImage: "url(./keep.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -43,22 +55,38 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Tweeks - A Twitter Clone </h1>
+            <h1>Keep - A Google Notepad </h1>
             <p>
-              Tweeks is a Full-Stack social web app i built using the MENN Stack
-              and firebase, users can real-time message, get notifications,
-              retweet, like, quote and bookmark tweets, post tweets, like and
-              reply comments it has all CRUD functionalities
+              {keep.slice(0, readMore)}{" "}
+              {readLess ? (
+                <a
+                  onClick={() => {
+                    setReadLess(false);
+                    setReadMore(150);
+                  }}
+                >
+                  Read less{" "}
+                </a>
+              ) : (
+                <a
+                  onClick={() => {
+                    setReadMore(length);
+                    setReadLess(true);
+                  }}
+                >
+                  ... Read more
+                </a>
+              )}
             </p>
             <span>
-              MongoDb, Express, Typescript, Next JS, Node Js, Firebase, PWA and
-              Styled-Components{" "}
+              Next JS, Node Js, MongoDb, Express, Typescript, Firebase, PWA and
+              Tailwind and CSS{" "}
             </span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://tweeks.netlify.app"
+                href="https://keep-notepad.vercel.app"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -66,7 +94,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Twitter-clone"
+                href="https://github.com/MayorFalomo/google-keep"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -81,7 +109,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="500"
             style={{
-              backgroundImage: "url(./reyna.webp)",
+              backgroundImage: "url(./tweeks.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -89,18 +117,39 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1> Reyna Hair salon </h1>
+              <h1>Tweeks - A Twitter Clone</h1>
               <p>
-                I freelanced on a Canadian startup's hair salon website,
-                revamping codebase, updating content, ensuring responsiveness,
-                while preserving the original code integrity.
+                {Twinkles.slice(0, readMore)}...{" "}
+                {readLess ? (
+                  <a
+                    onClick={() => {
+                      setReadLess(false);
+                      setReadMore(150);
+                    }}
+                  >
+                    Read less...{" "}
+                  </a>
+                ) : (
+                  <a
+                    onClick={() => {
+                      setReadMore(length);
+                      setReadLess(true);
+                    }}
+                  >
+                    Read more
+                  </a>
+                )}
               </p>
-              <span>Javascript, HTML and CSS</span>
+              <span>
+                {" "}
+                MongoDb, Express, Typescript, Next JS, Node Js, Firebase, PWA
+                and Styled-Components{" "}
+              </span>
               <div className="flexLink">
                 <a
                   className="link"
                   target="_blank"
-                  href="http://stage2.reyna.ca/"
+                  href="https://tweeks.netlify.app"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -108,7 +157,7 @@ const Projects = () => {
                 <a
                   className="disable"
                   target="_blank"
-                  // href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
+                  href="https://github.com/MayorFalomo/Twitter-clone"
                   rel="noreferrer"
                   // style="pointer: none"
                 >
@@ -124,7 +173,7 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           style={{
-            backgroundImage: "url(./easeinbiz.webp)",
+            backgroundImage: "url(./reyna.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -132,19 +181,18 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>EaseInBiz Automation </h1>
+            <h1>Reyna Hair Salon </h1>
             <p>
-              Easeinbiz - a startup based in Nigeria that provides automation
-              solutions for businesses, I built the entire page using react,
-              It's responsive on even the smallest devices and optimized on all
-              devices.
+              I freelanced on a Canadian startup's hair salon website, revamping
+              the codebase, updating content, ensuring responsiveness, while
+              preserving the original code integrity.
             </p>
-            <span>React, Styled-components</span>
+            <span>Javascript, HTML and CSS</span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://easeinbiz.com"
+                href="http://stage2.reyna.ca/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -168,7 +216,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="500"
             style={{
-              backgroundImage: "url(./blogaroo.webp)",
+              backgroundImage: "url(./easeinbiz.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -176,28 +224,25 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1> Blogaroo</h1>
+              <h1> EaseInBiz Automation</h1>
               <p>
-                A creative Blog Website i built using the MERN Stack, it has all
-                CRUD functionalities and added features of likes and comments on
-                blog post, editing your profile and making a blog post.
+                Easeinbiz - a startup based in Nigeria that provides automation
+                solutions for businesses, I built the entire page using react,
+                It's responsive and optimized on even the smallest devices.
               </p>
-              <span>
-                MongoDb, Express,Typescript, React, Node Js and
-                Styled-Components{" "}
-              </span>
+              <span>React, Styled-components</span>
               <div className="flexLink">
                 <a
                   className="link"
                   target="_blank"
-                  href="https://blogaroo.netlify.app/register"
+                  href="https://easeinbiz.com"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
+                  // href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -210,7 +255,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./cinemaflix.webp)",
+            backgroundImage: "url(./blogaroo.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -221,24 +266,27 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1> CinemaFlix </h1>
+            <h1> Blogaroo </h1>
             <p>
-              A movie hub project using the TMDB API, You can add movies to your
-              watchlist, search for any movie, watch trailers for the series and
-              browse through movies{" "}
+              A creative Blog Website i built using the MERN Stack, it has all
+              CRUD functionalities and added features of likes and comments on
+              blog post, editing your profile and making a blog post.
             </p>
-            <span>React, CSS, API </span>
+            <span>
+              {" "}
+              MongoDb, Express,Typescript, React, Node Js and Styled-Components
+            </span>
             <div className="flexLinks">
               <a
                 target="_blank"
-                href="https://cinema-flix.netlify.app/"
+                href="https://blogaroo.netlify.app/register"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo
               </a>
               <a
                 target="_blank"
-                href="https://github.com/MayorFalomo/cinemaFlix"
+                href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github
@@ -253,7 +301,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="500"
             style={{
-              backgroundImage: "url(./medleyGames.webp)",
+              backgroundImage: "url(./cinemaflix.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -261,23 +309,24 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1>Medley Games </h1>
+              <h1>Cinemaflix </h1>
               <p>
-                A landing page for a Game website page i built using React and
-                CSS, It uses react-router to route to different pages
+                A movie hub project using the TMDB API, You can add movies to
+                your watchlist, search for any movie, watch trailers for the
+                series and browse through movies
               </p>
-              <span> React, CSS</span>
+              <span> React, CSS, API</span>
               <div className="flexLink">
                 <a
                   target="_blank"
-                  href="https://medley-games.netlify.app/"
+                  href="https://cinema-flix.netlify.app/"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/Medley-Games"
+                  href="https://github.com/MayorFalomo/cinemaFlix"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -290,7 +339,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./urban.webp)",
+            backgroundImage: "url(./medleyGames.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -300,23 +349,23 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Nft Dashboard</h1>
+            <h1>Medley Games</h1>
             <p>
-              A Single Page Nft Dashboard, It uses local storage to save your
-              dark mode or light mode color{" "}
+              A landing page for a Game website page i built using React and
+              CSS, It uses react-router to route to different pages
             </p>
             <span>React, CSS </span>
             <div className="flexLinks">
               <a
                 target="_blank"
-                href="https://urban-nft-dashboard.netlify.app/"
+                href="https://medley-games.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a
                 target="_blank"
-                href="https://github.com/MayorFalomo/Urban-Nft-Dashboard"
+                href="https://github.com/MayorFalomo/Medley-Games"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -329,7 +378,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./travelBuddy.webp)",
+              backgroundImage: "url(./urban.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -339,24 +388,23 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1>Travel Buddy </h1>
+              <h1>Nft Dashboard </h1>
               <p>
-                A Travel Agency website i built using React also uses react
-                router for routing between pages this was my second ever project
-                using React{" "}
+                A Single Page Nft Dashboard, It uses local storage to save your
+                dark mode or light mode color{" "}
               </p>
               <span>React, CSS</span>
               <div className="flexLink">
                 <a
                   target="_blank"
-                  href="https://travelbuddy-agency.netlify.app/"
+                  href="https://urban-nft-dashboard.netlify.app/"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/TravelBuddy"
+                  href="https://github.com/MayorFalomo/Urban-Nft-Dashboard"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -369,7 +417,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./orpheus.webp)",
+            backgroundImage: "url(./travelBuddy.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -379,14 +427,19 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Orpheus</h1>
-            <p>A single Landing Page using React </p>
-            <span>React, SASS</span>
+            <h1>Travel Buddy</h1>
+            <p>
+              {" "}
+              A Travel Agency website i built using React also uses react router
+              for routing between pages this was my second ever project using
+              React{" "}
+            </p>
+            <span>React, CSS</span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://orpheus-nft.netlify.app/"
+                href="https://travelbuddy-agency.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -394,7 +447,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Orpheus-landing-page"
+                href="https://github.com/MayorFalomo/TravelBuddy"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -407,7 +460,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./google.webp)",
+              backgroundImage: "url(./orpheus.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -417,25 +470,20 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1>Google Clone </h1>
-              <p>
-                {" "}
-                Google clone - A Search Engine i built using the programming
-                search engine API and firebase for authentication, it works just
-                like google{" "}
-              </p>
+              <h1>Orpheus </h1>
+              <p>A single Landing Page using React</p>
               <span>HTML, React, CSS, API, Firebase </span>
               <div className="flexLink">
                 <a
                   target="_blank"
-                  href="https://googlebase.netlify.app/"
+                  href="https://orpheus-nft.netlify.app/"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/GoogleBase"
+                  href="https://github.com/MayorFalomo/Orpheus-landing-page"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -448,7 +496,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./swishUpdated.webp)",
+            backgroundImage: "url(./google.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -458,12 +506,11 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Swish</h1>
+            <h1>Google Clone</h1>
             <p>
-              Weather app i built using the openweather API and restcountry API,
-              I also added a converter so users can get their temperature to
-              whatever unit they prefer and also an interactive 3d view of the
-              Earth{" "}
+              A Google clone - A mini Search Engine i built using a search
+              engine API and firebase for authentication, it works just like
+              google.
               <a
                 target="_blank"
                 href="https://github.com/temidayo-falomo"
@@ -479,7 +526,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://swish-weather-app.netlify.app/"
+                href="https://googlebase.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -487,7 +534,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Swish-Weather-App"
+                href="https://github.com/MayorFalomo/GoogleBase"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -500,7 +547,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./quiz.webp)",
+              backgroundImage: "url(./swishUpdated.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -510,13 +557,14 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1>Quiz App </h1>
+              <h1>Swish </h1>
               <p>
-                A Trivial App i built using Next Js, The inspiration for this
-                was to model something after my University CBT app but using
-                trivial questions instead{" "}
+                Weather app i built using the openweather API and restcountry
+                API, I also added a converter so users can get their temperature
+                to whatever unit they prefer and also an interactive 3d view of
+                the Earth
               </p>
-              <span>Next JS, CSS </span>
+              <span>Next JS, Typescript, CSS </span>
               <div className="flexLink">
                 <a
                   target="_blank"
@@ -540,7 +588,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./StoreBay.webp)",
+            backgroundImage: "url(./quiz.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -550,20 +598,19 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>StoreBay</h1>
+            <h1>Quiz App</h1>
             <p>
               {" "}
-              An E-commerce site - My first Vue Js project, styled using
-              Tailwind, the challenge here was using two new technologies for
-              the first time and building something with it, the fashion
-              products come from escuelajs Api.{" "}
+              A Trivial App i built using Next Js, The inspiration for this was
+              to model something after my University CBT app but using trivial
+              questions instead.{" "}
             </p>
             <span>Next JS, CSS </span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://store-bay.netlify.app/"
+                href="https://trivial-quiz-app.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -571,11 +618,52 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/StoreBay"
+                href="https://github.com/MayorFalomo/Quiz-App"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="subProjectRightCon">
+          <div
+            className="subProjectRight"
+            style={{
+              backgroundImage: "url(./StoreBay.webp)",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div className="overLayRight"></div>
+            <div id="parallax">
+              <h1>StoreBay </h1>
+              <p>
+                An E-commerce site - My first Vue Js project, styled using
+                Tailwind, the fashion products come from escuelajs Api with
+                filters based on a type.
+              </p>
+              <span>Vue JS, Tailwind, CSS, API </span>
+              <div className="flexLink">
+                <a
+                  target="_blank"
+                  href="https://store-bay.netlify.app/"
+                  rel="noreferrer"
+                >
+                  {<MdLogout className="netlifyLink" />} Demo{" "}
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/MayorFalomo/StoreBay"
+                  rel="noreferrer"
+                >
+                  {<IoLogoGithub className="githubLink" />} Github{" "}
+                </a>
+              </div>
             </div>
           </div>
         </div>
