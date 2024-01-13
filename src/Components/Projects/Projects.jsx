@@ -155,7 +155,7 @@ const Projects = () => {
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
-                  className="disable"
+                  // className="disable"
                   target="_blank"
                   href="https://github.com/MayorFalomo/Twitter-clone"
                   rel="noreferrer"
@@ -568,14 +568,14 @@ const Projects = () => {
               <div className="flexLink">
                 <a
                   target="_blank"
-                  href="https://trivial-quiz-app.netlify.app/"
+                  href="https://swish-weather-app.netlify.app"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/Quiz-App"
+                  href="https://github.com/MayorFalomo/Swish-Weather-App"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
