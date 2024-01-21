@@ -17,13 +17,13 @@ const Projects = () => {
   const [readLess, setReadLess] = useState(false);
 
   const keep =
-    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, Add Canvas,Search and Send note to others, Translate notes, archive ,trash, pin, label, customize, and change the layouts of note. ";
+    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, and masonry layouts for notes. ";
   const Twinkles =
     "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments etc.";
 
   const length = Twinkles.length;
 
-  console.log(length);
+  // console.log(length);
 
   const paragraph = `MY PROJECTS`;
 
