@@ -22,6 +22,7 @@ nav .navbar .closedMenu {
   align-items: center;
   gap: 30px;
   font-size: 18px;
+  border: 2px red solid;
 }
 nav .navbar .inActiveNav {
   display: none;
@@ -193,7 +194,7 @@ nav .sound {
     gap: 30px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100vw;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
@@ -207,10 +208,9 @@ nav .sound {
     align-items: center;
     gap: 30px;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
-    transform: translateX(0%);
     z-index: 999999;
     height: 60vh;
     width: 100%;
