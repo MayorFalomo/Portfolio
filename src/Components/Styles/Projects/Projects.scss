@@ -193,16 +193,7 @@
     }
   }
 
-  @media (max-width: 520px ) {
-     .parallaxText{
-      position: absolute;
-    top: 35%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 9;
-    }
-  }
+  
   @media (max-width:890px) {
     .subProjectLeft{
       width: 90%;
@@ -215,10 +206,15 @@
     .parallaxText h1{
       display: flex;
       justify-content: center;
+      font-size: 32px;
     }
     .parallaxText p{
       background-color: transparent;
       text-align: center;
+      font-size: 18px;
+    }
+    .parallaxText span{
+     font-size: 18px;
     }
     .flexLinks{
       display: flex;
@@ -244,18 +240,57 @@
      #parallax h1{
       display: flex;
       justify-content: center;
+      font-size: 32px;
     }
      #parallax p{
       background-color: transparent;
       text-align: center;
+      font-size: 18px;
     }
     #parallax span{
       display: flex;
       justify-content: center;
+      font-size: 18px;
     }
      .flexLink{
       display: flex;
       justify-content:center;
+    }
+  }
+  @media (max-width: 520px ) {
+     .parallaxText{
+      position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    h1{
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    span{
+      font-size: 16px;
+            font-weight: 400;
+    }
+    }
+    #parallax h1{
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    #parallax p{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    #parallax span{
+      font-size: 16px;
+      font-weight: 400;
     }
   }
 }

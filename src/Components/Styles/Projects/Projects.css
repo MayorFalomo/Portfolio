@@ -181,16 +181,6 @@
     font-size: 45px;
   }
 }
-@media (max-width: 520px) {
-  .ProjectsContainer .parallaxText {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 9;
-  }
-}
 @media (max-width: 890px) {
   .ProjectsContainer .subProjectLeft {
     width: 90%;
@@ -202,10 +192,15 @@
   .ProjectsContainer .parallaxText h1 {
     display: flex;
     justify-content: center;
+    font-size: 32px;
   }
   .ProjectsContainer .parallaxText p {
     background-color: transparent;
     text-align: center;
+    font-size: 18px;
+  }
+  .ProjectsContainer .parallaxText span {
+    font-size: 18px;
   }
   .ProjectsContainer .flexLinks {
     display: flex;
@@ -231,17 +226,56 @@
   .ProjectsContainer #parallax h1 {
     display: flex;
     justify-content: center;
+    font-size: 32px;
   }
   .ProjectsContainer #parallax p {
     background-color: transparent;
     text-align: center;
+    font-size: 18px;
   }
   .ProjectsContainer #parallax span {
     display: flex;
     justify-content: center;
+    font-size: 18px;
   }
   .ProjectsContainer .flexLink {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 520px) {
+  .ProjectsContainer .parallaxText {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 9;
+  }
+  .ProjectsContainer .parallaxText h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .ProjectsContainer .parallaxText p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .ProjectsContainer .parallaxText span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .ProjectsContainer #parallax h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .ProjectsContainer #parallax p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .ProjectsContainer #parallax span {
+    font-size: 16px;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=Projects.css.map */

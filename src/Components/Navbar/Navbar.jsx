@@ -57,7 +57,6 @@ const Navbar = () => {
     setPlaySound(!playSound);
   };
 
-  console.log(isOpen, "isOpen");
   return (
     <nav>
       <div className="navbar">
