@@ -51,7 +51,7 @@
   }
   .aboutBio p {
     font-size: calc(15px + 0.390625vw);
-    line-height: 40px;
+    // line-height: 40px;
     // border: #d4a345 2px solid;
   }
   .word{
@@ -71,6 +71,11 @@
     align-items: flex-start;
     margin: auto;
     gap: 10px;
+    p{
+      // line-height: 30px;
+          // border: 1px solid red;
+
+    }
   }
   .aboutCard h1{
     color: #141c2d;
@@ -162,6 +167,7 @@
   .aboutCards p {
     width: 95%;
     margin: auto;
+    font-size: calc(15px + 0.390625vw);
     line-height: 30px;
   }
   .aboutBio {

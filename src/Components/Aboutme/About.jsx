@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/AboutStyle/Aboutstyle.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { AnimatePresence, motion } from "framer-motion";
@@ -6,6 +6,14 @@ import Paragraph from "./Paragraph";
 
 const About = () => {
   const paragraph = `About Me`;
+
+  const [lineHeights, setLineHeights] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 450) {
+      setLineHeights(true);
+    }
+  }, [lineHeights]);
   return (
     <div className="AboutContainer">
       <section className="aboutSection">
@@ -29,7 +37,7 @@ const About = () => {
           <div className="aboutBio">
             <div className="aboutCard">
               <h1 className="myself">Bio... </h1>
-              <p>
+              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
                 {" "}
                 My name is Mayowa Falomo a Full Stack Developer based in Nigeria
                 , My sole aim is building modern, intuitive, accessible,
@@ -39,7 +47,7 @@ const About = () => {
                 help leave a lasting impression about your company, brand or
                 product.
               </p>
-              <p>
+              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
                 As my projects show, i've worked on several projects, building
                 out and selectively picking out the best Ui while also paying
                 close attention to UX and functionality, I work with libraries
@@ -49,7 +57,7 @@ const About = () => {
                 to improve my skillset.{" "}
               </p>
 
-              <p>
+              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
                 In my Free time i like to read High Fantasy Novels, Watch a
                 movie / series or sometimes videos of food i can only imagine,
                 or I learn a new Technology.{" "}

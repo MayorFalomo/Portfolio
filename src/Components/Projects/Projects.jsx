@@ -15,7 +15,7 @@ const Projects = () => {
 
   const [readMore, setReadMore] = useState(150);
   const [readLess, setReadLess] = useState(false);
-
+  const [lineHeight, setLineHeight] = useState(false);
   const keep =
     "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, and masonry layouts for notes. ";
   const Twinkles =
@@ -26,6 +26,12 @@ const Projects = () => {
   // console.log(length);
 
   const paragraph = `MY PROJECTS`;
+
+  useEffect(() => {
+    if (window.innerWidth < 450) {
+      setLineHeight(true);
+    }
+  }, []);
 
   return (
     <div id="projects" className="ProjectsContainer">

@@ -44,7 +44,6 @@
 }
 .AboutContainer .aboutBio p {
   font-size: calc(15px + 0.390625vw);
-  line-height: 40px;
 }
 .AboutContainer .word {
   position: relative;
@@ -138,6 +137,7 @@
   .aboutCards p {
     width: 95%;
     margin: auto;
+    font-size: calc(15px + 0.390625vw);
     line-height: 30px;
   }
   .aboutBio {
