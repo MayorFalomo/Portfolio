@@ -34,6 +34,7 @@ body{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   cursor: default;
+  width: 100vw;
   /* overflow-x: hidden; */
 }
 
@@ -102,7 +103,7 @@ body{
 
 @media (max-width: 1200px) {
   .App{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 }
 @media (max-width: 500px) {

@@ -13,9 +13,10 @@ nav .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   margin: auto;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 nav .navbar .closedMenu {
   display: flex;
@@ -165,15 +166,22 @@ nav .sound {
 }
 
 @media (max-width: 950px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
   .MenuDiv {
     display: flex !important;
     position: absolute;
-    right: 20px;
-    top: 35px;
+    right: 30px;
+    top: 15px;
     z-index: 999999999;
   }
   .burger {
     font-size: 35px !important;
+    display: flex;
   }
   .namesLogo {
     position: relative;
@@ -193,7 +201,7 @@ nav .sound {
     gap: 30px;
     position: absolute;
     top: 0;
-    left: -100vw;
+    right: -100vw;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
@@ -207,7 +215,7 @@ nav .sound {
     align-items: center;
     gap: 30px;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     z-index: 999999;

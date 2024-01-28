@@ -85,7 +85,7 @@ const Navbar = () => {
               <li className="hover-underline-animation">CONTACT </li>
             </AnchorLink>
             <a
-              href="https://drive.google.com/file/d/1TNq4DpFVG2EQPn27p5RRl1N7qod8sKYB/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -97,60 +97,33 @@ const Navbar = () => {
         </div>
         <div className="closedMenu">
           <AnchorLink href="#about">
-            <li
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              id="firstChild"
-              className="hover-underline-animation"
-            >
+            <li id="firstChild" className="hover-underline-animation">
               ABOUT ME
             </li>
           </AnchorLink>
           <AnchorLink href="#skills">
-            <li
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="hover-underline-animation"
-            >
-              SKILLS{" "}
-            </li>
+            <li className="hover-underline-animation">SKILLS </li>
           </AnchorLink>
           <AnchorLink href="#projects">
-            <li
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="hover-underline-animation"
-            >
-              PROJECTS{" "}
-            </li>
+            <li className="hover-underline-animation">PROJECTS </li>
           </AnchorLink>
           <AnchorLink href="#contact">
-            <li
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="hover-underline-animation"
-            >
-              CONTACT{" "}
-            </li>
+            <li className="hover-underline-animation">CONTACT </li>
           </AnchorLink>
           <a
-            href="https://drive.google.com/file/d/1TNq4DpFVG2EQPn27p5RRl1N7qod8sKYB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
-            <li
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="bidBtn"
-            >
+            <li className="bidBtn">
               <button className="bidBtn">RESUME </button>
             </li>
           </a>
         </div>
         <div className="MenuDiv">
           {isOpen ? (
-            <li onClick={() => setIsOpen(false)}>
-              {<FaTimes className="times" />}{" "}
+            <li className="times" onClick={() => setIsOpen(false)}>
+              {<FaTimes />}{" "}
             </li>
           ) : (
             <li onClick={() => setIsOpen(true)} className="burger">

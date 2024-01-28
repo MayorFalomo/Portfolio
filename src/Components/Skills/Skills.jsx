@@ -16,7 +16,7 @@ import tailwind from "../Skills/tailwind.svg";
 import mongodb from "../Skills/mongodb.svg";
 import express from "../Skills/express.svg";
 import node from "../Skills/nodeJs.svg";
-
+import redux from "../Skills/redux.svg";
 const Skills = () => {
   const Logos = [
     {
@@ -97,7 +97,12 @@ const Skills = () => {
     {
       id: 16,
       logo: node,
-      name: "nodeJs",
+      name: "NodeJs",
+    },
+    {
+      id: 17,
+      logo: redux,
+      name: "Redux",
     },
   ];
 

@@ -1,9 +1,10 @@
 .AboutContainer {
   position: relative;
   z-index: 9;
+  // overflow-y: auto;
+  // border: 2px green solid;
   .aboutSection {
     display: flex;
-
   }
   .about-title {
     display: flex;
@@ -11,9 +12,10 @@
     align-items: center;
     width: 50%;
     height: 100vh;
-    position: sticky;
+    position: sticky !important;
     position: -webkit-sticky;
     top: 0;
+    // left: 0;
   }
   .about-title h2 {
     font-size: 5vw;

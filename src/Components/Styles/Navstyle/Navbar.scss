@@ -8,13 +8,16 @@ nav {
   z-index: 999999;
   width: 100%;
   cursor: pointer;
+
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // border: 2px red solid;
   }
 
   .navbar .closedMenu {
@@ -178,15 +181,22 @@ nav {
 }
 
 @media (max-width: 950px) {
+   .navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
   .MenuDiv {
     display: flex !important;
     position: absolute;
-    right: 20px;
-    top: 35px;
+    right: 30px;
+    top: 15px;
     z-index: 999999999;
   }
   .burger{
     font-size: 35px !important;
+    display: flex;
   }
   .namesLogo {
     position: relative;
@@ -207,13 +217,12 @@ nav {
     gap: 30px;
     position: absolute;
     top: 0;
-    left: -100vw;
+    right: -100vw;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
     width: 100% !important;
     background-color: #050607;
-    // border: 2px blue solid;
   }
   .navbar .navActive {
     display: flex !important;
@@ -222,7 +231,7 @@ nav {
     align-items: center;
     gap: 30px;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     // transform: translateX(0%);
@@ -230,6 +239,7 @@ nav {
     height: 60vh;
     width: 100%;
     background-color: #050607;
+
   }
   .navbar .inActiveNav #firstChild{
     margin-top: 30px;
@@ -242,6 +252,16 @@ nav {
     top: 150px !important;
   }
 }
+
+// @media (max-width: 420px) {
+//   .navbar{
+//     display: flex;
+//     justify-content: center;
+//     padding: 20px !important;
+//   }
+
+// }
+
 
 @media (max-width: 320px) {
   .navActive{

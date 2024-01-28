@@ -17,7 +17,7 @@ const Projects = () => {
   const [readLess, setReadLess] = useState(false);
   const [lineHeight, setLineHeight] = useState(false);
   const keep =
-    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, and masonry layouts for notes. ";
+    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, masonry layouts, multiple select for notes etc. ";
   const Twinkles =
     "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments etc.";
 
@@ -345,7 +345,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./medleyGames.webp)",
+            backgroundImage: "url(./quiz.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -355,23 +355,27 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Medley Games</h1>
+            <h1>Quiz App</h1>
             <p>
-              A landing page for a Game website page i built using React and
-              CSS, It uses react-router to route to different pages
+              {" "}
+              A Trivial App i built using Next Js, it features a countdown
+              timer, a leaderboard, a real-time chart, and a one-time
+              passwordless login.{" "}
             </p>
-            <span>React, CSS </span>
+            <span>Next JS, Redux, Firebase, Chart Js, CSS </span>
             <div className="flexLinks">
               <a
+                id="black"
                 target="_blank"
-                href="https://medley-games.netlify.app/"
+                href="https://trivial-quiz-app.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a
+                id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Medley-Games"
+                href="https://github.com/MayorFalomo/Quiz-App"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -594,7 +598,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./quiz.webp)",
+            backgroundImage: "url(./medleyGames.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -604,27 +608,23 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Quiz App</h1>
+            <h1>Medley Games</h1>
             <p>
-              {" "}
-              A Trivial App i built using Next Js, The inspiration for this was
-              to model something after my University CBT app but using trivial
-              questions instead.{" "}
+              A landing page for a Game website page i built using React and
+              CSS, It uses react-router to route to different pages
             </p>
-            <span>Next JS, CSS </span>
+            <span>React, CSS </span>
             <div className="flexLinks">
               <a
-                id="black"
                 target="_blank"
-                href="https://trivial-quiz-app.netlify.app/"
+                href="https://medley-games.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a
-                id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Quiz-App"
+                href="https://github.com/MayorFalomo/Medley-Games"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}

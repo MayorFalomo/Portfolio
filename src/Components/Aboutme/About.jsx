@@ -65,7 +65,7 @@ const About = () => {
               <p>I am currently available for New Opportunities... </p>
             </div>
           </div>
-          <div className="aboutCards">
+          {/* <div className="aboutCards">
             <h1>Experience</h1>
             <div style={{ marginTop: "10px" }}>
               <p>
@@ -82,16 +82,8 @@ const About = () => {
                 the user specifically in mind.
               </p>
             </div>
-            {/* <div className="interests">
-              <h4>Technologies i'm interested in</h4>
-              <div className="tech">
-                <span> Three Js</span>
-                <span>Python </span>
-                <span>Supabase </span>
-                <span>Prisma </span>
-              </div>
-            </div> */}
-          </div>
+           
+          </div> */}
         </div>
       </section>
     </div>
@@ -99,3 +91,15 @@ const About = () => {
 };
 
 export default About;
+
+{
+  /* <div className="interests">
+              <h4>Technologies i'm interested in</h4>
+              <div className="tech">
+                <span> Three Js</span>
+                <span>Python </span>
+                <span>Supabase </span>
+                <span>Prisma </span>
+              </div>
+            </div> */
+}
