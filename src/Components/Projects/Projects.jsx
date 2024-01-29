@@ -13,7 +13,7 @@ const Projects = () => {
     });
   }, []);
 
-  const [readMore, setReadMore] = useState(150);
+  const [readMore, setReadMore] = useState(160);
   const [readLess, setReadLess] = useState(false);
   const [lineHeight, setLineHeight] = useState(false);
   const keep =
@@ -521,15 +521,6 @@ const Projects = () => {
               A Google clone - A mini Search Engine i built using a search
               engine API and firebase for authentication, it works just like
               google.
-              <a
-                target="_blank"
-                href="https://github.com/temidayo-falomo"
-                rel="noreferrer"
-              >
-                {" "}
-                @Temidayo
-              </a>{" "}
-              also contributed to the UI{" "}
             </p>
             <span>Next JS, CSS </span>
             <div className="flexLinks">
@@ -572,7 +563,16 @@ const Projects = () => {
                 Weather app i built using the openweather API and restcountry
                 API, I also added a converter so users can get their temperature
                 to whatever unit they prefer and also an interactive 3d view of
-                the Earth
+                the Earth{" "}
+                <a
+                  target="_blank"
+                  href="https://github.com/temidayo-falomo"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  @Temidayo
+                </a>{" "}
+                also contributed to the UI{" "}
               </p>
               <span>Next JS, Typescript, CSS </span>
               <div className="flexLink">
@@ -649,9 +649,9 @@ const Projects = () => {
             <div id="parallax">
               <h1>StoreBay </h1>
               <p>
-                An E-commerce site - My first Vue Js project, styled using
-                Tailwind, the fashion products come from escuelajs Api with
-                filters based on a type.
+                An E-commerce site - I built this using Vue Js and styled it
+                using Tailwind, the fashion products come from escuelajs Api
+                with a filter functionality based on a fashion type.
               </p>
               <span>Vue JS, Tailwind, CSS, API </span>
               <div className="flexLink">
