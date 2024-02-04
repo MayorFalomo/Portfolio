@@ -17,7 +17,7 @@
     top: 0;
     // left: 0;
   }
-  .about-title h2 {
+  .about-title #shimmer {
     font-size: 5vw;
     color: #BF841A;
     // color: #d4a345;
@@ -197,5 +197,11 @@
     font-size: 40px !important;
     color: #d4a345;
     // color: #141c2d;
+  }
+    .about-title #shimmer {
+    font-size: 40px;
+    color: #BF841A;
+    text-align: center;
+    // color: #d4a345;
   }
 }
