@@ -17,7 +17,7 @@
 }
 .AboutContainer .about-title h2 {
   font-size: 5vw;
-  color: #d4a345;
+  color: #BF841A;
 }
 .AboutContainer .myNotes {
   width: 50%;
@@ -65,6 +65,7 @@
 }
 .AboutContainer .aboutCard h1 {
   color: #141c2d;
+  font-size: 60px;
 }
 .AboutContainer .aboutCards {
   display: flex;

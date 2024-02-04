@@ -2,7 +2,7 @@
   position: relative;
   z-index: 9;
   // overflow-y: auto;
-  // border: 2px green solid;
+  // border-top: 1px #BF841A solid;
   .aboutSection {
     display: flex;
   }
@@ -19,9 +19,10 @@
   }
   .about-title h2 {
     font-size: 5vw;
-    color: #d4a345;
-
+    color: #BF841A;
+    // color: #d4a345;
   }
+
   .myNotes {
     width: 50%;
     // height: 320vh;
@@ -81,6 +82,8 @@
   }
   .aboutCard h1{
     color: #141c2d;
+    font-size: 60px;
+    // border: 2px red solid;
   }
   .aboutCards{
     // border: 1px solid red;

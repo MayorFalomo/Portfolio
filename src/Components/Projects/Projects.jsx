@@ -21,6 +21,7 @@ const Projects = () => {
   const Twinkles =
     "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments etc.";
 
+  const keepLength = keep.length;
   const length = Twinkles.length;
 
   // console.log(length);
@@ -76,7 +77,7 @@ const Projects = () => {
               ) : (
                 <a
                   onClick={() => {
-                    setReadMore(length);
+                    setReadMore(keepLength);
                     setReadLess(true);
                   }}
                 >

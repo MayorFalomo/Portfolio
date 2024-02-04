@@ -18,10 +18,11 @@ const About = () => {
     <div className="AboutContainer">
       <section className="aboutSection">
         <div className="about-title">
-          <h2 id="about">
+          {/* <h2 id="about">
             <Paragraph value={paragraph} />
-          </h2>
+          </h2> */}
           {/* <h2 id="about">About Me </h2> */}
+          <h2 id="shimmer">About Me </h2>
         </div>
 
         <div className="myNotes">

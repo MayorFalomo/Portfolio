@@ -25,12 +25,13 @@ const Herosection = () => {
           <AnchorLink href="#projects">
             <img src="./projectsBtn.svg" alt="img" />
           </AnchorLink>
+          {/* <button className="contactMeBtn"> Contact me</button> */}
         </div>
       </div>
       <div className="leftLight">
         <img src="./leftLight.svg" alt="img" />{" "}
       </div>
-      <Particle />
+      {/* <Particle /> */}
 
       <div className="leftLightening">
         <img src="./EllipseLight.svg" alt="img" />{" "}

@@ -20,14 +20,34 @@
   }
   .name {
     font-size: 9vw;
-    color: #d4a345;
+    // color: #d4a345;
     font-family: "Montserrat";
     width: 100%;
+    letter-spacing: -0.01em;
+
+/* Gold Linear */
+background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
   }
   h1 span {
     font-family: "Montserrat";
     font-size: 5vw;
-    color: #e7cc98;
+    // color: #e7cc98;
+    letter-spacing: -0.01em;
+
+/* Gold Linear */
+background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
   }
   #header-text em {
     font-size: 50px;
@@ -43,6 +63,20 @@
     cursor: pointer;
 
   }
+  /* Yet the story of Orpheus */
+
+// position: absolute;
+// width: 552px;
+// height: 168px;
+// left: 111px;
+// top: 346px;
+
+// font-family: 'Cinzel';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 64px;
+// line-height: 77px;
+
   
   .leftLight {
     position: fixed;
@@ -118,3 +152,5 @@
     justify-content: flex-start;
   }
 }
+
+

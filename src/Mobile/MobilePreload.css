@@ -4,7 +4,22 @@
   align-items: center;
   height: 100vh;
 }
+.Title .centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
 .Title span {
   font-size: 40px;
-  color: #d4a345;
+  color: #BF841A;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, rgba(0, 0, 0, 0.3333333333), #000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+}
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+  }
 }/*# sourceMappingURL=MobilePreload.css.map */

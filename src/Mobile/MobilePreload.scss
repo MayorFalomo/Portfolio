@@ -3,16 +3,23 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    // .centered{
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     margin: auto;
-    //     text-align: center;
-    // }
+    .centered{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
     span{
         // font-size: 5vw;
         font-size: 40px;
-         color: #d4a345;
+         color: #BF841A;
+        //   color: grey;
+        -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+        background-repeat: no-repeat;
+        animation: shimmer 2.5s infinite;
     }
+    @keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
 }
