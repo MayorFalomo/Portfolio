@@ -15,7 +15,7 @@
   position: -webkit-sticky;
   top: 0;
 }
-.AboutContainer .about-title #shimmer {
+.AboutContainer .about-title h2 {
   font-size: 5vw;
   color: #BF841A;
 }
@@ -162,9 +162,8 @@
     font-size: 40px !important;
     color: #d4a345;
   }
-  .about-title #shimmer {
-    font-size: 40px;
+  .about-title h2 {
+    font-size: 35px !important;
     color: #BF841A;
-    text-align: center;
   }
 }/*# sourceMappingURL=Aboutstyle.css.map */

@@ -1,8 +1,6 @@
 .AboutContainer {
   position: relative;
   z-index: 9;
-  // overflow-y: auto;
-  // border-top: 1px #BF841A solid;
   .aboutSection {
     display: flex;
   }
@@ -15,9 +13,8 @@
     position: sticky !important;
     position: -webkit-sticky;
     top: 0;
-    // left: 0;
   }
-  .about-title #shimmer {
+  .about-title h2 {
     font-size: 5vw;
     color: #BF841A;
     // color: #d4a345;
@@ -25,8 +22,6 @@
 
   .myNotes {
     width: 50%;
-    // height: 320vh;
-    // border: 2px solid red;
   }
 
   .myself {
@@ -198,10 +193,9 @@
     color: #d4a345;
     // color: #141c2d;
   }
-    .about-title #shimmer {
-    font-size: 40px;
+    .about-title h2 {
+    font-size: 35px !important;
     color: #BF841A;
-    text-align: center;
-    // color: #d4a345;
+  
   }
 }
