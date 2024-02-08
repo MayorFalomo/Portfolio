@@ -8,8 +8,6 @@ import NextJs from "./nextjs.svg";
 import vue from "./vue.svg";
 import typescript from "./typescript.svg";
 import Reacts from "./ReactLogo.svg";
-import Skill from "./Skill";
-import { Parallax } from "react-scroll-parallax";
 import figma from "./figma.svg";
 import styledComponents from "./atom.webp";
 import tailwind from "../Skills/tailwind.svg";
@@ -17,6 +15,9 @@ import mongodb from "../Skills/mongodb.svg";
 import express from "../Skills/express.svg";
 import node from "../Skills/nodeJs.svg";
 import redux from "../Skills/redux.svg";
+import chakra from "../Skills/chakra.svg";
+import Skill from "./Skill";
+import { Parallax } from "react-scroll-parallax";
 const Skills = () => {
   const Logos = [
     {
@@ -103,6 +104,11 @@ const Skills = () => {
       id: 17,
       logo: redux,
       name: "Redux",
+    },
+    {
+      id: 18,
+      logo: chakra,
+      name: "Chakra UI",
     },
   ];
 

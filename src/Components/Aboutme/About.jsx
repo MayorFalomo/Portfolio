@@ -38,7 +38,7 @@ const About = () => {
           <div className="aboutBio">
             <div className="aboutCard">
               <h1 className="myself">Bio... </h1>
-              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
+              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 {" "}
                 My name is Mayowa Falomo a Full Stack Developer based in Nigeria
                 , My sole aim is building modern, intuitive, accessible,
@@ -48,7 +48,7 @@ const About = () => {
                 help leave a lasting impression about your company, brand or
                 product.
               </p>
-              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
+              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 As my projects show, i've worked on several projects, building
                 out and selectively picking out the best Ui while also paying
                 close attention to UX and functionality, I work with libraries
@@ -58,7 +58,7 @@ const About = () => {
                 to improve my skillset.{" "}
               </p>
 
-              <p style={{ lineHeight: lineHeights ? "40px" : "35px" }}>
+              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 In my Free time i like to read High Fantasy Novels, Watch a
                 movie / series or sometimes videos of food i can only imagine,
                 or I learn a new Technology.{" "}
