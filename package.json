@@ -23,11 +23,11 @@
     "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
- "scripts": {
+  "scripts": {
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview"
-},
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
