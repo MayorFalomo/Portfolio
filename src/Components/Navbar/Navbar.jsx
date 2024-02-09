@@ -9,8 +9,6 @@ import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { motion } from "framer-motion";
-import { useAnimate, stagger } from "framer-motion";
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);

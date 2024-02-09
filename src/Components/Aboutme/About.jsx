@@ -14,6 +14,7 @@ const About = () => {
       setLineHeights(true);
     }
   }, [lineHeights]);
+
   return (
     <div className="AboutContainer">
       <section className="aboutSection">
