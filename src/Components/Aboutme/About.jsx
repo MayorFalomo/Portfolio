@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <div className="AboutContainer">
-      <section className="aboutSection">
+      <section id="about" className="aboutSection">
         <div className="about-title">
           {/* <h2 id="about">
             <Paragraph value={paragraph} />
@@ -29,7 +29,7 @@ const About = () => {
         <div className="myNotes">
           <div className="aboutCardImg">
             <LazyLoadImage
-              style={{ backgroundImage: `url(./meImage.webp)` }}
+              style={{ backgroundImage: `url(./MeImage.webp)` }}
               className="AboutmeImg"
             >
               {/* <img src="./meImage.svg" alt="img" loading="lazy" /> */}
