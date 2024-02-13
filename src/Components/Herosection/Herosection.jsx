@@ -23,7 +23,7 @@ const Herosection = () => {
             <img src="./contactBtn.svg" alt="img" />
           </AnchorLink>
           <AnchorLink href="#projects">
-            <img src="./projectsBtn.svg" alt="img" />
+            <img src="./ProjectsBtn.svg" alt="img" />
           </AnchorLink>
           {/* <button className="contactMeBtn"> Contact me</button> */}
         </div>
