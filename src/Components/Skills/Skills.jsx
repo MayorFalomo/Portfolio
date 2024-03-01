@@ -17,6 +17,7 @@ import node from "../Skills/nodeJs.svg";
 import redux from "../Skills/redux.svg";
 import chakra from "../Skills/chakra.svg";
 import Skill from "./Skill";
+import materialUI from "../Skills/material-ui.svg";
 import { Parallax } from "react-scroll-parallax";
 const Skills = () => {
   const Logos = [
@@ -109,6 +110,11 @@ const Skills = () => {
       id: 18,
       logo: chakra,
       name: "Chakra UI",
+    },
+    {
+      id: 19,
+      logo: materialUI,
+      name: "Material UI",
     },
   ];
 

@@ -19,7 +19,7 @@ const Projects = () => {
   const keep =
     "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, masonry layouts, multiple select for notes etc. ";
   const Twinkles =
-    "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, retweet, like, quote and bookmark tweets, post tweets, like and reply comments etc.";
+    "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, follow and unfollow others, tailor your tweets,retweet, like quote and bookmark, post tweets, reply comments etc.";
 
   const keepLength = keep.length;
   const length = Twinkles.length;
