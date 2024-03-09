@@ -18,6 +18,7 @@ import redux from "../Skills/redux.svg";
 import chakra from "../Skills/chakra.svg";
 import Skill from "./Skill";
 import materialUI from "../Skills/material-ui.svg";
+import shad from "../Skills/shad.svg";
 import { Parallax } from "react-scroll-parallax";
 const Skills = () => {
   const Logos = [
@@ -71,11 +72,11 @@ const Skills = () => {
       logo: "./firebase.svg",
       name: "FIREBASE",
     },
-    {
-      id: 11,
-      logo: "./github.svg",
-      name: "GITHUB",
-    },
+    // {
+    //   id: 11,
+    //   logo: "./github.svg",
+    //   name: "GITHUB",
+    // },
     {
       id: 12,
       logo: "./git.svg",
@@ -115,6 +116,11 @@ const Skills = () => {
       id: 19,
       logo: materialUI,
       name: "Material UI",
+    },
+    {
+      id: 20,
+      logo: shad,
+      name: "ShadCn",
     },
   ];
 
