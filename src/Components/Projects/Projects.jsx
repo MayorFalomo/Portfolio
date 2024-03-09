@@ -199,7 +199,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="http://stage2.reyna.ca/"
+                href="http://stage.reyna.ca/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
