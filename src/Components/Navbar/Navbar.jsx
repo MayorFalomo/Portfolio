@@ -9,6 +9,7 @@ import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
@@ -55,6 +56,8 @@ const Navbar = () => {
     setPlaySound(!playSound);
   };
 
+  const route = useLocation();
+
   return (
     <nav>
       <div className="navbar">
@@ -69,16 +72,48 @@ const Navbar = () => {
         <div>
           <ul className={isOpen ? "navActive" : "inActiveNav"}>
             <AnchorLink href="#about">
-              <li id="firstChild" className="hover-underline-animation">
+              <li
+                style={{
+                  display:
+                    route.pathname == "/project-section" ? "none" : "flex",
+                }}
+                className="hover-underline-animation"
+              >
                 ABOUT ME
               </li>
             </AnchorLink>
             <AnchorLink href="#skills">
-              <li className="hover-underline-animation">SKILLS </li>
+              <li
+                style={{
+                  display:
+                    route.pathname == "/project-section" ? "none" : "flex",
+                }}
+                className="hover-underline-animation"
+              >
+                SKILLS{" "}
+              </li>
             </AnchorLink>
-            <AnchorLink href="#projects">
+            {/* <Link to="/">
+              <li
+                style={{
+                  display: route.pathname == "/" ? "none" : "flex",
+                }}
+                className="hover-underline-animation"
+              >
+                HOME{" "}
+              </li>
+            </Link> */}
+            <Link
+              style={{
+                display: route.pathname == "/" ? "none" : "flex",
+              }}
+              to="/"
+            >
+              <li className="hover-underline-animation">HOME </li>
+            </Link>
+            <Link to="/project-section">
               <li className="hover-underline-animation">PROJECTS </li>
-            </AnchorLink>
+            </Link>
             <AnchorLink href="#contact">
               <li className="hover-underline-animation">CONTACT </li>
             </AnchorLink>
@@ -93,18 +128,44 @@ const Navbar = () => {
             </a>
           </ul>
         </div>
-        <div className="closedMenu">
-          <AnchorLink href="#about">
+
+        <ul className="closedMenu">
+          {/* <AnchorLink to="/">
             <li id="firstChild" className="hover-underline-animation">
+              Home{" "}
+            </li>
+          </AnchorLink> */}
+          <AnchorLink href="#about">
+            <li
+              style={{
+                display: route.pathname == "/project-section" ? "none" : "flex",
+              }}
+              className="hover-underline-animation"
+            >
               ABOUT ME
             </li>
           </AnchorLink>
           <AnchorLink href="#skills">
-            <li className="hover-underline-animation">SKILLS </li>
+            <li
+              style={{
+                display: route.pathname == "/project-section" ? "none" : "flex",
+              }}
+              className="hover-underline-animation"
+            >
+              SKILLS{" "}
+            </li>
           </AnchorLink>
-          <AnchorLink href="#projects">
+          <Link
+            style={{
+              display: route.pathname == "/" ? "none" : "flex",
+            }}
+            to="/"
+          >
+            <li className="hover-underline-animation">HOME </li>
+          </Link>
+          <Link to="/project-section">
             <li className="hover-underline-animation">PROJECTS </li>
-          </AnchorLink>
+          </Link>
           <AnchorLink href="#contact">
             <li className="hover-underline-animation">CONTACT </li>
           </AnchorLink>
@@ -117,7 +178,7 @@ const Navbar = () => {
               <button className="bidBtn">RESUME </button>
             </li>
           </a>
-        </div>
+        </ul>
         <div className="MenuDiv">
           {isOpen ? (
             <li className="times" onClick={() => setIsOpen(false)}>

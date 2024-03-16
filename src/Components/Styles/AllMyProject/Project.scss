@@ -1,0 +1,51 @@
+  .projectContain{
+    // border: 2px yellow solid;
+    width: 100%;
+ 
+.imgContainer{
+  position: relative;  
+}
+  .imgContainer:hover .overLayLeft{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: 	rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+  .imgContainer .Text{
+    display: none;
+    .flexText{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+        transition: all 0.3s ease;
+    }
+    .flexText p:hover{
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  
+  }
+   .imgContainer:hover .Text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    // right: 50%;
+  //  transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    // border: 3px red solid !important;
+  }
+ 
+  }

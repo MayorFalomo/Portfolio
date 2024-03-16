@@ -1,0 +1,32 @@
+.ProjectsContainer .grid {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 5px auto;
+  margin-bottom: 50px;
+}
+.ProjectsContainer .grid-item {
+  width: 95%;
+  max-width: 500px;
+  height: auto;
+}
+.ProjectsContainer .timesX {
+  position: fixed;
+  z-index: 999999999;
+  right: 85%;
+  top: 30px;
+}
+@media (max-width: 480px) {
+  .ProjectsContainer .timesX {
+    right: 95% !important;
+  }
+  .ProjectsContainer .ProjectsContainer .grid {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 5px auto !important;
+  }
+}/*# sourceMappingURL=AllMyProjects.css.map */

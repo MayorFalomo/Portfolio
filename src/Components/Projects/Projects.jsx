@@ -5,6 +5,7 @@ import { MdLogout } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   useEffect(() => {
@@ -33,6 +34,8 @@ const Projects = () => {
       setLineHeight(true);
     }
   }, []);
+
+  const [changeTextOnHover, setChangeTextOnHover] = useState(false);
 
   return (
     <div id="projects" className="ProjectsContainer">
@@ -674,6 +677,16 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <Link style={{ textDecoration: "none" }} to="/project-section">
+          <button
+            onMouseEnter={() => setChangeTextOnHover(true)}
+            onMouseLeave={() => setChangeTextOnHover(false)}
+            className="convince"
+          >
+            {" "}
+            {changeTextOnHover ? "Lets go" : "Need more convincing?"}{" "}
+          </button>
+        </Link>
       </div>
     </div>
   );

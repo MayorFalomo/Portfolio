@@ -1,4 +1,3 @@
-import "./App.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Navbar from "./Components/Navbar/Navbar";
 import Herosection from "./Components/Herosection/Herosection";
@@ -12,91 +11,19 @@ import { AnimatePresence, easeIn } from "framer-motion";
 import { motion } from "framer-motion";
 import MobilePreload from "./Mobile/MobilePreload";
 import Lenis from "@studio-freight/lenis";
+import { Route, Routes } from "react-router-dom";
+import ProjectSection from "./pages/project-section";
+import Home from "./pages/home";
 
 function App() {
-  const [screenSize, setScreenSize] = useState(getCurrentDimension());
-  const [completed, setCompleted] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setCompleted(true);
-    }, 2000);
-  }, []);
-
-  function getCurrentDimension() {
-    return {
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  }
-
-  useEffect(() => {
-    const updateDimension = () => {
-      setScreenSize(getCurrentDimension());
-    };
-
-    window.addEventListener("resize", updateDimension);
-
-    return () => {
-      window.removeEventListener("resize", updateDimension);
-    };
-  }, []);
-
-  useEffect(() => {
-    handleResize(); // Check window.innerWidth initially
-  }, [screenSize]);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setCompleted(true);
-  //   }, 2000);
-  // }, []);
-
-  const handleResize = () => {
-    if (screenSize.width < 500) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
-  // const location = useLocation();
-
   return (
     <ParallaxProvider>
-      {/* <AnimatePresence mode="wait"> */}
-      {completed ? (
-        <div>
-          <div className="App">
-            <Cursor />
-            <Navbar />
-            <Herosection />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-          </div>
-        </div>
-      ) : (
-        <div>
-          {/* <div> */}
-          <MobilePreload />
-          {/* </div> */}
-        </div>
-      )}
-      {/* </AnimatePresence> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/project-section" element={<ProjectSection />} />
+      </Routes>
     </ParallaxProvider>
   );
 }

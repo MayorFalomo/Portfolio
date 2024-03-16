@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Archivo&family=Barlow:wght@600&family=Cabin:wght@500&family=Cinzel:wght@500;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@300&family=Maven+Pro&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&family=Nanum+Gothic&family=Playfair+Display:wght@500&family=Poppins&family=Roboto:ital,wght@1,300&family=Rubik:wght@300;400&family=Saira&display=swap");
 .HeroContainer {
   position: relative;
-  // z-index: 1;
   height: 100vh;
   .HeroCard {
     position: absolute;
@@ -24,13 +23,12 @@
     font-family: "Montserrat";
     width: 100%;
     letter-spacing: -0.01em;
-
-/* Gold Linear */
-background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    /* Gold Linear */
+    background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 
 
   }
@@ -39,13 +37,12 @@ text-fill-color: transparent;
     font-size: 5vw;
     // color: #e7cc98;
     letter-spacing: -0.01em;
-
-/* Gold Linear */
-background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    /* Gold Linear */
+    background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 
 
   }
@@ -63,19 +60,6 @@ text-fill-color: transparent;
     cursor: pointer;
 
   }
-  /* Yet the story of Orpheus */
-
-// position: absolute;
-// width: 552px;
-// height: 168px;
-// left: 111px;
-// top: 346px;
-
-// font-family: 'Cinzel';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 64px;
-// line-height: 77px;
 
   
   .leftLight {

@@ -1,8 +1,7 @@
 import React from "react";
-import Particle from "../Particle/Particle";
+// import Particle from "../Particle/Particle";
 import "../Styles/Herostyle/Herostyle.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { motion } from "framer-motion";
 
 const Herosection = () => {
   return (
