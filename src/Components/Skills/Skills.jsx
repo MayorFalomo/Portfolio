@@ -132,8 +132,9 @@ const Skills = () => {
         CORE SKILLS
       </h1>
       <Parallax
-        easing="easeOutQuad"
-        translateX={[-50, 30]}
+        easing="ease"
+        // easing="easeOutQuad"
+        translateX={[-100, 30]}
         className="my-thing"
       >
         <div className="skillCard">

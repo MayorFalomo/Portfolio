@@ -20,7 +20,7 @@ const Home = () => {
     setTimeout(() => {
       setCompleted(true);
     }, 2000);
-  }, []);
+  }, [completed]);
 
   function getCurrentDimension() {
     return {

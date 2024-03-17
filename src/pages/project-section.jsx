@@ -6,6 +6,7 @@ import Lenis from "@studio-freight/lenis";
 import AllMyProjects from "../Components/AllMyProjects/AllMyProjects";
 import "../project-section.css";
 import GoToTop from "../Components/GoToTop";
+import Contact from "../Components/Contact/Contact";
 
 const ProjectSection = () => {
   useEffect(() => {
@@ -22,12 +23,12 @@ const ProjectSection = () => {
   return (
     <div className="App">
       <Cursor />
-
+      <Navbar />
       <div className="Project-hero">
         <h1>EXPLORE MY PROJECTS </h1>
       </div>
-      <Navbar />
       <AllMyProjects />
+      <Contact />
       <GoToTop />
     </div>
   );
