@@ -73,6 +73,16 @@ const AllMyProjects = () => {
     },
     {
       id: "6",
+      projectName: "Lien-Bot",
+      projectImg: "./lien-bot.webp",
+      aboutProject:
+        "Lien bot (FreeLance) is an AI platform where users can chat with a bot and based on your answer to the bots questions it comes up with a lien document which is then sent to your email, I built the entire frontend to interact with the backend and the bot, The frontend is of course based on chatgpt interface",
+      skill: "Next 14, Chakra-UI, Tailwind, CSS, AI bot, API",
+      demo: "https://lien-bot.vercel.app/",
+      github: " ",
+    },
+    {
+      id: "7",
       projectName: "Blogaroo",
       projectImg: "./blogaroo.webp",
       aboutProject:
@@ -83,7 +93,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Blogaroo-FrontEnd",
     },
     {
-      id: "7",
+      id: "8",
       projectName: "Cinemaflix",
       projectImg: "./cinemaflix.webp",
       aboutProject:
@@ -94,7 +104,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "8",
+      id: "9",
       projectName: "Quiz App",
       projectImg: "./quiz.webp",
       aboutProject:
@@ -104,7 +114,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Quiz-App",
     },
     {
-      id: "9",
+      id: "10",
       projectName: "Nft Dashboard",
       projectImg: "./urban.webp",
       aboutProject:
@@ -114,7 +124,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Urban-Nft-Dashboard",
     },
     {
-      id: "10",
+      id: "11",
       projectName: "Travel Buddy",
       projectImg: "./travelBuddy.webp",
       aboutProject:
@@ -124,7 +134,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/TravelBuddy",
     },
     {
-      id: "11",
+      id: "12",
       projectName: "Orpheus",
       projectImg: "./orpheus.webp",
       aboutProject: "A single Landing Page using React.",
@@ -133,7 +143,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Orpheus-landing-page",
     },
     {
-      id: "12",
+      id: "13",
       projectName: "Google Clone",
       projectImg: "./google.webp",
       aboutProject:
@@ -143,7 +153,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/GoogleBase",
     },
     {
-      id: "13",
+      id: "14",
       projectName: "Swish",
       projectImg: "./swishUpdated.webp",
       aboutProject:
@@ -153,7 +163,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Swish-Weather-App",
     },
     {
-      id: "14",
+      id: "15",
       projectName: "Medley Games",
       projectImg: "./medleyGames.webp",
       aboutProject:
@@ -163,14 +173,54 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Medley-Games",
     },
     {
-      id: "15",
+      id: "16",
+      projectName: "Multistep-Form",
+      projectImg: "./multistep-form.webp",
+      aboutProject:
+        "Multistep-Form was a project (Freelance) where potential users can register for a platform using a Flight and your booking number to register for a platform, you can track your progress as you complete each step, I made use of Google's Map API, Now users can search for their addresses on google map and find their exact address on the map to ensure accuracy and the marker switches to that point, and there's also a success message when you successfully complete the form",
+      skill: "Next 13 JS, Chakra UI, Framer-Motion, Google map api, CSS",
+      demo: "https://netrobe-multistep.vercel.app/",
+      github: "https://github.com/MayorFalomo/multistep",
+    },
+    {
+      id: "17",
       projectName: "StoreBay",
       projectImg: "./StoreBay.webp",
       aboutProject:
         "An E-commerce site - I built this using Vue Js and styled it using Tailwind, the fashion products come from an Api, and I added a filter functionality based on a fashion type.",
-      skill: "Vue JS, Tailwind, CSS, API",
+      skill: "Vue 2 JS, Tailwind, CSS, API",
       demo: "https://store-bay.netlify.app/",
       github: "https://github.com/MayorFalomo/StoreBay",
+    },
+    {
+      id: "18",
+      projectName: "Worldly",
+      projectImg: "./worldly.webp",
+      aboutProject:
+        "Worldly is a project i built using Vue Js, Where Users can choose which they would rather answer, Flag or Capital? Each question has 3 attempts, and then fun messages and lottie animation if you get up to 7 correctly, Now! are you ready to test your country knowledge?.",
+      skill: "Vue 3 JS, CSS, Lottie Animation, API",
+      demo: "https://worldly-pi.vercel.app/",
+      github: "https://github.com/MayorFalomo/Worldly",
+    },
+    {
+      id: "19",
+      projectName: "Todo",
+      projectImg: "./todo.webp",
+      aboutProject:
+        "A Todo app i built using Vue Js, users can add a todo, delete a todo, edit a todo and set a remainder, neatly organize note based on if they are completed or not....Your Todos are of course all backed up.",
+      skill: "Vue 3, CSS",
+      demo: "https://vue-todo-app-kohl.vercel.app/",
+      github: "https://github.com/MayorFalomo/vue-todo-app",
+    },
+    {
+      id: "20",
+      projectName: "Shadcn",
+      projectImg: "./shadcn.webp",
+      aboutProject:
+        "A single practice layout using Next 13 and Shadcn for styling.",
+      skill: "Next Js, Shadcn, CSS",
+      demo: "https://nextform-shadcn.vercel.app/",
+      github: "https://github.com/MayorFalomo/Next-Shadcn",
     },
   ]);
 
