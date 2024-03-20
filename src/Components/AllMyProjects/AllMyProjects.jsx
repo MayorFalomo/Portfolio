@@ -222,6 +222,16 @@ const AllMyProjects = () => {
       demo: "https://nextform-shadcn.vercel.app/",
       github: "https://github.com/MayorFalomo/Next-Shadcn",
     },
+    {
+      id: "21",
+      projectName: "Drone",
+      projectImg: "./drone.webp",
+      aboutProject:
+        "A single practice landing page layout using, random fact: This was the first ever project i built using React, It was my first dive into the world of javascript frameworks and since paved the way for me",
+      skill: "React Js, CSS",
+      demo: "https://drone-landing.netlify.app/",
+      github: "https://github.com/MayorFalomo/Drone--Landing-Page",
+    },
   ]);
 
   const [readMore, setReadMore] = useState(160);
