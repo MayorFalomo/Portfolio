@@ -175,7 +175,7 @@ nav {
     font-size: 50px;
     position: absolute;
     left: 10px;
-    top: 170px;
+    top: 120px;
     z-index: 99;
   }
  
@@ -219,7 +219,7 @@ nav {
     position: absolute;
     top: 0;
     right: -100vw;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+    transition: 0.4s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     will-change: transform;
     height: 60vh;
     width: 100% !important;
@@ -234,7 +234,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    transition: 0.6s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
+    transition: 0.4s cubic-bezier(0.08, 0.65, 0.53, 0.96) !important;
     // transform: translateX(0%);
     z-index: 999999;
     height: 60vh;
@@ -250,7 +250,7 @@ nav {
   }
   .sound {
     position: absolute;
-    top: 150px !important;
+    top: 120px !important;
   }
 }
 

@@ -83,6 +83,16 @@ const AllMyProjects = () => {
     },
     {
       id: "7",
+      projectName: "Multistep-Form",
+      projectImg: "./multistep-form.webp",
+      aboutProject:
+        "Multistep-Form was a project (Freelance) where potential users can register for a platform using a Flight and your booking number to register for a platform, you can track your progress as you complete each step, I made use of Google's Map API, Now users can search for their addresses on google map and find their exact address on the map to ensure accuracy and the marker switches to that point, and there's also a success message when you successfully complete the form",
+      skill: "Next 13 JS, Chakra UI, Framer-Motion, Google map api, CSS",
+      demo: "https://netrobe-multistep.vercel.app/",
+      github: "https://github.com/MayorFalomo/multistep",
+    },
+    {
+      id: "8",
       projectName: "Blogaroo",
       projectImg: "./blogaroo.webp",
       aboutProject:
@@ -92,8 +102,9 @@ const AllMyProjects = () => {
       demo: "https://blogaroo.netlify.app/register",
       github: "https://github.com/MayorFalomo/Blogaroo-FrontEnd",
     },
+
     {
-      id: "8",
+      id: "9",
       projectName: "Cinemaflix",
       projectImg: "./cinemaflix.webp",
       aboutProject:
@@ -104,7 +115,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "9",
+      id: "10",
       projectName: "Quiz App",
       projectImg: "./quiz.webp",
       aboutProject:
@@ -114,7 +125,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Quiz-App",
     },
     {
-      id: "10",
+      id: "11",
       projectName: "Nft Dashboard",
       projectImg: "./urban.webp",
       aboutProject:
@@ -124,7 +135,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Urban-Nft-Dashboard",
     },
     {
-      id: "11",
+      id: "12",
       projectName: "Travel Buddy",
       projectImg: "./travelBuddy.webp",
       aboutProject:
@@ -134,7 +145,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/TravelBuddy",
     },
     {
-      id: "12",
+      id: "13",
       projectName: "Orpheus",
       projectImg: "./orpheus.webp",
       aboutProject: "A single Landing Page using React.",
@@ -143,7 +154,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Orpheus-landing-page",
     },
     {
-      id: "13",
+      id: "14",
       projectName: "Google Clone",
       projectImg: "./google.webp",
       aboutProject:
@@ -153,7 +164,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/GoogleBase",
     },
     {
-      id: "14",
+      id: "15",
       projectName: "Swish",
       projectImg: "./swishUpdated.webp",
       aboutProject:
@@ -163,7 +174,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Swish-Weather-App",
     },
     {
-      id: "15",
+      id: "16",
       projectName: "Medley Games",
       projectImg: "./medleyGames.webp",
       aboutProject:
@@ -172,16 +183,7 @@ const AllMyProjects = () => {
       demo: "https://medley-games.netlify.app/",
       github: "https://github.com/MayorFalomo/Medley-Games",
     },
-    {
-      id: "16",
-      projectName: "Multistep-Form",
-      projectImg: "./multistep-form.webp",
-      aboutProject:
-        "Multistep-Form was a project (Freelance) where potential users can register for a platform using a Flight and your booking number to register for a platform, you can track your progress as you complete each step, I made use of Google's Map API, Now users can search for their addresses on google map and find their exact address on the map to ensure accuracy and the marker switches to that point, and there's also a success message when you successfully complete the form",
-      skill: "Next 13 JS, Chakra UI, Framer-Motion, Google map api, CSS",
-      demo: "https://netrobe-multistep.vercel.app/",
-      github: "https://github.com/MayorFalomo/multistep",
-    },
+
     {
       id: "17",
       projectName: "StoreBay",

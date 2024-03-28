@@ -22,6 +22,8 @@ const Projects = () => {
   const Twinkles =
     "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, follow and unfollow others, tailor your tweets,retweet, like quote and bookmark, post tweets, reply comments etc.";
 
+  const multistep =
+    "Multistep-Form is a project (Freelance) where users can fill a multistep form with specific information like Flight, Iban Number, your email, phone number which are verified/validated before being submitted, you can also track your progress through the form as you complete each step, I made use of Google Map's API, Now users can search for their addresses on google map and find their exact address on the map with pinpoint accuracy and the marker switches to that point, Review your info at the end, then there's also a success message when you successfully complete the form";
   const keepLength = keep.length;
   const length = Twinkles.length;
 
@@ -265,7 +267,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./blogaroo.webp)",
+            backgroundImage: "url(./lien-bot.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -276,29 +278,24 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1> Blogaroo </h1>
+            <h1> Lien-Bot </h1>
             <p>
-              A creative Blog Website i built using the MERN Stack, it has all
-              CRUD functionalities and added features of likes and comments on
-              blog post, editing your profile and making a blog post.
+              Lien bot (FreeLance) is an AI platform where users can chat with a
+              bot and based on your answer to the bots questions it comes up
+              with a lien document, I built the entire frontend to interact with
+              the backend and the bot, The frontend is of course based on
+              chatGPT interface.
             </p>
-            <span>
-              {" "}
-              MongoDb, Express,Typescript, React, Node Js and Styled-Components
-            </span>
+            <span> Next Js, Chakra UI, Tailwind, CSS, AI Bot, API</span>
             <div className="flexLinks">
               <a
                 target="_blank"
-                href="https://blogaroo.netlify.app/register"
+                href="https://lien-bot.vercel.app"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo
               </a>
-              <a
-                target="_blank"
-                href="https://github.com/MayorFalomo/Blogaroo-FrontEnd"
-                rel="noreferrer"
-              >
+              <a target="_blank" href="#" rel="noreferrer">
                 {<IoLogoGithub className="githubLink" />} Github
               </a>
             </div>
@@ -392,7 +389,7 @@ const Projects = () => {
           <div
             className="subProjectRight"
             style={{
-              backgroundImage: "url(./urban.webp)",
+              backgroundImage: "url(./multistep-form.webp)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -402,23 +399,45 @@ const Projects = () => {
           >
             <div className="overLayRight"></div>
             <div id="parallax">
-              <h1>Nft Dashboard </h1>
+              <h1>Multistep-Form</h1>
+
               <p>
-                A Single Page Nft Dashboard, It uses local storage to save your
-                dark mode or light mode color{" "}
+                {multistep.slice(0, readMore)}{" "}
+                {readLess ? (
+                  <a
+                    onClick={() => {
+                      setReadLess(false);
+                      setReadMore(150);
+                    }}
+                  >
+                    Read less{" "}
+                  </a>
+                ) : (
+                  <a
+                    onClick={() => {
+                      setReadMore(keepLength);
+                      setReadLess(true);
+                    }}
+                  >
+                    ... Read more
+                  </a>
+                )}
               </p>
-              <span>React, CSS</span>
+              <span>
+                Next Js, Chakra UI, Framer-Motion, Google Map API, CSS{" "}
+              </span>
+
               <div className="flexLink">
                 <a
                   target="_blank"
-                  href="https://urban-nft-dashboard.netlify.app/"
+                  href="https://netrobe-multistep.vercel.app/"
                   rel="noreferrer"
                 >
                   {<MdLogout className="netlifyLink" />} Demo{" "}
                 </a>
                 <a
                   target="_blank"
-                  href="https://github.com/MayorFalomo/Urban-Nft-Dashboard"
+                  href="https://github.com/MayorFalomo/multistep"
                   rel="noreferrer"
                 >
                   {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -431,7 +450,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./travelBuddy.webp)",
+            backgroundImage: "url(./urban.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -441,19 +460,18 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Travel Buddy</h1>
+            <h1>Nft Dashboard </h1>
             <p>
-              {" "}
-              A Travel Agency website i built using React also uses react router
-              for routing between pages this was my second ever project using
-              React{" "}
+              A Single Page Nft Dashboard, It uses local storage to save your
+              dark mode or light mode color{" "}
             </p>
             <span>React, CSS</span>
+
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://travelbuddy-agency.netlify.app/"
+                href="https://urban-nft-dashboard.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -461,7 +479,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/TravelBuddy"
+                href="https://github.com/MayorFalomo/Urban-Nft-Dashboard"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
