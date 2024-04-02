@@ -10,6 +10,8 @@ import Skills from "../Components/Skills/Skills";
 import Projects from "../Components/Projects/Projects";
 import Contact from "../Components/Contact/Contact";
 import MobilePreload from "../Mobile/MobilePreload";
+import Template from "../template";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
@@ -70,12 +72,16 @@ const Home = () => {
     requestAnimationFrame(raf);
   }, []);
 
-  // const location = useLocation();
   return (
     <ParallaxProvider>
       {completed ? (
         <div>
-          <div className="App">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="App"
+          >
             <Cursor />
             <Navbar />
             <Herosection />
@@ -83,12 +89,16 @@ const Home = () => {
             <Skills />
             <Projects />
             <Contact />
-          </div>
+          </motion.div>
         </div>
       ) : (
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           <MobilePreload />
-        </div>
+        </motion.div>
       )}
     </ParallaxProvider>
   );
