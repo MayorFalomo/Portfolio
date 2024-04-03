@@ -9,7 +9,7 @@ import { LocationProvider } from "./Location";
 function App() {
   const location = useLocation();
 
-  console.log(location, "location");
+  // console.log(location, "location");
   return (
     <ParallaxProvider>
       <LocationProvider>
