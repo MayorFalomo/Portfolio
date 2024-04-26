@@ -24,8 +24,11 @@ const Projects = () => {
 
   const multistep =
     "Multistep-Form is a project (Freelance) where users can fill a multistep form with specific information like Flight, Iban Number, your email, phone number which are verified/validated before being submitted, you can also track your progress through the form as you complete each step, I made use of Google Map's API, Now users can search for their addresses on google map and find their exact address on the map with pinpoint accuracy and the marker switches to that point, Review your info at the end, then there's also a success message when you successfully complete the form";
+  const ema =
+    "EMA Screener is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit.";
   const keepLength = keep.length;
   const length = Twinkles.length;
+  const emaLength = ema.length;
 
   // console.log(length);
 
@@ -185,7 +188,7 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           style={{
-            backgroundImage: "url(./reyna.webp)",
+            backgroundImage: "url(./ema.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -193,18 +196,41 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Reyna Hair Salon </h1>
+            <h1>EMA Screener </h1>
             <p>
+              {ema.slice(0, readMore)}{" "}
+              {readLess ? (
+                <a
+                  onClick={() => {
+                    setReadLess(false);
+                    setReadMore(150);
+                  }}
+                >
+                  Read less{" "}
+                </a>
+              ) : (
+                <a
+                  onClick={() => {
+                    setReadMore(emaLength);
+                    setReadLess(true);
+                  }}
+                >
+                  ... Read more
+                </a>
+              )}
+            </p>
+            {/* <p>
               I freelanced on a Canadian startup's hair salon website, revamping
               the codebase, updating content, ensuring responsiveness, while
               preserving the original code integrity.
-            </p>
-            <span>Javascript, HTML and CSS</span>
+            </p> */}
+            <span>Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS</span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="http://stage.reyna.ca/"
+                href="https://apps.emascreener.bloombyte.dev/"
+                // href="http://stage.reyna.ca/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -504,7 +530,7 @@ const Projects = () => {
             <div id="parallax">
               <h1>Orpheus </h1>
               <p>A single Landing Page using React</p>
-              <span>HTML, React, CSS, API, Firebase </span>
+              <span>React, SASS </span>
               <div className="flexLink">
                 <a
                   target="_blank"
@@ -544,7 +570,7 @@ const Projects = () => {
               engine API and firebase for authentication, it works just like
               google.
             </p>
-            <span>Next JS, CSS </span>
+            <span>HTML, React, CSS, API, Firebase </span>
             <div className="flexLinks">
               <a
                 id="black"

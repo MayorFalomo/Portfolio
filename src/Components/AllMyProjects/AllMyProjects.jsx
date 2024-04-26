@@ -93,6 +93,16 @@ const AllMyProjects = () => {
     },
     {
       id: "8",
+      projectName: "EMA Screener",
+      projectImg: "./ema.webp",
+      aboutProject:
+        "EMA Screener is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops, Implementing functionalities like pagination, search, an admin dashboard, filter through records, password recovery etc ",
+      skill: "Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS",
+      demo: "https://apps.emascreener.bloombyte.dev/",
+      github: "",
+    },
+    {
+      id: "9",
       projectName: "Blogaroo",
       projectImg: "./blogaroo.webp",
       aboutProject:
@@ -104,7 +114,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "9",
+      id: "10",
       projectName: "Cinemaflix",
       projectImg: "./cinemaflix.webp",
       aboutProject:
@@ -115,7 +125,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "10",
+      id: "11",
       projectName: "Quiz App",
       projectImg: "./quiz.webp",
       aboutProject:
@@ -125,7 +135,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Quiz-App",
     },
     {
-      id: "11",
+      id: "12",
       projectName: "Nft Dashboard",
       projectImg: "./urban.webp",
       aboutProject:
@@ -135,7 +145,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Urban-Nft-Dashboard",
     },
     {
-      id: "12",
+      id: "13",
       projectName: "Travel Buddy",
       projectImg: "./travelBuddy.webp",
       aboutProject:
@@ -145,7 +155,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/TravelBuddy",
     },
     {
-      id: "13",
+      id: "14",
       projectName: "Orpheus",
       projectImg: "./orpheus.webp",
       aboutProject: "A single Landing Page using React.",
@@ -154,7 +164,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Orpheus-landing-page",
     },
     {
-      id: "14",
+      id: "15",
       projectName: "Google Clone",
       projectImg: "./google.webp",
       aboutProject:
@@ -164,7 +174,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/GoogleBase",
     },
     {
-      id: "15",
+      id: "16",
       projectName: "Swish",
       projectImg: "./swishUpdated.webp",
       aboutProject:
@@ -174,7 +184,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Swish-Weather-App",
     },
     {
-      id: "16",
+      id: "17",
       projectName: "Medley Games",
       projectImg: "./medleyGames.webp",
       aboutProject:
@@ -185,7 +195,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "17",
+      id: "18",
       projectName: "StoreBay",
       projectImg: "./StoreBay.webp",
       aboutProject:
@@ -195,7 +205,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/StoreBay",
     },
     {
-      id: "18",
+      id: "19",
       projectName: "Worldly",
       projectImg: "./worldly.webp",
       aboutProject:
@@ -205,7 +215,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Worldly",
     },
     {
-      id: "19",
+      id: "20",
       projectName: "Todo",
       projectImg: "./todo.webp",
       aboutProject:
@@ -215,7 +225,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/vue-todo-app",
     },
     {
-      id: "20",
+      id: "21",
       projectName: "Shadcn",
       projectImg: "./shadcn.webp",
       aboutProject:
@@ -225,7 +235,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Next-Shadcn",
     },
     {
-      id: "21",
+      id: "22",
       projectName: "Drone",
       projectImg: "./drone.webp",
       aboutProject:
