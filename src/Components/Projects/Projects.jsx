@@ -20,12 +20,12 @@ const Projects = () => {
   const keep =
     "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, masonry layouts, multiple select for notes etc. ";
   const Twinkles =
-    "Tweeks is a Full-Stack social web app i built using the MENN Stack and firebase, users can real-time message, get notifications, follow and unfollow others, tailor your tweets,retweet, like quote and bookmark, post tweets, reply comments etc.";
+    "Tweeks is a Full-Stack social web app with over 500+ registered users, users can real-time message, get notifications, follow and unfollow others, switch between tweets (see tweets from only your following and tweets for you),retweet, like quote and bookmark, post tweets, reply comments etc.";
 
   const multistep =
-    "Multistep-Form is a project (Freelance) where users can fill a multistep form with specific information like Flight, Iban Number, your email, phone number which are verified/validated before being submitted, you can also track your progress through the form as you complete each step, I made use of Google Map's API, Now users can search for their addresses on google map and find their exact address on the map with pinpoint accuracy and the marker switches to that point, Review your info at the end, then there's also a success message when you successfully complete the form";
+    "Multistep-Form is a project (Freelance) where users can fill a multistep form with specific information like Flight, Iban Number, your email, phone number which are all verified/validated before being going to the next step, you can also track your progress through the form as you complete each step, I made use of Google Map's API, Now users can search for their addresses on google map and find their exact address on the map with pinpoint accuracy and the marker switches to that point, Review your info at the end, then there's also a nice success animation when you successfully complete the form";
   const ema =
-    "EMA Screener is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit.";
+    "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit.";
   const keepLength = keep.length;
   const length = Twinkles.length;
   const emaLength = ema.length;
@@ -203,7 +203,7 @@ const Projects = () => {
                 <a
                   onClick={() => {
                     setReadLess(false);
-                    setReadMore(150);
+                    setReadMore(160);
                   }}
                 >
                   Read less{" "}
@@ -264,9 +264,10 @@ const Projects = () => {
             <div id="parallax">
               <h1> EaseInBiz Automation</h1>
               <p>
-                Easeinbiz - a startup based in Nigeria that provides automation
-                solutions for businesses, I built the entire page using react,
-                It's responsive and optimized on even the smallest devices.
+                Easeinbiz (Freelance) - a startup based in Nigeria that provides
+                automation solutions for businesses, I built the entire page
+                using react, It's responsive and optimized on even the smallest
+                devices.
               </p>
               <span>React, Styled-components</span>
               <div className="flexLink">
