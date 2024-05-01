@@ -3,6 +3,8 @@ import "../Styles/AboutStyle/Aboutstyle.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { AnimatePresence, motion } from "framer-motion";
 import Paragraph from "./Paragraph";
+import { SplitReveal } from "../SplitText/SplitReveal";
+import TextReveal from "../SplitText/TeaxtReveal";
 
 const About = () => {
   const paragraph = `About Me`;
@@ -23,6 +25,7 @@ const About = () => {
             <Paragraph value={paragraph} />
           </h2> */}
           {/* <h2 id="about">About Me </h2> */}
+          {/* <SplitReveal>About Me </SplitReveal> */}
           <h2 id="shimmer">About Me </h2>
         </div>
 
@@ -39,6 +42,7 @@ const About = () => {
           <div className="aboutBio">
             <div className="aboutCard">
               <h1 className="myself">Bio... </h1>
+
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 {" "}
                 My name is Mayowa Falomo a Full Stack Developer based in Nigeria
@@ -49,6 +53,7 @@ const About = () => {
                 help leave a lasting impression about your company, brand or
                 product.
               </p>
+
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 As my projects show, i've worked on several projects, building
                 out and selectively picking out the best Ui while also paying

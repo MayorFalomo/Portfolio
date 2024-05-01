@@ -22,17 +22,23 @@ const Project = (props) => {
         />
         <div className="overLayLeft"></div>
         <div className="Text">
-          <div data-aos="fade-up" data-aos-duration="500" className="flexText">
+          <div className="flexText" data-aos="fade-up" data-aos-duration="500">
             <p
               onClick={() => {
                 props.setOpenModal(true);
                 props.setDemoLink(props.project.demo);
               }}
-              style={{ display: "flex", alignItems: "center", gap: "5px" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                cursor: "pointer",
+              }}
             >
               {<MdLogout className="netlifyLink" />} Demo
             </p>
             <p
+              style={{ cursor: "pointer" }}
               onClick={() => {
                 props.setAboutModal(true);
                 props.setSingleProject((prev) => {

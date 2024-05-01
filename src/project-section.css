@@ -107,11 +107,26 @@ body{
   margin: 0 auto;
   /* border: red 2px solid; */
 }
-.App .Project-hero h1{
+.App .Project-hero {
   font-size: calc(20px + 2vw);
+  font-weight: 700;
   color: #dc5656;
  margin-top: 50px;
  text-align: center;
+}
+
+.App .rightLight {
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  z-index: -9;
+  /* border: #dc5656 2px solid; */
+}
+.App .leftLightening {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: -9;
 }
 
 @media (max-width: 1200px) {

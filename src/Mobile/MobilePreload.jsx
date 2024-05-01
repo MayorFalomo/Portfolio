@@ -3,6 +3,7 @@ import "./MobilePreload.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import { SplitReveal } from "../Components/SplitText/SplitReveal";
 
 const MobilePreload = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const MobilePreload = () => {
   return (
     <motion.div className="Title">
       <div className="centered">
+        {/* <SplitReveal>WEB WIZARD</SplitReveal> */}
         <span className="web" data-aos="fade-up" data-aos-duration="500">
           WEB{" "}
         </span>

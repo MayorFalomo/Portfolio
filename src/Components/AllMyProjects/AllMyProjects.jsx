@@ -283,7 +283,10 @@ const AllMyProjects = () => {
 
   return (
     <div id="projects" className="ProjectsContainer">
-      <div className="grid">
+      <div
+        onClick={() => (aboutModal ? setAboutModal(false) : "")}
+        className="grid"
+      >
         {projects.map((project) => {
           return (
             <div className="grid-item" key={project.id}>

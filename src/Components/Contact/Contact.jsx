@@ -1,15 +1,26 @@
 import React from "react";
 import "../Styles/Contact/Contactstyles.css";
-
+import { SplitReveal } from "../SplitText/SplitReveal";
+import { useScramble } from "use-scramble";
 const Contact = () => {
   const paragraph = `-LET'S WORK TOGETHER-`;
+  // hook returns a ref
+  const { ref, replay } = useScramble({
+    text: "-LET'S WORK TOGETHER-",
+    speed: 0.3,
+    tick: 0.5,
+    step: 1,
+    scramble: 4,
+    seed: 0,
+  });
   return (
     <div id="contact" className="ContactContainer">
       <div className="work">
         <div className="content">
           <h1> CONTACT </h1>
           <h1> CONTACT </h1>
-          <p>-LET'S WORK TOGETHER- </p>
+          <p ref={ref} onMouseOver={replay} />
+          {/* <p>-LET'S WORK TOGETHER- </p> */}
           <div className="email">
             <p>
               {" "}
@@ -63,7 +74,8 @@ const Contact = () => {
             <li className="hover-underline-animation">Whatsapp </li>
           </a>
         </ul>
-        <p>Designed and Developed By Mayowa &copy; 2022</p>
+        <SplitReveal>Designed and Developed By Mayowa &copy; 2022</SplitReveal>
+        {/* <p>Designed and Developed By Mayowa &copy; 2022</p> */}
       </footer>
     </div>
   );

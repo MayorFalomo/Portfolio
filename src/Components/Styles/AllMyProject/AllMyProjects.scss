@@ -1,4 +1,5 @@
 .ProjectsContainer{
+
   .grid{
    width: 100% !important;
  display: flex;
@@ -8,12 +9,18 @@
  gap: 20px;
  margin: 5px auto;
  margin-bottom: 50px;
+//  border: 2px red solid;
+  //  position: relative;
+  // z-index: 999999;
 }
 
 .grid-item{
   width: 95%;
   max-width: 500px;
   height: auto;
+  //   position: relative;
+  // z-index: 999;
+
   // margin: 5px auto;
 }
 .timesX{

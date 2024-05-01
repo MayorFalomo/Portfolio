@@ -27,7 +27,8 @@ const Projects = () => {
   const ema =
     "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit.";
   const keepLength = keep.length;
-  const length = Twinkles.length;
+  const tweeks = Twinkles.length;
+  const multi = multistep.length;
   const emaLength = ema.length;
 
   // console.log(length);
@@ -147,7 +148,7 @@ const Projects = () => {
                 ) : (
                   <a
                     onClick={() => {
-                      setReadMore(length);
+                      setReadMore(tweeks);
                       setReadLess(true);
                     }}
                   >
@@ -442,7 +443,7 @@ const Projects = () => {
                 ) : (
                   <a
                     onClick={() => {
-                      setReadMore(keepLength);
+                      setReadMore(multi);
                       setReadLess(true);
                     }}
                   >

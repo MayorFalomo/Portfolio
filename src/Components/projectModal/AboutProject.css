@@ -9,6 +9,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     padding: 5px;
+    /* border: 2px yellow solid; */
 }
 .aboutModalCon::-webkit-scrollbar{
     width: 0;
