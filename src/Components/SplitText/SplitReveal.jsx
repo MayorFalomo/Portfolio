@@ -27,7 +27,7 @@ export function SplitReveal({
   const controls = useAnimation();
 
   useEffect(() => {
-    console.log(inView, "inview");
+    // console.log(inView, "inview");
     if (inView) {
       controls.start("visible");
     } else {

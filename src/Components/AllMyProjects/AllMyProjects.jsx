@@ -24,7 +24,7 @@ const AllMyProjects = () => {
       projectName: "Keep - A Google Notepad",
       projectImg: "./keep.webp",
       aboutProject:
-        "Keep is Full Stack Notepad web app where users can Create notes, set remainders for specific hours(morning, afternoon, evening, next week etc.), add canvas for drawing to your notes, search and send note to others, multi-language notes translate, archive , trash, pin, label your notes for easier organizing, customize your notes using colors and mood images, switch between masonry view or List view, multiple select notes to pin, archive, trash notes etc.",
+        "Keep is Full Stack Notepad web app where users can Create notes, set remainders for specific hours(morning, afternoon, evening, next week etc.), Create a canvas for drawing in your notes, search and send note to others, multi-language notes translate, archive , trash, pin, label your notes for easier organizing, customize your notes using colors and mood images, switch between masonry view or List view, multiple select notes to pin, archive, trash notes etc.",
       skill:
         "Next Js, Typescript, Node Js, MongoDb, Express, Tailwind, CSS, Firebase, PWA ",
       demo: "https://keep-notepad.vercel.app",
