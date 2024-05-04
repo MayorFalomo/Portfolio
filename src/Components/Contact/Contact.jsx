@@ -7,7 +7,7 @@ const Contact = () => {
   // hook returns a ref
   const { ref, replay } = useScramble({
     text: "-LET'S WORK TOGETHER-",
-    speed: 0.3,
+    speed: 0.4,
     tick: 0.5,
     step: 1,
     scramble: 4,
