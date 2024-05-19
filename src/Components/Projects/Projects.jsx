@@ -25,7 +25,7 @@ const Projects = () => {
   const multistep =
     "Multistep-Form is a (Freelance) project where users fill a multistep form with information like Flight, Iban, email etc. which are all validated before moving to the next step, I made use of Google Map's API, So users can search for their addresses and find their exact address on the map and the marker switches to that point.";
   const ema =
-    "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit.";
+    "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit, also utilized web-sockets for instant updates.";
   const keepLength = keep.length;
   const tweeks = Twinkles.length;
   const multi = multistep.length;
