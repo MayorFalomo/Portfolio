@@ -230,7 +230,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://apps.emascreener.bloombyte.dev/"
+                href="https://trend-catcher.netlify.app/"
                 // href="http://stage.reyna.ca/"
                 rel="noreferrer"
               >

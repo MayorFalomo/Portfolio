@@ -45,13 +45,13 @@ const About = () => {
 
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 {" "}
-                My name is Mayowa Falomo a Full Stack Developer based in Nigeria
-                , My sole aim is building modern, intuitive, accessible,
-                scalable, technical and user friendly sites while also making
-                sure the site is optimized for best user experience. I am
-                passionate about creating unique site experiences for users to
-                help leave a lasting impression about your company, brand or
-                product.
+                My name is Mayowa Falomo, I'm a Full Stack Developer based in
+                Nigeria , My sole aim is building modern, intuitive, accessible,
+                scalable, technical and user friendly websites and web-apps,
+                while also making sure the site is optimized for best user
+                experience. I am passionate about creating unique site
+                experiences for users to help leave a lasting impression about
+                your company, brand or product.
               </p>
 
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>

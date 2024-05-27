@@ -19,6 +19,8 @@ import chakra from "../Skills/chakra.svg";
 import Skill from "./Skill";
 import materialUI from "../Skills/material-ui.svg";
 import shad from "../Skills/shad.svg";
+import graphql from "../Skills/graphql.svg";
+import apollo from "../Skills/apollo.svg";
 import { Parallax } from "react-scroll-parallax";
 const Skills = () => {
   const Logos = [
@@ -121,6 +123,16 @@ const Skills = () => {
       id: 20,
       logo: shad,
       name: "ShadCn",
+    },
+    {
+      id: 21,
+      logo: graphql,
+      name: "GraphQl",
+    },
+    {
+      id: 22,
+      logo: apollo,
+      name: "Apollo",
     },
   ];
 

@@ -98,7 +98,7 @@ const AllMyProjects = () => {
       aboutProject:
         "EMA Screener is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops, Implementing functionalities like pagination, search, an admin dashboard, filter through records, password recovery etc ",
       skill: "Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS",
-      demo: "https://apps.emascreener.bloombyte.dev/",
+      demo: "https://trend-catcher.netlify.app/",
       github: "",
     },
     {
