@@ -118,7 +118,7 @@ const Navbar = () => {
               <li className="hover-underline-animation">CONTACT </li>
             </AnchorLink>
             <a
-              href="https://drive.google.com/file/d/1Bo2aAN-mtfa6XeSpspKet60Hb2v-MyTB/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
               // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
@@ -171,7 +171,7 @@ const Navbar = () => {
             <li className="hover-underline-animation">CONTACT </li>
           </AnchorLink>
           <a
-            href="https://drive.google.com/file/d/1Bo2aAN-mtfa6XeSpspKet60Hb2v-MyTB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
             // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
