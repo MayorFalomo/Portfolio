@@ -3,6 +3,7 @@ import React from "react";
 import "../Styles/Herostyle/Herostyle.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaAngleDown } from "react-icons/fa";
 const Herosection = () => {
   return (
     <AnimatePresence>
@@ -19,7 +20,7 @@ const Herosection = () => {
           </div>
 
           <div className="imgBtn">
-            <AnchorLink href="#hire">
+            {/* <AnchorLink href="#hire">
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -27,8 +28,8 @@ const Herosection = () => {
                 src="./contactBtn.svg"
                 alt="img"
               />
-            </AnchorLink>
-            <AnchorLink href="#projects">
+            </AnchorLink> */}
+            {/* <AnchorLink href="#projects">
               <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -36,8 +37,30 @@ const Herosection = () => {
                 src="./ProjectsBtn.svg"
                 alt="img"
               />
+            </AnchorLink> */}
+            <AnchorLink>
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="GoToMyProjectsBtn"
+              >
+                <span>CONTACT ME</span>{" "}
+              </motion.button>
             </AnchorLink>
-            {/* <button className="contactMeBtn"> Contact me</button> */}
+            <AnchorLink>
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="contactMeBtn"
+              >
+                <span>PROJECTS</span>{" "}
+                <span>
+                  <FaAngleDown className="projectsIconDown" />{" "}
+                </span>
+              </motion.button>
+            </AnchorLink>
           </div>
         </div>
         <div className="leftLight">

@@ -32,12 +32,16 @@
   flex-direction: center;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .SkillContainer .atom {
   width: 100px;
 }
 .SkillContainer .atom img {
   width: 100%;
+}
+.SkillContainer .mainSkill p {
+  font-size: 16px;
 }
 
 @media (max-width: 1600px) {

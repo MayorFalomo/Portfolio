@@ -31,12 +31,17 @@
     flex-direction: center;
     align-items: center;
     justify-content: center;
+    gap: 20px;
   }
  .atom{
     width: 100px;
   }
   .atom img{
     width: 100%;
+  }
+ 
+  .mainSkill p{
+    font-size: 16px;
   }
 }
  

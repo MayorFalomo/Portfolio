@@ -48,26 +48,26 @@ const About = () => {
                 My name is Mayowa Falomo, I'm a Full Stack Developer based in
                 Nigeria , My sole aim is building modern, intuitive, accessible,
                 scalable, technical and user friendly websites and web-apps,
-                while also making sure the site is optimized for best user
-                experience. I am passionate about creating unique site
-                experiences for users to help leave a lasting impression about
-                your company, brand or product.
+                while ensuring the site is optimized for best user experience. I
+                am passionate about creating unique site experiences for users
+                to help leave a lasting impression about your company, brand or
+                product.
               </p>
 
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
                 As my projects show, i've worked on several projects, building
-                out and selectively picking out the best Ui while also paying
+                out and selectively picking out the best UI while also paying
                 close attention to UX and functionality, I work with libraries
                 like React and frameworks like Next J.S, Typescript and CSS
-                frameworks like SASS and Styled components well, i'm also
-                interested in Technologies like Firebase and i am always looking
-                to improve my skillset.{" "}
+                frameworks like Tailwind and Chakra well, i'm also interested in
+                Technologies like Firebase and I am always looking to improve my
+                skillset.{" "}
               </p>
 
               <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
-                In my Free time i like to read High Fantasy Novels, Watch a
-                movie / series or sometimes videos of food i can only imagine,
-                or I learn a new Technology.{" "}
+                In my Free time I like to read High Fantasy Novels, Watch a
+                movie / series or sometimes watch food blogs or you catch me
+                learning something new.{" "}
               </p>
               <p>I am currently available for New Opportunities... </p>
             </div>

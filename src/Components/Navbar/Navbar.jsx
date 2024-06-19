@@ -193,18 +193,22 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <Tippy className="playSound" content="Play Sound">
-        <div className="sound">
-          {playSound ? (
+      <div className="sound">
+        {playSound ? (
+          <Tippy placement="bottom" content="Stop playing">
             <p
               onClick={() => {
                 handleClick();
                 stop();
               }}
+              className="playing"
             >
-              {<CgLoadbarSound className="playIcon" />}
+              <i className="gg-loadbar-sound"></i>
+              {/* {<CgLoadbarSound className="playIcon" />} */}
             </p>
-          ) : (
+          </Tippy>
+        ) : (
+          <Tippy placement="bottom" content="Play Sound">
             <p
               onClick={() => {
                 handleClick();
@@ -213,9 +217,9 @@ const Navbar = () => {
             >
               {<GiSoundOff className="stopIcon" />}
             </p>
-          )}
-        </div>
-      </Tippy>
+          </Tippy>
+        )}
+      </div>
     </nav>
   );
 };

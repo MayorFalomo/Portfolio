@@ -53,6 +53,44 @@
   gap: 30px;
   cursor: pointer;
 }
+.HeroContainer .imgBtn .contactMeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 8px;
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-radius: 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  border-top: #BF841A 1px solid;
+  border-left: #BF841A 1px solid;
+  border-right: 1px solid rgba(44, 89, 152, 0.3411764706);
+  border-bottom: 1px solid rgba(44, 89, 152, 0.3411764706);
+}
+.HeroContainer .imgBtn .projectsIconDown {
+  font-size: 20px;
+  color: #BF841A;
+}
+.HeroContainer .imgBtn .GoToMyProjectsBtn {
+  padding: 12px 20px;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  border-radius: 5px;
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  background-size: 100% auto;
+}
 .HeroContainer .leftLight {
   position: fixed;
   left: -100px;
@@ -123,5 +161,13 @@
   }
   h1 span {
     font-size: 22px !important;
+  }
+  .contactMeBtn {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+  .GoToMyProjectsBtn {
+    font-size: 16px;
+    padding: 12px 15px;
   }
 }/*# sourceMappingURL=Herostyle.css.map */
