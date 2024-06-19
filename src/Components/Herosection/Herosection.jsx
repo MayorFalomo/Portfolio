@@ -38,7 +38,7 @@ const Herosection = () => {
                 alt="img"
               />
             </AnchorLink> */}
-            <AnchorLink>
+            <AnchorLink href="#hire">
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -48,7 +48,7 @@ const Herosection = () => {
                 <span>CONTACT ME</span>{" "}
               </motion.button>
             </AnchorLink>
-            <AnchorLink>
+            <AnchorLink href="#projects">
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
