@@ -191,7 +191,7 @@ nav .sound .playing .gg-loadbar-sound::after,
 nav .sound .playing .gg-loadbar-sound::before {
   display: block;
   box-sizing: border-box;
-  width: 4px;
+  width: 2px;
   height: 12px;
   box-shadow: inset 0 -12px 0;
   animation: gg-bar 1.3s ease infinite alternate;
