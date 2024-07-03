@@ -43,6 +43,17 @@ const AllMyProjects = () => {
     },
     {
       id: "3",
+      projectName: "BankHotel",
+      projectImg: "./bankHotel.webp",
+      aboutProject:
+        " BankHotel is a creative website I built using Next JS, ShadCn and Tailwind and MongoDb, GraphQl, Express for the Booking System backend, The Booking System would allow users to book a date and time, a room and select a payment option powered by Stripe payment",
+      skill:
+        "Next Js, Tailwind, ShadCn, NodeJs, MongoDb, Express, Stripe, Framer-motion ",
+      demo: "https://bankhotel-ng.netlify.app",
+      github: "https://github.com/MayorFalomo/BankHotel",
+    },
+    {
+      id: "4",
       projectName: "Reyna Hair Salon",
       projectImg: "./reyna.webp",
       aboutProject:
@@ -52,7 +63,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "4",
+      id: "5",
       projectName: "EaseInBiz Automation",
       projectImg: "./easeinbiz.webp",
       aboutProject:
@@ -62,7 +73,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "5",
+      id: "6",
       projectName: "Qcmology",
       projectImg: "./qcmology.webp",
       aboutProject:
@@ -72,7 +83,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "6",
+      id: "7",
       projectName: "Lien-Bot",
       projectImg: "./lien-bot.webp",
       aboutProject:
@@ -82,7 +93,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "7",
+      id: "8",
       projectName: "Multistep-Form",
       projectImg: "./multistep-form.webp",
       aboutProject:
@@ -92,7 +103,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/multistep",
     },
     {
-      id: "8",
+      id: "9",
       projectName: "EMA Screener",
       projectImg: "./ema.webp",
       aboutProject:
@@ -102,7 +113,7 @@ const AllMyProjects = () => {
       github: "",
     },
     {
-      id: "9",
+      id: "10",
       projectName: "Blogaroo",
       projectImg: "./blogaroo.webp",
       aboutProject:
@@ -114,7 +125,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "10",
+      id: "11",
       projectName: "Cinemaflix",
       projectImg: "./cinemaflix.webp",
       aboutProject:
@@ -125,7 +136,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "11",
+      id: "12",
       projectName: "Quiz App",
       projectImg: "./quiz.webp",
       aboutProject:
@@ -135,7 +146,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Quiz-App",
     },
     {
-      id: "12",
+      id: "13",
       projectName: "Nft Dashboard",
       projectImg: "./urban.webp",
       aboutProject:
@@ -145,7 +156,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Urban-Nft-Dashboard",
     },
     {
-      id: "13",
+      id: "14",
       projectName: "Travel Buddy",
       projectImg: "./travelBuddy.webp",
       aboutProject:
@@ -155,7 +166,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/TravelBuddy",
     },
     {
-      id: "14",
+      id: "15",
       projectName: "Orpheus",
       projectImg: "./orpheus.webp",
       aboutProject: "A single Landing Page using React.",
@@ -164,7 +175,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Orpheus-landing-page",
     },
     {
-      id: "15",
+      id: "16",
       projectName: "Google Clone",
       projectImg: "./google.webp",
       aboutProject:
@@ -174,7 +185,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/GoogleBase",
     },
     {
-      id: "16",
+      id: "17",
       projectName: "Swish",
       projectImg: "./swishUpdated.webp",
       aboutProject:
@@ -184,7 +195,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Swish-Weather-App",
     },
     {
-      id: "17",
+      id: "18",
       projectName: "Medley Games",
       projectImg: "./medleyGames.webp",
       aboutProject:
@@ -195,7 +206,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "18",
+      id: "19",
       projectName: "StoreBay",
       projectImg: "./StoreBay.webp",
       aboutProject:
@@ -205,7 +216,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/StoreBay",
     },
     {
-      id: "19",
+      id: "20",
       projectName: "Worldly",
       projectImg: "./worldly.webp",
       aboutProject:
@@ -215,7 +226,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Worldly",
     },
     {
-      id: "20",
+      id: "21",
       projectName: "Todo",
       projectImg: "./todo.webp",
       aboutProject:
@@ -225,7 +236,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/vue-todo-app",
     },
     {
-      id: "21",
+      id: "22",
       projectName: "Shadcn",
       projectImg: "./shadcn.webp",
       aboutProject:
@@ -235,7 +246,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Next-Shadcn",
     },
     {
-      id: "22",
+      id: "23",
       projectName: "Drone",
       projectImg: "./drone.webp",
       aboutProject:
