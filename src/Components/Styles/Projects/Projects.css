@@ -26,7 +26,7 @@
   text-align: center;
   font-size: 7vw;
   margin: 40px auto;
-  color: #141c2d;
+  color: rgba(45, 69, 94, 0.4039215686) !important;
 }
 .ProjectsContainer a:hover {
   text-decoration: underline;

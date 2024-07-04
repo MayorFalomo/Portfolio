@@ -15,40 +15,6 @@ const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // function useMenuAnimation(isOpen) {
-  //   const [scope, animate] = useAnimate();
-
-  //   useEffect(() => {
-  //     const menuAnimations = isOpen
-  //       ? [
-  //           [
-  //             "ul",
-  //             { transform: "translateX(0%)" },
-  //             { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.6 },
-  //           ],
-  //           [
-  //             "li",
-  //             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-  //             { delay: stagger(0.09), at: "-0.1" },
-  //           ],
-  //         ]
-  //       : [
-  //           [
-  //             "li",
-  //             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-  //             { delay: stagger(0.09, { from: "last" }), at: "<" },
-  //           ],
-  //           ["ul", { transform: "translateX(100%)" }, { at: "-0.1" }],
-  //         ];
-
-  //     animate([...menuAnimations]);
-  //   }, [isOpen]);
-
-  //   return scope;
-  // }
-
-  // const scope = useMenuAnimation(isOpen);
-
   const [playSound, setPlaySound] = useState(false);
 
   const [play, { stop }] = useSound(got);
@@ -71,28 +37,22 @@ const Navbar = () => {
 
         <div>
           <ul className={isOpen ? "navActive" : "inActiveNav"}>
-            <AnchorLink href="#about">
-              <li
-                style={{
-                  display:
-                    route.pathname == "/project-section" ? "none" : "flex",
-                }}
-                className="hover-underline-animation"
-              >
-                ABOUT ME
-              </li>
-            </AnchorLink>
-            <AnchorLink href="#skills">
-              <li
-                style={{
-                  display:
-                    route.pathname == "/project-section" ? "none" : "flex",
-                }}
-                className="hover-underline-animation"
-              >
-                SKILLS{" "}
-              </li>
-            </AnchorLink>
+            <li
+              style={{
+                display: route.pathname == "/project-section" ? "none" : "flex",
+              }}
+              className="hover-underline-animation"
+            >
+              <AnchorLink href="#about">ABOUT ME</AnchorLink>
+            </li>
+            <li
+              style={{
+                display: route.pathname == "/project-section" ? "none" : "flex",
+              }}
+              className="hover-underline-animation"
+            >
+              <AnchorLink href="#skills">SKILLS </AnchorLink>
+            </li>
             {/* <Link to="/">
               <li
                 style={{
@@ -103,20 +63,22 @@ const Navbar = () => {
                 HOME{" "}
               </li>
             </Link> */}
-            <Link
-              style={{
-                display: route.pathname == "/" ? "none" : "flex",
-              }}
-              to="/"
-            >
-              <li className="hover-underline-animation">HOME </li>
-            </Link>
-            <Link to="/project-section">
-              <li className="hover-underline-animation">PROJECTS </li>
-            </Link>
-            <AnchorLink href="#contact">
-              <li className="hover-underline-animation">CONTACT </li>
-            </AnchorLink>
+            <li className="hover-underline-animation">
+              <Link
+                style={{
+                  display: route.pathname == "/" ? "none" : "flex",
+                }}
+                to="/"
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="hover-underline-animation">
+              <Link to="/project-section">PROJECTS</Link>
+            </li>
+            <li className="hover-underline-animation">
+              <AnchorLink href="#contact">CONTACT</AnchorLink>
+            </li>
             <a
               href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
               // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
@@ -136,26 +98,22 @@ const Navbar = () => {
               Home{" "}
             </li>
           </AnchorLink> */}
-          <AnchorLink href="#about">
-            <li
-              style={{
-                display: route.pathname == "/project-section" ? "none" : "flex",
-              }}
-              className="hover-underline-animation"
-            >
-              ABOUT ME
-            </li>
-          </AnchorLink>
-          <AnchorLink href="#skills">
-            <li
-              style={{
-                display: route.pathname == "/project-section" ? "none" : "flex",
-              }}
-              className="hover-underline-animation"
-            >
-              SKILLS{" "}
-            </li>
-          </AnchorLink>
+          <li
+            style={{
+              display: route.pathname == "/project-section" ? "none" : "flex",
+            }}
+            className="hover-underline-animation"
+          >
+            <AnchorLink href="#about">ABOUT ME</AnchorLink>
+          </li>
+          <li
+            style={{
+              display: route.pathname == "/project-section" ? "none" : "flex",
+            }}
+            className="hover-underline-animation"
+          >
+            <AnchorLink href="#skills">SKILLS </AnchorLink>
+          </li>
           <Link
             style={{
               display: route.pathname == "/" ? "none" : "flex",
@@ -167,19 +125,20 @@ const Navbar = () => {
           <Link to="/project-section">
             <li className="hover-underline-animation">PROJECTS </li>
           </Link>
-          <AnchorLink href="#contact">
-            <li className="hover-underline-animation">CONTACT </li>
-          </AnchorLink>
-          <a
-            href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
-            // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <li className="bidBtn">
+          <li className="hover-underline-animation">
+            <AnchorLink href="#contact">CONTACT</AnchorLink>
+          </li>
+
+          <li className="bidBtn">
+            <a
+              href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
+              // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="bidBtn">RESUME </button>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <div className="MenuDiv">
           {isOpen ? (

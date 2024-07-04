@@ -26,6 +26,7 @@
   text-align: center;
   margin: 20px auto;
   font-size: 30px;
+  color: rgba(45, 69, 94, 0.4039215686) !important;
 }
 .AboutContainer .aboutCardImg h2 {
   text-align: center;

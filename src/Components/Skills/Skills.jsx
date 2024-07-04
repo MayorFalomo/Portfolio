@@ -158,7 +158,12 @@ const Skills = () => {
             );
           })}
           <div className="atom">
-            <img className="styled" src={styledComponents} alt="" />
+            <img
+              className="styled"
+              style={{ width: "80px" }}
+              src={styledComponents}
+              alt=""
+            />
             <p>Styled-Components </p>
           </div>
         </div>

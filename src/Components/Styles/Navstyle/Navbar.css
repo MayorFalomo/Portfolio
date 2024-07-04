@@ -21,8 +21,10 @@ nav .navbar {
 nav .navbar .closedMenu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
   font-size: 18px;
+  width: fit-content;
 }
 nav .navbar .inActiveNav {
   display: none;

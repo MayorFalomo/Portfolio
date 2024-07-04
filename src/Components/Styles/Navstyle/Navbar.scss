@@ -23,8 +23,10 @@ nav {
   .navbar .closedMenu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
     font-size: 18px;
+    width: fit-content;
     // border: 2px red solid;
   }
    .navbar .inActiveNav{
@@ -176,11 +178,7 @@ nav {
     position: absolute;
     bottom: -80px;
     left: 20px;
-    .stopIcon{
-      // position: absolute;
-      // left: 10px;
-      // top: 25px;
-    }
+   
     .playing{
       position: absolute;
       top: -25px;
