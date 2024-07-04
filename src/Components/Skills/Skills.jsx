@@ -164,7 +164,7 @@ const Skills = () => {
               src={styledComponents}
               alt=""
             />
-            <p>Styled-Components </p>
+            <p>Styled Components </p>
           </div>
         </div>
       </Parallax>

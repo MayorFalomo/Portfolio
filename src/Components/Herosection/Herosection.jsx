@@ -20,6 +20,24 @@ const Herosection = () => {
           </div>
 
           <div className="imgBtn">
+            {/* <AnchorLink href="#hire">
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                src="./contactBtn.svg"
+                alt="img"
+              />
+            </AnchorLink> */}
+            {/* <AnchorLink href="#projects">
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                src="./ProjectsBtn.svg"
+                alt="img"
+              />
+            </AnchorLink> */}
             <AnchorLink href="#hire">
               <motion.button
                 initial={{ opacity: 0 }}

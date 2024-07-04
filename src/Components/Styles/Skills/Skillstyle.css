@@ -35,7 +35,10 @@
   gap: 20px;
 }
 .SkillContainer .atom {
-  width: 100px;
+  width: fit-content;
+}
+.SkillContainer .atom p {
+  text-align: center;
 }
 .SkillContainer .atom img {
   width: 100%;
@@ -67,8 +70,7 @@
   }
   .atom {
     width: 100%;
-    max-width: 70px;
-    height: auto;
+    text-align: center;
   }
 }
 @media (max-width: 450px) {
@@ -82,7 +84,5 @@
   }
   .atom {
     width: 100%;
-    max-width: 70px;
-    height: auto;
   }
 }/*# sourceMappingURL=Skillstyle.css.map */

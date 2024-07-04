@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/Navstyle/Navbar.css";
-import { CgLoadbarSound } from "react-icons/cg";
 import { GiSoundOff } from "react-icons/gi";
 import useSound from "use-sound";
 import got from "./got.mp3";
@@ -53,25 +52,14 @@ const Navbar = () => {
             >
               <AnchorLink href="#skills">SKILLS </AnchorLink>
             </li>
-            {/* <Link to="/">
-              <li
-                style={{
-                  display: route.pathname == "/" ? "none" : "flex",
-                }}
-                className="hover-underline-animation"
-              >
-                HOME{" "}
-              </li>
-            </Link> */}
-            <li className="hover-underline-animation">
-              <Link
-                style={{
-                  display: route.pathname == "/" ? "none" : "flex",
-                }}
-                to="/"
-              >
-                HOME
-              </Link>
+
+            <li
+              style={{
+                display: route.pathname == "/" ? "none" : "flex",
+              }}
+              className="hover-underline-animation"
+            >
+              <Link to="/">HOME</Link>
             </li>
             <li className="hover-underline-animation">
               <Link to="/project-section">PROJECTS</Link>
@@ -93,11 +81,6 @@ const Navbar = () => {
         </div>
 
         <ul className="closedMenu">
-          {/* <AnchorLink to="/">
-            <li id="firstChild" className="hover-underline-animation">
-              Home{" "}
-            </li>
-          </AnchorLink> */}
           <li
             style={{
               display: route.pathname == "/project-section" ? "none" : "flex",
@@ -132,7 +115,6 @@ const Navbar = () => {
           <li className="bidBtn">
             <a
               href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
-              // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

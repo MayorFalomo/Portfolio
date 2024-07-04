@@ -155,6 +155,12 @@
     color: #d4a345;
   }
 }
+@media (max-width: 600px) {
+  .aboutCardImg {
+    background-position: left !important;
+    object-position: left !important;
+  }
+}
 @media (max-width: 400px) {
   #about {
     font-size: 48px !important;
