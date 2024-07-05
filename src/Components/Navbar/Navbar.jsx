@@ -67,16 +67,16 @@ const Navbar = () => {
             <li className="hover-underline-animation">
               <AnchorLink href="#contact">CONTACT</AnchorLink>
             </li>
-            <a
-              href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
-              // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <li className="bidBtn">
+            <li className="bidBtn">
+              <a
+                href="https://drive.google.com/file/d/1CJGtFzpka_IFwGS3l9AW7iGhOnbQI4UG/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1JrOKcSVtY5d2_wszlEDM0HQEd38MkPM9/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="bidBtn">RESUME </button>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
 
