@@ -46,9 +46,9 @@ const AllMyProjects = () => {
       projectName: "BankHotel",
       projectImg: "./bankHotel.webp",
       aboutProject:
-        " BankHotel is a creative website I built using Next JS, ShadCn and Tailwind and MongoDb, GraphQl, Express for the Booking System backend, The Booking System would allow users to book a date and time, a room and select a payment option powered by Stripe payment",
+        "A creative visual website I built for a mock Hotel called BankHotel, Guests can book hotel rooms with custom specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. I paid particular attention to the performance, code reusability, UI while maintaining a seamless engaging user experience",
       skill:
-        "Next Js, Tailwind, ShadCn, NodeJs, MongoDb, Express, Stripe, Framer-motion ",
+        "Next Js, Typescript, Redux, Tailwind, ShadCn, NodeJs, MongoDb, Express, Paystack api",
       demo: "https://bankhotel-ng.netlify.app",
       github: "https://github.com/MayorFalomo/BankHotel",
     },
