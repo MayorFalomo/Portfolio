@@ -29,7 +29,7 @@ const About = () => {
         <div className="myNotes">
           <div className="aboutCardImg">
             <LazyLoadImage
-              style={{ backgroundImage: `url(./myPic.webp)` }}
+              style={{ backgroundImage: `url(./myPic.jpg)` }}
               className="AboutmeImg"
             >
               {/* <img src="./meImage.svg" alt="img" loading="lazy" /> */}
