@@ -45,6 +45,8 @@
 }
 .AboutContainer .aboutBio p {
   font-size: calc(15px + 0.390625vw);
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 .AboutContainer .word {
   position: relative;
