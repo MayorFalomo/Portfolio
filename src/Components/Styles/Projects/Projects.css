@@ -79,7 +79,7 @@
   transition: 0.5s all ease;
 }
 .ProjectsContainer .subProjectLeft:hover .overLayLeft {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
 }

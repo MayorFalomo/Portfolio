@@ -28,6 +28,7 @@ const Projects = () => {
     "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit, also utilized web-sockets for instant updates.";
   const bankHotel =
     "A creative visual website I built for a mock Hotel called BankHotel, Guests can book hotel rooms with custom specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. I paid particular attention to the performance, code reusability, UI while maintaining a seamless engaging user experience";
+
   const keepLength = keep.length;
   const tweeks = Twinkles.length;
   const multi = multistep.length;
@@ -234,7 +235,6 @@ const Projects = () => {
                 id="black"
                 target="_blank"
                 href="https://trend-catcher.netlify.app/"
-                // href="http://stage.reyna.ca/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}

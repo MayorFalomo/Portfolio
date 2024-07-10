@@ -9,7 +9,6 @@ import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { Link, useLocation } from "react-router-dom";
-
 const Navbar = () => {
   const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +16,7 @@ const Navbar = () => {
   const [playSound, setPlaySound] = useState(false);
 
   const [play, { stop }] = useSound(got);
+
   const handleClick = () => {
     setPlaySound(!playSound);
   };
