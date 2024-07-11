@@ -10,7 +10,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
-  const [menuBtn, setMenuBtn] = useState(false);
+  // const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const [playSound, setPlaySound] = useState(false);

@@ -3,7 +3,7 @@ import "./MobilePreload.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { SplitReveal } from "../Components/SplitText/SplitReveal";
+// import { SplitReveal } from "../Components/SplitText/SplitReveal";
 
 const MobilePreload = () => {
   useEffect(() => {

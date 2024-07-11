@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Styles/AllMyProject/AllMyProjects.css";
-import { Parallax } from "react-scroll-parallax";
-import { MdLogout } from "react-icons/md";
-import { IoLogoGithub } from "react-icons/io5";
+// import { Parallax } from "react-scroll-parallax";
+// import { MdLogout } from "react-icons/md";
+// import { IoLogoGithub } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectModal from "../projectModal/ProjectModal";
 import { FaTimes } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 import Project from "./Project";
-import keepImg from "./keep.webp";
 import AboutModal from "../projectModal/AboutModal";
 const AllMyProjects = () => {
   useEffect(() => {
