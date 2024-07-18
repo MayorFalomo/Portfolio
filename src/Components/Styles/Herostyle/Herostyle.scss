@@ -42,10 +42,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
-
-
+    // text-fill-color: transparent;
   }
+  
   #header-text em {
     font-size: 50px;
   }
@@ -79,6 +78,8 @@
       border-left: #BF841A 1px solid;
       border-right: 1px solid #2c599857;
       border-bottom: 1px solid #2c599857;
+      box-shadow: rgb(246, 216, 143) 0px 20px 30px -20px;
+
     }
 
     .projectsIconDown{
@@ -97,7 +98,7 @@
       border-radius: 5px;
       background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
       background-size: 100% auto;
-
+      
     }
   }
   

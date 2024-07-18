@@ -38,7 +38,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 .HeroContainer #header-text em {
   font-size: 50px;
@@ -72,6 +71,7 @@
   border-left: #BF841A 1px solid;
   border-right: 1px solid rgba(44, 89, 152, 0.3411764706);
   border-bottom: 1px solid rgba(44, 89, 152, 0.3411764706);
+  box-shadow: rgb(246, 216, 143) 0px 20px 30px -20px;
 }
 .HeroContainer .imgBtn .projectsIconDown {
   font-size: 20px;
