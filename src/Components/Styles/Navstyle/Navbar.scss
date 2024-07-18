@@ -245,6 +245,9 @@ nav {
   .namesLogo {
     position: relative;
     z-index: 9999999999;
+    .activeMayor{
+      color: #d4a345;
+    }
   }
   .navbar .closedMenu{
     display: none !important;
@@ -292,15 +295,6 @@ nav {
   }
  
 }
-
-// @media (max-width: 420px) {
-//   .navbar{
-//     display: flex;
-//     justify-content: center;
-//     padding: 20px !important;
-//   }
-
-// }
 
 
 @media (max-width: 320px) {

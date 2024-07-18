@@ -20,7 +20,7 @@
     "react-router-dom": "^6.22.3",
     "react-scroll-parallax": "^3.3.1",
     "use-scramble": "^2.2.15",
-    "use-sound": "^4.0.1",
+    "use-sound": "^4.0.3",
     "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^2.1.4"
   },

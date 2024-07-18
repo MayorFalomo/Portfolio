@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../Styles/Navstyle/Navbar.css";
 import { GiSoundOff } from "react-icons/gi";
 import useSound from "use-sound";
@@ -9,8 +9,8 @@ import { RiMenu3Fill } from "react-icons/ri";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { Link, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
-  // const [menuBtn, setMenuBtn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const [playSound, setPlaySound] = useState(false);
@@ -27,11 +27,27 @@ const Navbar = () => {
     <nav>
       <div className="navbar">
         <div className="namesLogo">
-          {isOpen ? (
-            <h2 className="activeMayor">Mayowa. </h2>
-          ) : (
-            <h2 className="inactive">Falomo. </h2>
-          )}
+          <AnimatePresence mode="wait">
+            {isOpen ? (
+              <motion.h2
+                className="activeMayor"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                Mayowa.{" "}
+              </motion.h2>
+            ) : (
+              <motion.h2
+                className="inactive"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                Falomo.{" "}
+              </motion.h2>
+            )}
+          </AnimatePresence>
         </div>
 
         <div>
@@ -97,17 +113,19 @@ const Navbar = () => {
           >
             <AnchorLink href="#skills">SKILLS </AnchorLink>
           </li>
-          <Link
-            style={{
-              display: route.pathname == "/" ? "none" : "flex",
-            }}
-            to="/"
-          >
-            <li className="hover-underline-animation">HOME </li>
-          </Link>
-          <Link to="/project-section">
-            <li className="hover-underline-animation">PROJECTS </li>
-          </Link>
+          <li className="hover-underline-animation">
+            <Link
+              style={{
+                display: route.pathname == "/" ? "none" : "flex",
+              }}
+              to="/"
+            >
+              HOME
+            </Link>
+          </li>
+          <li className="hover-underline-animation">
+            <Link to="/project-section">PROJECTS</Link>
+          </li>
           <li className="hover-underline-animation">
             <AnchorLink href="#contact">CONTACT</AnchorLink>
           </li>

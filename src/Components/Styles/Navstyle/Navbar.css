@@ -239,6 +239,9 @@ nav .sound .playing .gg-loadbar-sound::after {
     position: relative;
     z-index: 9999999999;
   }
+  .namesLogo .activeMayor {
+    color: #d4a345;
+  }
   .navbar .closedMenu {
     display: none !important;
   }
