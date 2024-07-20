@@ -43,7 +43,7 @@ const Herosection = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="GoToMyProjectsBtn"
+                className="contactMeBtn"
               >
                 <span>CONTACT ME</span>{" "}
               </motion.button>
@@ -53,7 +53,7 @@ const Herosection = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="contactMeBtn"
+                className="GoToMyProjectsBtn"
               >
                 <span>PROJECTS</span>{" "}
                 <span>

@@ -14,6 +14,13 @@ const About = () => {
     }
   }, [lineHeights]);
 
+  const image = {
+    src: "./myPic.webp",
+    alt: "About Me",
+    width: "100%",
+    height: "100%",
+  };
+
   return (
     <div className="AboutContainer">
       <section id="about" className="aboutSection">
@@ -29,11 +36,16 @@ const About = () => {
         <div className="myNotes">
           <div className="aboutCardImg">
             <LazyLoadImage
+              alt={image.alt}
+              height={image.height}
+              src={image.src} // use normal <img> attributes as props
+              width={image.width}
+            />
+            {/* <LazyLoadImage
               style={{ backgroundImage: `url(./myPic.webp)` }}
               className="AboutmeImg"
             >
-              {/* <img src="./meImage.svg" alt="img" loading="lazy" /> */}
-            </LazyLoadImage>
+            </LazyLoadImage> */}
             <h2>A rare picture of me grinning widely.... </h2>
           </div>
           <div className="aboutBio">

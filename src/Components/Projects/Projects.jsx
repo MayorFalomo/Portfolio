@@ -20,14 +20,14 @@ const Projects = () => {
   const keep =
     "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, masonry layouts, multiple select for notes etc. ";
   const Twinkles =
-    "Tweeks is a Full-Stack social web app with over 500+ registered users, users can real-time message, get notifications, follow and unfollow others, switch between tweets (see tweets from only your following and tweets for you),retweet, like quote and bookmark, post tweets, reply comments etc.";
+    "Tweeks is a Full-Stack Twitter-clone with over 600+ registered users, users can real-time message, get notifications, block and unblock, follow and unfollow others, view tweets from only your following and tweets for you, retweet, like, quote and bookmark, post tweets,pictures,videos, reply comments, report tweet, mark-as-uninterested etc.";
 
   const multistep =
     "Multistep-Form is a (Freelance) project where users fill a multistep form with information like Flight, Iban, email etc. which are all validated before moving to the next step, I made use of Google Map's API, So users can search for their addresses and find their exact address on the map and the marker switches to that point.";
   const ema =
     "EMA Screener (Freelance) is a technical analysis tool where investors can identify potential trends in the stock market and quickly pinpoint stocks that have crossed above or below their EMA, providing valuable insights for making informed investment decisions, Working with Bloombyte Software Agency, I built the frontend from scratch working hand in hand with the backend, testing unit and devops unit, also utilized web-sockets for instant updates.";
   const bankHotel =
-    "A sleek creative visual website I built called BankHotel, using a custom Booking system, Guests can book hotel rooms with specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. plus it offers a seamless engaging user experience. Tip: **use Lighthouse";
+    "A sleek creative visual website I built called BankHotel, using a custom Booking system, Guests can book hotel rooms with specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. plus it offers a fast, seamless engaging user experience.";
 
   const keepLength = keep.length;
   const tweeks = Twinkles.length;

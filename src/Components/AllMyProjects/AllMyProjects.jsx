@@ -34,7 +34,7 @@ const AllMyProjects = () => {
       projectName: "Tweeks - A Twitter Clone",
       projectImg: "./tweeks.webp",
       aboutProject:
-        "Tweeks is a Full-Stack social web app (Twitter clone), Where users can real-time message others (share pictures and videos too), get notifications, follow and unfollow other users, Tailor your TL to see tweets of only those you're following, retweet, like quote and bookmark tweets, post tweets, reply other comments, see a list of those you or other people are following etc.",
+        "Tweeks is a Full-Stack social web app (Twitter clone), Where users can real-time message others (share pictures and videos too), get notifications block and unblock, report tweet, mark-as-uninterested, follow and unfollow other users, Tailor your TL to see tweets of only those you're following, retweet, like quote and bookmark tweets, post tweets, reply other comments, see a list of those you or other people are following etc.",
       skill:
         "Next Js, Typescript, Node Js, MongoDb, Express, CSS, Firebase, PWA ",
       demo: "https://tweeks.netlify.app",
@@ -45,7 +45,7 @@ const AllMyProjects = () => {
       projectName: "BankHotel",
       projectImg: "./bankHotel.webp",
       aboutProject:
-        "A creative visual website I built for a mock Hotel called BankHotel, Guests can book hotel rooms with custom specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. I paid particular attention to the performance, code reusability, UI while maintaining a seamless engaging user experience",
+        "A creative visual website I built for called BankHotel, Guests can book hotel rooms with custom specified preferences, Payment integration using Paystack API, an option to download a generated pdf copy containing all your booking Info. I paid particular attention to the performance, code reusability, UI while maintaining a seamless engaging user experience",
       skill:
         "Next Js, Typescript, Redux, Tailwind, ShadCn, NodeJs, MongoDb, Express, Paystack api",
       demo: "https://bankhotel-ng.netlify.app",

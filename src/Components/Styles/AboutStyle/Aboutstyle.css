@@ -31,6 +31,7 @@
 .AboutContainer .aboutCardImg h2 {
   text-align: center;
   line-height: 25px;
+  margin-top: 7px;
 }
 .AboutContainer .AboutmeImg {
   width: 100%;

@@ -16,7 +16,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-intersection-observer": "^9.10.1",
-    "react-lazy-load-image-component": "^1.6.0",
+    "react-lazy-load-image-component": "^1.6.2",
     "react-router-dom": "^6.22.3",
     "react-scroll-parallax": "^3.3.1",
     "use-scramble": "^2.2.15",
