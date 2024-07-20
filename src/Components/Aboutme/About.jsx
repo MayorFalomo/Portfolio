@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/AboutStyle/Aboutstyle.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 // import { AnimatePresence, motion } from "framer-motion";
 
 const About = () => {
@@ -40,6 +42,11 @@ const About = () => {
               height={image.height}
               src={image.src} // use normal <img> attributes as props
               width={image.width}
+              effect="blur"
+              wrapperProps={{
+                // If you need to, you can tweak the effect transition using the wrapper style.
+                style: { transitionDelay: "1s" },
+              }}
             />
             {/* <LazyLoadImage
               style={{ backgroundImage: `url(./myPic.webp)` }}
