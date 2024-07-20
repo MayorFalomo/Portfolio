@@ -43,10 +43,10 @@ const About = () => {
               src={image.src} // use normal <img> attributes as props
               width={image.width}
               effect="blur"
-              wrapperProps={{
-                // If you need to, you can tweak the effect transition using the wrapper style.
-                style: { transitionDelay: "1s" },
-              }}
+              // wrapperProps={{
+              //   // If you need to, you can tweak the effect transition using the wrapper style.
+              //   style: { transitionDelay: "0.5s" },
+              // }}
             />
             {/* <LazyLoadImage
               style={{ backgroundImage: `url(./myPic.webp)` }}
