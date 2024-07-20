@@ -1,9 +1,11 @@
 
 # My Portfolio
 
-The inspiration behind my portfolio theme was based off a project i built, Orpheus.
+Hello!, This is my portfolio website. built using React and SASS. It was designed and built by yours truly, ME! of course.
 
-Most of my projects are usually self inspired or front-end challenges.
+And I truly hoped you like it.
+
+Most of my projects are usually self inspired, so basically, in Arana Grande's voice: I think it, I like it, I want it, I build It. 👍
 
 
 ## Demo
@@ -33,4 +35,3 @@ What optimizations did you make in your code? E.g. refactors, performance improv
 
 Migrated to Vite from CRA
 
-I had to refactor the project section the portfolio loading slow on mobile, Removed framer-motion as that was affecting the speed and i used AOS for the transition instead. 
