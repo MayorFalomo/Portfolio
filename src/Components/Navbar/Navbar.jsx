@@ -173,6 +173,7 @@ const Navbar = () => {
                 handleClick();
                 play();
               }}
+              className="stopPlaying"
             >
               {<GiSoundOff className="stopIcon" />}
             </p>

@@ -62,6 +62,7 @@ const About = () => {
             <LazyLoadImage
               alt={image.alt}
               height={image.height}
+              style={{ minHeight: "300px" }}
               src={image.src} // use normal <img> attributes as props
               width={image.width}
               effect="blur"

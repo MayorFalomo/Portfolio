@@ -218,6 +218,13 @@ nav .sound .playing .gg-loadbar-sound::after {
   right: -4px;
   animation-delay: -3.7s;
 }
+nav .sound .stopPlaying {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  z-index: 9999;
+  z-index: 999999;
+}
 
 @media (max-width: 950px) {
   .navbar {
