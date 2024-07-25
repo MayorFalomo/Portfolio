@@ -48,11 +48,7 @@ const About = () => {
               //   style: { transitionDelay: "0.5s" },
               // }}
             />
-            {/* <LazyLoadImage
-              style={{ backgroundImage: `url(./myPic.webp)` }}
-              className="AboutmeImg"
-            >
-            </LazyLoadImage> */}
+
             <h2>A rare picture of me grinning widely.... </h2>
           </div>
           <div className="aboutBio">

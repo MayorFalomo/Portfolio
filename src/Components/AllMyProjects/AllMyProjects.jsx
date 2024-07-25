@@ -34,7 +34,7 @@ const AllMyProjects = () => {
       projectName: "Tweeks - A Twitter Clone",
       projectImg: "./tweeks.webp",
       aboutProject:
-        "Tweeks is a Full-Stack social web app (Twitter clone), Where users can real-time message others (share pictures and videos too), get notifications block and unblock, report tweet, mark-as-uninterested, follow and unfollow other users, Tailor your TL to see tweets of only those you're following, retweet, like quote and bookmark tweets, post tweets, reply other comments, see a list of those you or other people are following etc.",
+        "Tweeks is a Full-Stack social web app (Twitter clone), Where users can real-time message others (share pictures and videos too), get notifications, tag others to your tweets, block and unblock, report tweet, mark-as-uninterested, follow and unfollow other users, Tailor your TL to see tweets of only those you're following, retweet, like quote and bookmark tweets, post tweets, reply other comments, see a list of those you or other people are following etc.",
       skill:
         "Next Js, Typescript, Node Js, MongoDb, Express, CSS, Firebase, PWA ",
       demo: "https://tweeks.netlify.app",
