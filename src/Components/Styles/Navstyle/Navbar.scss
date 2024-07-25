@@ -178,11 +178,12 @@ nav {
     position: absolute;
     bottom: -80px;
     left: 20px;
-   
+    z-index: 99999;
     .playing{
       position: absolute;
       top: -25px;
       left: 20px;
+      z-index: 9999;
       @keyframes gg-bar {
         10% {box-shadow: inset 0 -4px 0}
         30% {box-shadow: inset 0 -10px 0}

@@ -165,11 +165,13 @@ nav .sound {
   position: absolute;
   bottom: -80px;
   left: 20px;
+  z-index: 99999;
 }
 nav .sound .playing {
   position: absolute;
   top: -25px;
   left: 20px;
+  z-index: 9999;
 }
 @keyframes gg-bar {
   10% {
