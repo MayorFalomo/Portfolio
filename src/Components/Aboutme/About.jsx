@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Styles/AboutStyle/Aboutstyle.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import FadeInText from "../Animation/FadeInText";
+import { useInView } from "react-intersection-observer";
 
 // import { AnimatePresence, motion } from "framer-motion";
 
@@ -22,6 +24,26 @@ const About = () => {
     width: "100%",
     height: "100%",
   };
+
+  const [ref, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  const [ref1, inView1] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  const [ref2, inView2] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  const [ref3, inView3] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
 
   return (
     <div className="AboutContainer">
@@ -55,37 +77,52 @@ const About = () => {
             <div className="aboutCard">
               <h1 className="myself">Bio... </h1>
 
-              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
-                {" "}
-                My name is Mayowa Falomo, I'm a Frontend Developer whose sole
-                aim is building modern, intuitive, user accessible, scalable,
-                technical and user friendly websites and web-apps, while
-                ensuring the site is optimized for best user experience. I am
-                passionate about creating unique experiences for users to help
-                leave a lasting impression about your company, brand or product.
-              </p>
+              <div ref={ref}>
+                {/* <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}> */}
+                <FadeInText inView={inView} styles={lineHeights ? 40 : 45}>
+                  My name is Mayowa Falomo, I'm a Frontend Developer whose sole
+                  aim is building modern, intuitive, user accessible, scalable,
+                  technical and user friendly websites and web-apps, while
+                  ensuring the site is optimized for best user experience. I am
+                  passionate about creating unique experiences for users to help
+                  leave a lasting impression about your company, brand or
+                  product.
+                </FadeInText>
+                {/* </p> */}
+              </div>
 
-              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
-                As my projects show, I've worked actively on several projects,
-                building out and selectively picking out the best UI while also
-                paying close attention to UX and functionality, I work with
-                libraries like React and frontend frameworks like Next J.S, Vue
-                and CSS frameworks like Tailwind and Chakra well, I'm also
-                interested in Technologies like Firebase, Prisma and I am always
-                looking to improve my skillset.{" "}
-              </p>
-
-              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
-                In my Free time I like to read High Fantasy Novels, Watch a
-                movie / series or watch food blogs or you catch me always
-                learning something new.{" "}
-              </p>
-              <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}>
-                So whether it's a new project, upgrading an existing one, fresh
-                eye for your UI, finding a stubborn bug in your application or
-                you just want to say "Hello!", Shoot me a DM, I reply lightening
-                fast ⚡.{" "}
-              </p>
+              <div ref={ref1}>
+                {/* <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}> */}
+                <FadeInText inView={inView1} styles={lineHeights ? 40 : 45}>
+                  As my projects show, I've worked actively on several projects,
+                  building out and selectively picking out the best UI while
+                  also paying close attention to UX and functionality, I work
+                  with libraries like React and frontend frameworks like Next
+                  J.S, Vue and CSS frameworks like Tailwind and Chakra well, I'm
+                  also interested in Technologies like Firebase, Prisma and I am
+                  always looking to improve my skillset.{" "}
+                </FadeInText>
+              </div>
+              {/* </p> */}
+              <div ref={ref2}>
+                {/* <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}> */}
+                <FadeInText inView={inView2} styles={lineHeights ? 40 : 45}>
+                  In my Free time I like to read High Fantasy Novels, Watch a
+                  movie / series or watch food blogs or you catch me always
+                  learning something new.{" "}
+                </FadeInText>
+              </div>
+              {/* </p> */}
+              <div ref={ref3}>
+                {/* <p style={{ lineHeight: lineHeights ? "40px" : "45px" }}> */}
+                <FadeInText inView={inView3} styles={lineHeights ? 40 : 45}>
+                  So whether it's a new project, upgrading an existing one,
+                  fresh eye for your UI, finding a stubborn bug in your
+                  application or you just want to say "Hello!", Shoot me a DM, I
+                  reply lightening fast ⚡.{" "}
+                </FadeInText>
+              </div>
+              {/* </p> */}
             </div>
           </div>
           {/* <div className="aboutCards">

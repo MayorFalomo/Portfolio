@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  motion,
-  useAnimation,
-  useScroll,
-  useViewportScroll,
-} from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 export function SplitReveal({
   children,
@@ -24,6 +19,7 @@ export function SplitReveal({
     threshold: 0.05, // Trigger the animation when 50% of the element is in view
     // triggerOnce: true, // Only trigger the animation once
   });
+
   const controls = useAnimation();
 
   useEffect(() => {

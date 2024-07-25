@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Projects from "../Components/Projects/Projects";
+// import Projects from "../Components/Projects/Projects";
 import Cursor from "../Components/Cursor/Cursor";
 import Navbar from "../Components/Navbar/Navbar";
 import Lenis from "@studio-freight/lenis";
