@@ -113,15 +113,13 @@ const Navbar = () => {
           >
             <AnchorLink href="#skills">SKILLS </AnchorLink>
           </li>
-          <li className="hover-underline-animation">
-            <Link
-              style={{
-                display: route.pathname == "/" ? "none" : "flex",
-              }}
-              to="/"
-            >
-              HOME
-            </Link>
+          <li
+            style={{
+              display: route.pathname == "/" ? "none" : "flex",
+            }}
+            className="hover-underline-animation"
+          >
+            <Link to="/">HOME</Link>
           </li>
           <li className="hover-underline-animation">
             <Link to="/project-section">PROJECTS</Link>
@@ -140,6 +138,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+
         <ul className="MenuDiv">
           {isOpen ? (
             <li className="times" onClick={() => setIsOpen(false)}>
