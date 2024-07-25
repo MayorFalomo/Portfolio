@@ -18,9 +18,9 @@ const Projects = () => {
   const [readLess, setReadLess] = useState(false);
   const [lineHeight, setLineHeight] = useState(false);
   const keep =
-    "Keep is Full Stack Notepad web app where users can Create notes, set remainders, add canvas, search and send note to others, translate notes, archive ,trash, pin, label, customize, masonry layouts, multiple select for notes etc. ";
+    "Keep is Full Stack Notepad web app where users can Create notes, Set remainders, Add canvas, Search and Send note to others, Multi-language Translate for your notes, Archive , Trash, Pin, Label, Customize, Masonry layouts, Multiple select for notes etc. ";
   const Twinkles =
-    "Tweeks is a Full-Stack Twitter-clone with close to 700+ registered users, users can real-time message, get notifications, tag users, block and unblock, follow and unfollow others, view tweets from only your following and tweets for you, retweet, like, quote and bookmark, post tweets, pictures, videos, reply comments, report tweet, mark-as-uninterested etc.";
+    "Tweeks is a Full-Stack Twitter-clone with close to 700+ registered users, users can Real-time message, Get notifications, Tag users, Block and unblock, Follow and unfollow others, View tweets from only your following and Tweets for you, Retweet, Like, Quote and Bookmark, Post tweets, Pictures, Videos, Reply comments, Report tweet, Mark-as-uninterested etc.";
 
   const multistep =
     "Multistep-Form is a (Freelance) project where users fill a multistep form with information like Flight, Iban, email etc. which are all validated before moving to the next step, I made use of Google Map's API, So users can search for their addresses and find their exact address on the map and the marker switches to that point.";
@@ -79,26 +79,28 @@ const Projects = () => {
             <p>
               {keep.slice(0, readMore)}{" "}
               {readLess ? (
-                <a
+                <span
                   onClick={() => {
                     setReadLess(false);
                     setReadMore(150);
                   }}
+                  className="readMore"
                 >
                   Read less{" "}
-                </a>
+                </span>
               ) : (
-                <a
+                <span
+                  className="readMore"
                   onClick={() => {
                     setReadMore(keepLength);
                     setReadLess(true);
                   }}
                 >
                   ... Read more
-                </a>
+                </span>
               )}
             </p>
-            <span>
+            <span className="stacks">
               Next JS, Node Js, MongoDb, Express, Typescript, Firebase, PWA and
               Tailwind and CSS{" "}
             </span>
@@ -141,26 +143,28 @@ const Projects = () => {
               <p>
                 {Twinkles.slice(0, readMore)}...{" "}
                 {readLess ? (
-                  <a
+                  <span
                     onClick={() => {
                       setReadLess(false);
                       setReadMore(150);
                     }}
+                    className="readMore"
                   >
                     Read less...{" "}
-                  </a>
+                  </span>
                 ) : (
-                  <a
+                  <span
                     onClick={() => {
                       setReadMore(tweeks);
                       setReadLess(true);
                     }}
+                    className="readMore"
                   >
                     Read more
-                  </a>
+                  </span>
                 )}
               </p>
-              <span>
+              <span className="stacks">
                 {" "}
                 MongoDb, Express, Typescript, Next JS, Node Js, Firebase, PWA
                 and Styled-Components{" "}
@@ -205,23 +209,25 @@ const Projects = () => {
             <p>
               {ema.slice(0, readMore)}{" "}
               {readLess ? (
-                <a
+                <span
                   onClick={() => {
                     setReadLess(false);
                     setReadMore(160);
                   }}
+                  className="readMore"
                 >
                   Read less{" "}
-                </a>
+                </span>
               ) : (
-                <a
+                <span
                   onClick={() => {
                     setReadMore(emaLength);
                     setReadLess(true);
                   }}
+                  className="readMore"
                 >
                   ... Read more
-                </a>
+                </span>
               )}
             </p>
             {/* <p>
@@ -229,7 +235,9 @@ const Projects = () => {
               the codebase, updating content, ensuring responsiveness, while
               preserving the original code integrity.
             </p> */}
-            <span>Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS</span>
+            <span className="stacks">
+              Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS
+            </span>
             <div className="flexLinks">
               <a
                 id="black"
@@ -271,26 +279,28 @@ const Projects = () => {
                 {" "}
                 {bankHotel.slice(0, readMore)}{" "}
                 {readLess ? (
-                  <a
+                  <span
                     onClick={() => {
                       setReadLess(false);
                       setReadMore(150);
                     }}
+                    className="readMore"
                   >
                     Read less{" "}
-                  </a>
+                  </span>
                 ) : (
-                  <a
+                  <span
                     onClick={() => {
                       setReadMore(bankHotelLength);
                       setReadLess(true);
                     }}
+                    className="readMore"
                   >
                     ... Read more
-                  </a>
+                  </span>
                 )}{" "}
               </p>
-              <span>
+              <span className="stacks">
                 Next 14, Typescript, Redux,React Hook form, zod, Node Js,
                 MongoDb, Express{" "}
               </span>
@@ -337,7 +347,10 @@ const Projects = () => {
               the backend and the bot, The frontend is of course based on
               chatGPT interface.
             </p>
-            <span> Next Js, Chakra UI, Tailwind, CSS, AI Bot, API</span>
+            <span className="stacks">
+              {" "}
+              Next Js, Chakra UI, Tailwind, CSS, AI Bot, API
+            </span>
             <div className="flexLinks">
               <a
                 target="_blank"
@@ -373,7 +386,7 @@ const Projects = () => {
                 your watchlist, search for any movie, watch trailers for the
                 series and browse through movies
               </p>
-              <span> React, CSS, API</span>
+              <span className="stacks"> React, CSS, API</span>
               <div className="flexLink">
                 <a
                   target="_blank"
@@ -414,7 +427,9 @@ const Projects = () => {
               timer, a leaderboard, a real-time chart, and a one-time
               passwordless login.{" "}
             </p>
-            <span>Next JS, Redux, Firebase, Chart Js, CSS </span>
+            <span className="stacks">
+              Next JS, Redux, Firebase, Chart Js, CSS{" "}
+            </span>
             <div className="flexLinks">
               <a
                 id="black"
@@ -474,7 +489,7 @@ const Projects = () => {
                   </a>
                 )}
               </p>
-              <span>
+              <span className="stacks">
                 Next Js, Chakra UI, Framer-Motion, Google Map API, CSS{" "}
               </span>
 
@@ -516,7 +531,7 @@ const Projects = () => {
               A Single Page Nft Dashboard, It uses local storage to save your
               dark mode or light mode color{" "}
             </p>
-            <span>React, CSS</span>
+            <span className="stacks">React, CSS</span>
 
             <div className="flexLinks">
               <a
@@ -555,7 +570,7 @@ const Projects = () => {
             <div id="parallax">
               <h1>Orpheus </h1>
               <p>A single Landing Page using React</p>
-              <span>React, SASS </span>
+              <span className="stacks">React, SASS </span>
               <div className="flexLink">
                 <a
                   target="_blank"
@@ -595,7 +610,7 @@ const Projects = () => {
               engine API and firebase for authentication, it works just like
               google.
             </p>
-            <span>HTML, React, CSS, API, Firebase </span>
+            <span className="stacks">HTML, React, CSS, API, Firebase </span>
             <div className="flexLinks">
               <a
                 id="black"
@@ -647,7 +662,7 @@ const Projects = () => {
                 </a>{" "}
                 also contributed to the UI{" "}
               </p>
-              <span>Next JS, Typescript, CSS </span>
+              <span className="stacks">Next JS, Typescript, CSS </span>
               <div className="flexLink">
                 <a
                   target="_blank"
@@ -686,7 +701,7 @@ const Projects = () => {
               A landing page for a Game website page i built using React and
               CSS, It uses react-router to route to different pages
             </p>
-            <span>React, CSS </span>
+            <span className="stacks">React, CSS </span>
             <div className="flexLinks">
               <a
                 target="_blank"
@@ -726,7 +741,7 @@ const Projects = () => {
                 using Tailwind, the fashion products come from escuelajs Api
                 with a filter functionality based on a fashion type.
               </p>
-              <span>Vue JS, Tailwind, CSS, API </span>
+              <span className="stacks">Vue JS, Tailwind, CSS, API </span>
               <div className="flexLink">
                 <a
                   target="_blank"
