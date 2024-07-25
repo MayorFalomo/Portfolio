@@ -64,12 +64,17 @@ const Herosection = () => {
           </div>
         </div>
         <div className="leftLight">
-          <img src="./leftLight.svg" alt="img" />{" "}
+          <img src="./leftLight.svg" width={"100%"} height={"100%"} alt="img" />{" "}
         </div>
         {/* <Particle /> */}
 
         <div className="leftLightening">
-          <img src="./EllipseLight.svg" alt="img" />{" "}
+          <img
+            src="./EllipseLight.svg"
+            width={"100%"}
+            height={"100%"}
+            alt="img"
+          />{" "}
         </div>
       </div>
     </AnimatePresence>

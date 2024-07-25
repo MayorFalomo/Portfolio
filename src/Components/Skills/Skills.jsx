@@ -160,6 +160,8 @@ const Skills = () => {
           <div className="atom">
             <img
               className="styled"
+              width={"100%"}
+              height={"100%"}
               style={{ width: "80px" }}
               src={styledComponents}
               alt=""

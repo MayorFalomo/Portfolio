@@ -38,41 +38,55 @@ const Contact = () => {
       </div>
       <footer id="hire">
         <ul>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/mayowafalomo1"
-          >
-            <li className="hover-underline-animation">Twitter </li>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/mayowa-falomo-908875178/"
-          >
-            <li className="hover-underline-animation">LinkedIn </li>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/MayorFalomo"
-          >
-            <li className="hover-underline-animation">GitHub </li>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="mailto:mayorfalomo@gmail.com"
-          >
-            <li className="hover-underline-animation">Gmail </li>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://api.whatsapp.com/send?phone=08178152952"
-          >
-            <li className="hover-underline-animation">Whatsapp </li>
-          </a>
+          <li className="hover-underline-animation">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/mayowafalomo1"
+            >
+              Twitter
+            </a>
+          </li>
+
+          <li className="hover-underline-animation">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/mayowa-falomo-908875178/"
+            >
+              LinkedIn
+            </a>
+          </li>
+
+          <li className="hover-underline-animation">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/MayorFalomo"
+            >
+              GitHub
+            </a>
+          </li>
+
+          <li className="hover-underline-animation">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:mayorfalomo@gmail.com"
+            >
+              Gmail
+            </a>
+          </li>
+
+          <li className="hover-underline-animation">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://api.whatsapp.com/send?phone=08178152952"
+            >
+              Whatsapp
+            </a>
+          </li>
         </ul>
         <SplitReveal>Designed and Developed By Mayowa &copy; 2022</SplitReveal>
         {/* <p>Designed and Developed By Mayowa &copy; 2022</p> */}
