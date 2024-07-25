@@ -140,7 +140,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="MenuDiv">
+        <ul className="MenuDiv">
           {isOpen ? (
             <li className="times" onClick={() => setIsOpen(false)}>
               {<FaTimes />}{" "}
@@ -150,7 +150,7 @@ const Navbar = () => {
               {<RiMenu3Fill />}{" "}
             </li>
           )}
-        </div>
+        </ul>
       </div>
       <div className="sound">
         {playSound ? (
@@ -163,7 +163,6 @@ const Navbar = () => {
               className="playing"
             >
               <i className="gg-loadbar-sound"></i>
-              {/* {<CgLoadbarSound className="playIcon" />} */}
             </p>
           </Tippy>
         ) : (
