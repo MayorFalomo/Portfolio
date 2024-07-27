@@ -110,10 +110,7 @@
   display: flex;
   justify-content: flex-end;
   margin: 10px auto;
-  font-size: 20px;
-  margin: 10px auto;
-  font-size: 20px;
-  color: #141c2d;
+  font-size: calc(17px + 0.25vw);
   color: transparent;
   color: #ffffff;
   /* background: #333333; */
@@ -178,8 +175,9 @@
 }
 .ProjectsContainer #parallax .stacks {
   margin: 10px auto;
-  font-size: 20px;
+  font-size: calc(17px + 0.25vw);
   color: #141c2d;
+  text-align: center;
   color: transparent;
   color: #ffffff;
   /* background: #333333; */
@@ -216,6 +214,10 @@
   }
   .ProjectsContainer .parallaxText {
     width: 100%;
+  }
+  .ProjectsContainer .parallaxText .stacks {
+    display: flex;
+    justify-content: center;
   }
   .ProjectsContainer .parallaxText h1 {
     display: flex;

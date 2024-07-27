@@ -18,7 +18,7 @@ const Navbar = () => {
   const [play, { stop }] = useSound(got);
 
   const handleClick = () => {
-    setPlaySound(!playSound);
+    setPlaySound((prev) => !prev);
   };
 
   const route = useLocation();

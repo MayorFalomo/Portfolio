@@ -168,17 +168,19 @@ nav {
   }
   .burger {
     font-size: 40px;
+    cursor: pointer !important;
   }
   .times {
     font-size: 40px;
+    cursor: pointer !important;
   }
   .sound {
-    font-size: 50px;
+    font-size: 40px;
     width: 60px;
     position: absolute;
     bottom: -80px;
     left: 20px;
-    z-index: 99999;
+    z-index: 9999999;
     .playing{
       position: absolute;
       top: -25px;
@@ -223,10 +225,10 @@ nav {
       }
       .stopPlaying{
         position: absolute;
-         top: -25px;
-      left: 20px;
-      z-index: 9999;
-        z-index: 999999;
+        bottom: -30px;
+      left: 5px;
+        z-index: 99999999;
+        cursor: pointer;
       }
     }
  
@@ -249,6 +251,7 @@ nav {
   .burger{
     font-size: 35px !important;
     display: flex;
+    cursor:  pointer !important;
   }
   .namesLogo {
     position: relative;

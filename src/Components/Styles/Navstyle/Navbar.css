@@ -155,17 +155,19 @@ nav .MenuDiv {
 }
 nav .burger {
   font-size: 40px;
+  cursor: pointer !important;
 }
 nav .times {
   font-size: 40px;
+  cursor: pointer !important;
 }
 nav .sound {
-  font-size: 50px;
+  font-size: 40px;
   width: 60px;
   position: absolute;
   bottom: -80px;
   left: 20px;
-  z-index: 99999;
+  z-index: 9999999;
 }
 nav .sound .playing {
   position: absolute;
@@ -220,10 +222,10 @@ nav .sound .playing .gg-loadbar-sound::after {
 }
 nav .sound .stopPlaying {
   position: absolute;
-  top: -25px;
-  left: 20px;
-  z-index: 9999;
-  z-index: 999999;
+  bottom: -30px;
+  left: 5px;
+  z-index: 99999999;
+  cursor: pointer;
 }
 
 @media (max-width: 950px) {
@@ -243,6 +245,7 @@ nav .sound .stopPlaying {
   .burger {
     font-size: 35px !important;
     display: flex;
+    cursor: pointer !important;
   }
   .namesLogo {
     position: relative;
