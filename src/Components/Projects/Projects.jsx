@@ -20,7 +20,7 @@ const Projects = () => {
   const keep =
     "Keep is Full Stack Notepad web app where users can Create notes, Set remainders, Add canvas, Search and Send note to others, Multi-language Translate for your notes, Archive , Trash, Pin, Label, Customize, Masonry layouts, Multiple select for notes etc. ";
   const Twinkles =
-    "Tweeks is a Full-Stack Twitter-clone with close to 700+ registered users, users can Real-time message, Get notifications, Tag users, Block and unblock, Follow and unfollow others, View tweets from only your following and Tweets for you, Retweet, Like, Quote and Bookmark, Post tweets, Pictures, Videos, Reply comments, Report tweet, Mark-as-uninterested etc.";
+    "Tweeks is a Full-Stack Twitter-clone with close to 700+ registered users, users can Real-time message, Get notifications, Tag users, Block and unblock, Follow and unfollow others, View tweets from only your following and Tweets for you, Retweet, Like,comment, Quote and Bookmark, Post tweets, Pictures, Videos, Reply comments, Mark-as-uninterested etc.";
 
   const multistep =
     "Multistep-Form is a (Freelance) project where users fill a multistep form with information like Flight, Iban, email etc. which are all validated before moving to the next step, I made use of Google Map's API, So users can search for their addresses and find their exact address on the map and the marker switches to that point.";
