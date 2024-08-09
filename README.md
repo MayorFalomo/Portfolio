@@ -1,3 +1,9 @@
+## Demo
+
+https://mayowa-falomo.netlify.app/
+
+![Logo](http://res.cloudinary.com/dsghy4siv/image/upload/v1723183334/ng7mos6mxnozv1jzfncn.png)
+
 
 # My Portfolio
 
@@ -7,10 +13,6 @@ And I truly hope you like it.
 
 Most of my projects are usually self inspired, so basically, in Arianna Grande's voice: I think it, I like it, I want it, I build It. 👍
 
-
-## Demo
-
-https://mayowa-falomo.netlify.app/
 
 
 ## License
