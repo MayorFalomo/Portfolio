@@ -2,7 +2,7 @@
 
 https://mayowa-falomo.netlify.app/
 
-![Logo](http://res.cloudinary.com/dsghy4siv/image/upload/v1723183334/ng7mos6mxnozv1jzfncn.png)
+![Logo](http://res.cloudinary.com/dsghy4siv/image/upload/v1723184939/iml8m8lalubrcuyzwduq.png)
 
 
 # My Portfolio
