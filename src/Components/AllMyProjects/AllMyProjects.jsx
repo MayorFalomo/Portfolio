@@ -53,6 +53,16 @@ const AllMyProjects = () => {
     },
     {
       id: "4",
+      projectName: "RxZippy",
+      projectImg: "./rxzippy.webp",
+      aboutProject:
+        "A freelance project for Rxzippy, a medical company that offer delivery services for medical supplies and other medical related services.",
+      skill: "React, Typescript, Tailwind, Shadcn, Framer motion ",
+      demo: "https://rxzippy.netlify.app",
+      github: " ",
+    },
+    {
+      id: "5",
       projectName: "Reyna Hair Salon",
       projectImg: "./reyna.webp",
       aboutProject:
@@ -62,7 +72,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "5",
+      id: "6",
       projectName: "EaseInBiz Automation",
       projectImg: "./easeinbiz.webp",
       aboutProject:
@@ -72,7 +82,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "6",
+      id: "7",
       projectName: "Qcmology",
       projectImg: "./qcmology.webp",
       aboutProject:
@@ -82,7 +92,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "7",
+      id: "8",
       projectName: "Lien-Bot",
       projectImg: "./lien-bot.webp",
       aboutProject:
@@ -92,7 +102,7 @@ const AllMyProjects = () => {
       github: " ",
     },
     {
-      id: "8",
+      id: "9",
       projectName: "Multistep-Form",
       projectImg: "./multistep-form.webp",
       aboutProject:
@@ -102,7 +112,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/multistep",
     },
     {
-      id: "9",
+      id: "10",
       projectName: "EMA Screener",
       projectImg: "./ema.webp",
       aboutProject:
@@ -112,7 +122,7 @@ const AllMyProjects = () => {
       github: "",
     },
     {
-      id: "10",
+      id: "11",
       projectName: "Blogaroo",
       projectImg: "./blogaroo.webp",
       aboutProject:
@@ -124,7 +134,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "11",
+      id: "12",
       projectName: "Cinemaflix",
       projectImg: "./cinemaflix.webp",
       aboutProject:
@@ -135,7 +145,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "12",
+      id: "13",
       projectName: "Quiz App",
       projectImg: "./quiz.webp",
       aboutProject:
@@ -145,7 +155,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Quiz-App",
     },
     {
-      id: "13",
+      id: "14",
       projectName: "Nft Dashboard",
       projectImg: "./urban.webp",
       aboutProject:
@@ -155,7 +165,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Urban-Nft-Dashboard",
     },
     {
-      id: "14",
+      id: "15",
       projectName: "Travel Buddy",
       projectImg: "./travelBuddy.webp",
       aboutProject:
@@ -165,7 +175,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/TravelBuddy",
     },
     {
-      id: "15",
+      id: "16",
       projectName: "Orpheus",
       projectImg: "./orpheus.webp",
       aboutProject: "A single Landing Page using React.",
@@ -174,7 +184,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Orpheus-landing-page",
     },
     {
-      id: "16",
+      id: "17",
       projectName: "Google Clone",
       projectImg: "./google.webp",
       aboutProject:
@@ -184,7 +194,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/GoogleBase",
     },
     {
-      id: "17",
+      id: "18",
       projectName: "Swish",
       projectImg: "./swishUpdated.webp",
       aboutProject:
@@ -194,7 +204,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Swish-Weather-App",
     },
     {
-      id: "18",
+      id: "19",
       projectName: "Medley Games",
       projectImg: "./medleyGames.webp",
       aboutProject:
@@ -205,7 +215,7 @@ const AllMyProjects = () => {
     },
 
     {
-      id: "19",
+      id: "20",
       projectName: "StoreBay",
       projectImg: "./StoreBay.webp",
       aboutProject:
@@ -215,7 +225,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/StoreBay",
     },
     {
-      id: "20",
+      id: "21",
       projectName: "Worldly",
       projectImg: "./worldly.webp",
       aboutProject:
@@ -225,7 +235,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Worldly",
     },
     {
-      id: "21",
+      id: "22",
       projectName: "Todo",
       projectImg: "./todo.webp",
       aboutProject:
@@ -235,7 +245,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/vue-todo-app",
     },
     {
-      id: "22",
+      id: "23",
       projectName: "Shadcn",
       projectImg: "./shadcn.webp",
       aboutProject:
@@ -245,7 +255,7 @@ const AllMyProjects = () => {
       github: "https://github.com/MayorFalomo/Next-Shadcn",
     },
     {
-      id: "23",
+      id: "24",
       projectName: "Drone",
       projectImg: "./drone.webp",
       aboutProject:

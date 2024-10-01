@@ -100,7 +100,7 @@ const About = () => {
                   also paying close attention to UX and functionality, I work
                   with libraries like React and frontend frameworks like Next
                   J.S, Vue and CSS frameworks like Tailwind and Chakra well, I'm
-                  also interested in Technologies like Firebase, Prisma and I am
+                  also interested in Technologies like ThreeJS, Prisma and I am
                   always looking to improve my skillset.{" "}
                 </FadeInText>
               </div>
