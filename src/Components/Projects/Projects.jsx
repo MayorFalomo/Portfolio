@@ -67,48 +67,27 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           style={{
-            backgroundImage: "url(./keep.webp)",
-            backgroundPosition: "center",
+            backgroundImage: "url(./toyor.webp)",
+            backgroundPosition: "left",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Keep - A Google Notepad </h1>
+              <h1> Portfolio </h1>
             <p>
-              {keep.slice(0, readMore)}{" "}
-              {readLess ? (
-                <span
-                  onClick={() => {
-                    setReadLess(false);
-                    setReadMore(150);
-                  }}
-                  className="readMore"
-                >
-                  Read less{" "}
-                </span>
-              ) : (
-                <span
-                  className="readMore"
-                  onClick={() => {
-                    setReadMore(keepLength);
-                    setReadLess(true);
-                  }}
-                >
-                  ... Read more
-                </span>
-              )}
+            Designed and Built this creative, minimalist portfolio for a senior developer, achieving a fast, neat, modern, visually appealing feel for users.
             </p>
+          
             <span className="stacks">
-              Next JS, Node Js, MongoDb, Express, Typescript, Firebase, PWA and
-              Tailwind and CSS{" "}
+            React, Tailwind, Framer motion
             </span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://keep-notepad.vercel.app"
+                href="https://toyorc.netlify.app"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -116,7 +95,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/google-keep"
+                href="#"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -166,8 +145,7 @@ const Projects = () => {
               </p>
               <span className="stacks">
                 {" "}
-                MongoDb, Express, Typescript, Next JS, Node Js, Firebase, PWA
-                and Styled-Components{" "}
+               
               </span>
               <div className="flexLink">
                 <a
@@ -197,7 +175,7 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           style={{
-            backgroundImage: "url(./ema.webp)",
+            backgroundImage: "url(./keep.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -205,14 +183,14 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>EMA Screener </h1>
+              <h1>Keep - A Google Notepad </h1>
             <p>
-              {ema.slice(0, readMore)}{" "}
+              {keep.slice(0, readMore)}{" "}
               {readLess ? (
                 <span
                   onClick={() => {
                     setReadLess(false);
-                    setReadMore(160);
+                    setReadMore(150);
                   }}
                   className="readMore"
                 >
@@ -220,11 +198,11 @@ const Projects = () => {
                 </span>
               ) : (
                 <span
+                  className="readMore"
                   onClick={() => {
-                    setReadMore(emaLength);
+                    setReadMore(keepLength);
                     setReadLess(true);
                   }}
-                  className="readMore"
                 >
                   ... Read more
                 </span>
@@ -236,13 +214,15 @@ const Projects = () => {
               preserving the original code integrity.
             </p> */}
             <span className="stacks">
-              Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS
+                Next JS, Node Js, MongoDb, Express, Typescript, Firebase, PWA and
+              Tailwind and CSS{" "}
+           
             </span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://trend-catcher.netlify.app/"
+                href="https://keep-notepad.vercel.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -251,7 +231,7 @@ const Projects = () => {
                 className="disable"
                 id="black"
                 target="_blank"
-                // href="https://github.com/MayorFalomo/Twitter-clone"
+                href="https://github.com/MayorFalomo/google-keep"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -410,7 +390,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./quiz.webp)",
+            backgroundImage: "url(./ema.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -420,21 +400,42 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Quiz App</h1>
+              <h1>EMA Screener </h1>
             <p>
-              {" "}
-              A Trivial App i built using Next Js, it features a countdown
-              timer, a leaderboard, a real-time chart, and a one-time
-              passwordless login.{" "}
+              {ema.slice(0, readMore)}{" "}
+              {readLess ? (
+                <span
+                  onClick={() => {
+                    setReadLess(false);
+                    setReadMore(160);
+                  }}
+                  className="readMore"
+                >
+                  Read less{" "}
+                </span>
+              ) : (
+                <span
+                  onClick={() => {
+                    setReadMore(emaLength);
+                    setReadLess(true);
+                  }}
+                  className="readMore"
+                >
+                  ... Read more
+                </span>
+              )}
             </p>
+          
             <span className="stacks">
-              Next JS, Redux, Firebase, Chart Js, CSS{" "}
+                 
+              Next 14 JS, Chakra UI, Tailwind, Framer-Motion, CSS
+             {" "}
             </span>
             <div className="flexLinks">
               <a
                 id="black"
                 target="_blank"
-                href="https://trivial-quiz-app.netlify.app/"
+                href="https://trend-catcher.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
@@ -442,7 +443,7 @@ const Projects = () => {
               <a
                 id="black"
                 target="_blank"
-                href="https://github.com/MayorFalomo/Quiz-App"
+                // href="https://github.com/MayorFalomo/Quiz-App"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}
@@ -686,7 +687,7 @@ const Projects = () => {
         <div
           className="subProjectLeft"
           style={{
-            backgroundImage: "url(./medleyGames.webp)",
+            backgroundImage: "url(./quiz.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -696,23 +697,25 @@ const Projects = () => {
         >
           <div className="overLayLeft"></div>
           <div className="parallaxText">
-            <h1>Medley Games</h1>
+             <h1>Quiz App</h1>
             <p>
-              A landing page for a Game website page i built using React and
-              CSS, It uses react-router to route to different pages
+              {" "}
+              A Trivial App i built using Next Js, it features a countdown
+              timer, a leaderboard, a real-time chart, and a one-time
+              passwordless login.{" "}
             </p>
-            <span className="stacks">React, CSS </span>
+            <span className="stacks"> Next JS, Redux, Firebase, Chart Js, CSS</span>
             <div className="flexLinks">
               <a
                 target="_blank"
-                href="https://medley-games.netlify.app/"
+                href="https://trivial-quiz-app.netlify.app/"
                 rel="noreferrer"
               >
                 {<MdLogout className="netlifyLink" />} Demo{" "}
               </a>
               <a
                 target="_blank"
-                href="https://github.com/MayorFalomo/Medley-Games"
+                href="https://github.com/MayorFalomo/Quiz-App"
                 rel="noreferrer"
               >
                 {<IoLogoGithub className="githubLink" />} Github{" "}

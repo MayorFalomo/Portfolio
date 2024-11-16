@@ -19,6 +19,17 @@ const AllMyProjects = () => {
 
   const [projects, setProjects] = useState([
     {
+      id: "0",
+      projectName: "Portfolio",
+      projectImg: "./toyor.webp",
+      aboutProject:
+        "Designed and built this creative, simplistic portfolio for a Senior Developer, ensuring a clean and modern look, also showcasing my evolved design skills and structure",
+      skill:
+        "React Js, Typescript, Framer motion, Tailwind ",
+      demo: "https://toyorc.netlify.app",
+      github: "#",
+    },
+    {
       id: "1",
       projectName: "Keep - A Google Notepad",
       projectImg: "./keep.webp",
